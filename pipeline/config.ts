@@ -37,6 +37,7 @@ export const PATHS = {
   dashboardInsights: path.join(DATA_DIR, "derived", "dashboard_insights.json"),
   curatedHomepage: path.join(DATA_DIR, "derived", "curated_homepage.json"),
   memoryBookPayload: path.join(DATA_DIR, "derived", "memory_book_payload.json"),
+  storyLenses: path.join(DATA_DIR, "public", "story_lenses.json"),
   messagesManifest: path.join(DATA_DIR, "public", "messages_manifest.json"),
 } as const;
 

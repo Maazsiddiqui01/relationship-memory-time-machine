@@ -8,6 +8,7 @@ import type {
   NarrativeSegment,
 } from "../schemas.js";
 import { ensureProjectDirectories, groupBy, readJson, readNdjson, writeJson } from "../lib/io.js";
+import { writeStoryLenses } from "../lib/story-lenses.js";
 
 async function main(): Promise<void> {
   await ensureProjectDirectories();
@@ -94,12 +95,14 @@ async function main(): Promise<void> {
     await writeJson(path.join(PATHS.publicDir, fileName), payload);
   }
 
+  await writeStoryLenses();
+
   console.log(
     JSON.stringify(
       {
         stage: "publish",
         message_shards: manifest.shard_count,
-        public_datasets: passthroughDatasets.length + 2,
+        public_datasets: passthroughDatasets.length + 3,
       },
       null,
       2,

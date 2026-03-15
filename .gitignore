@@ -16,6 +16,7 @@ data/cache/
 data/canonical/
 data/annotations/
 data/derived/
+!data/public/**/*.json
 WhatsApp Chat with Durriya.txt
 
 # Outputs

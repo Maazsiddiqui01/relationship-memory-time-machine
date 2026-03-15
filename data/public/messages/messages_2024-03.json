@@ -1,0 +1,17 @@
+{
+  "month_key": "2024-03",
+  "message_count": 1,
+  "messages": [
+    {
+      "message_id": "msg_0000006",
+      "timestamp_local": "2024-03-05T00:38:00",
+      "sender_id": null,
+      "sender_label": null,
+      "message_type": "system",
+      "text": "Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them. *Learn more*.",
+      "technical_session_id": "tech_0006",
+      "narrative_segment_id": "segment_0005",
+      "chapter_id": "chapter_001"
+    }
+  ]
+}

@@ -1,0 +1,2077 @@
+{
+  "generated_at": "2026-03-15T19:55:41.818Z",
+  "participants": [
+    {
+      "participant_id": "participant_01",
+      "label": "Durriya",
+      "total_messages": 123823,
+      "message_share": 45.67,
+      "total_words": 482585,
+      "average_words_per_message": 3.9,
+      "average_chars_per_message": 18.87,
+      "emoji_count": 30514,
+      "emoji_share": 58.21,
+      "emoji_per_message": 0.25,
+      "link_count": 213,
+      "link_share": 30.26,
+      "multiline_count": 353,
+      "multiline_share": 38.58,
+      "weekend_percentage": 29.57,
+      "late_night_percentage": 27.19,
+      "session_opener_count": 167,
+      "session_opener_share": 52.19,
+      "longest_message_length": 8165,
+      "average_reply_gap_minutes": 7.89
+    },
+    {
+      "participant_id": "participant_02",
+      "label": "Maaz Siddiqui",
+      "total_messages": 147305,
+      "message_share": 54.33,
+      "total_words": 688822,
+      "average_words_per_message": 4.68,
+      "average_chars_per_message": 23.44,
+      "emoji_count": 21908,
+      "emoji_share": 41.79,
+      "emoji_per_message": 0.15,
+      "link_count": 491,
+      "link_share": 69.74,
+      "multiline_count": 562,
+      "multiline_share": 61.42,
+      "weekend_percentage": 29.07,
+      "late_night_percentage": 27.38,
+      "session_opener_count": 153,
+      "session_opener_share": 47.81,
+      "longest_message_length": 7997,
+      "average_reply_gap_minutes": 6.63
+    }
+  ],
+  "time_patterns": {
+    "monthly_split": [
+      {
+        "month_key": "2024-05",
+        "total_messages": 27592,
+        "participant_counts": {
+          "participant_01": 12212,
+          "participant_02": 15380
+        },
+        "late_night_count": 11202
+      },
+      {
+        "month_key": "2024-06",
+        "total_messages": 39038,
+        "participant_counts": {
+          "participant_01": 17301,
+          "participant_02": 21737
+        },
+        "late_night_count": 10574
+      },
+      {
+        "month_key": "2024-07",
+        "total_messages": 23832,
+        "participant_counts": {
+          "participant_01": 10249,
+          "participant_02": 13583
+        },
+        "late_night_count": 2592
+      },
+      {
+        "month_key": "2024-08",
+        "total_messages": 17111,
+        "participant_counts": {
+          "participant_01": 7548,
+          "participant_02": 9563
+        },
+        "late_night_count": 2324
+      },
+      {
+        "month_key": "2024-09",
+        "total_messages": 12917,
+        "participant_counts": {
+          "participant_01": 5080,
+          "participant_02": 7837
+        },
+        "late_night_count": 2828
+      },
+      {
+        "month_key": "2024-10",
+        "total_messages": 15297,
+        "participant_counts": {
+          "participant_01": 6488,
+          "participant_02": 8809
+        },
+        "late_night_count": 3130
+      },
+      {
+        "month_key": "2024-11",
+        "total_messages": 14939,
+        "participant_counts": {
+          "participant_01": 6542,
+          "participant_02": 8397
+        },
+        "late_night_count": 2900
+      },
+      {
+        "month_key": "2024-12",
+        "total_messages": 9978,
+        "participant_counts": {
+          "participant_01": 4271,
+          "participant_02": 5707
+        },
+        "late_night_count": 2356
+      },
+      {
+        "month_key": "2025-01",
+        "total_messages": 8828,
+        "participant_counts": {
+          "participant_01": 4161,
+          "participant_02": 4667
+        },
+        "late_night_count": 2189
+      },
+      {
+        "month_key": "2025-02",
+        "total_messages": 7444,
+        "participant_counts": {
+          "participant_01": 3437,
+          "participant_02": 4007
+        },
+        "late_night_count": 1204
+      },
+      {
+        "month_key": "2025-03",
+        "total_messages": 8835,
+        "participant_counts": {
+          "participant_01": 4225,
+          "participant_02": 4610
+        },
+        "late_night_count": 3780
+      },
+      {
+        "month_key": "2025-04",
+        "total_messages": 12229,
+        "participant_counts": {
+          "participant_01": 5733,
+          "participant_02": 6496
+        },
+        "late_night_count": 4443
+      },
+      {
+        "month_key": "2025-05",
+        "total_messages": 11506,
+        "participant_counts": {
+          "participant_01": 5840,
+          "participant_02": 5666
+        },
+        "late_night_count": 3969
+      },
+      {
+        "month_key": "2025-06",
+        "total_messages": 11455,
+        "participant_counts": {
+          "participant_01": 5846,
+          "participant_02": 5609
+        },
+        "late_night_count": 4489
+      },
+      {
+        "month_key": "2025-07",
+        "total_messages": 11447,
+        "participant_counts": {
+          "participant_01": 5622,
+          "participant_02": 5825
+        },
+        "late_night_count": 4505
+      },
+      {
+        "month_key": "2025-08",
+        "total_messages": 8516,
+        "participant_counts": {
+          "participant_01": 4306,
+          "participant_02": 4210
+        },
+        "late_night_count": 2369
+      },
+      {
+        "month_key": "2025-09",
+        "total_messages": 9874,
+        "participant_counts": {
+          "participant_01": 4952,
+          "participant_02": 4922
+        },
+        "late_night_count": 2590
+      },
+      {
+        "month_key": "2025-10",
+        "total_messages": 7873,
+        "participant_counts": {
+          "participant_01": 4394,
+          "participant_02": 3479
+        },
+        "late_night_count": 2428
+      },
+      {
+        "month_key": "2025-11",
+        "total_messages": 6415,
+        "participant_counts": {
+          "participant_01": 3215,
+          "participant_02": 3200
+        },
+        "late_night_count": 2072
+      },
+      {
+        "month_key": "2025-12",
+        "total_messages": 910,
+        "participant_counts": {
+          "participant_01": 390,
+          "participant_02": 520
+        },
+        "late_night_count": 494
+      },
+      {
+        "month_key": "2026-01",
+        "total_messages": 1500,
+        "participant_counts": {
+          "participant_01": 553,
+          "participant_02": 947
+        },
+        "late_night_count": 68
+      },
+      {
+        "month_key": "2026-02",
+        "total_messages": 2995,
+        "participant_counts": {
+          "participant_01": 1216,
+          "participant_02": 1779
+        },
+        "late_night_count": 1226
+      },
+      {
+        "month_key": "2026-03",
+        "total_messages": 597,
+        "participant_counts": {
+          "participant_01": 242,
+          "participant_02": 355
+        },
+        "late_night_count": 259
+      }
+    ],
+    "weekday_distribution": [
+      {
+        "label": "Sun",
+        "total_messages": 44424,
+        "participant_counts": {
+          "participant_01": 20664,
+          "participant_02": 23760
+        },
+        "weekday": 0
+      },
+      {
+        "label": "Mon",
+        "total_messages": 40227,
+        "participant_counts": {
+          "participant_01": 18538,
+          "participant_02": 21689
+        },
+        "weekday": 1
+      },
+      {
+        "label": "Tue",
+        "total_messages": 38326,
+        "participant_counts": {
+          "participant_01": 17528,
+          "participant_02": 20798
+        },
+        "weekday": 2
+      },
+      {
+        "label": "Wed",
+        "total_messages": 36631,
+        "participant_counts": {
+          "participant_01": 16523,
+          "participant_02": 20108
+        },
+        "weekday": 3
+      },
+      {
+        "label": "Thu",
+        "total_messages": 37339,
+        "participant_counts": {
+          "participant_01": 16798,
+          "participant_02": 20541
+        },
+        "weekday": 4
+      },
+      {
+        "label": "Fri",
+        "total_messages": 39161,
+        "participant_counts": {
+          "participant_01": 17818,
+          "participant_02": 21343
+        },
+        "weekday": 5
+      },
+      {
+        "label": "Sat",
+        "total_messages": 35020,
+        "participant_counts": {
+          "participant_01": 15954,
+          "participant_02": 19066
+        },
+        "weekday": 6
+      }
+    ],
+    "hour_distribution": [
+      {
+        "label": "00:00",
+        "total_messages": 12268,
+        "participant_counts": {
+          "participant_01": 5728,
+          "participant_02": 6540
+        },
+        "hour_of_day": 0
+      },
+      {
+        "label": "01:00",
+        "total_messages": 7800,
+        "participant_counts": {
+          "participant_01": 3587,
+          "participant_02": 4213
+        },
+        "hour_of_day": 1
+      },
+      {
+        "label": "02:00",
+        "total_messages": 4042,
+        "participant_counts": {
+          "participant_01": 1830,
+          "participant_02": 2212
+        },
+        "hour_of_day": 2
+      },
+      {
+        "label": "03:00",
+        "total_messages": 5167,
+        "participant_counts": {
+          "participant_01": 2342,
+          "participant_02": 2825
+        },
+        "hour_of_day": 3
+      },
+      {
+        "label": "04:00",
+        "total_messages": 2416,
+        "participant_counts": {
+          "participant_01": 849,
+          "participant_02": 1567
+        },
+        "hour_of_day": 4
+      },
+      {
+        "label": "05:00",
+        "total_messages": 652,
+        "participant_counts": {
+          "participant_01": 258,
+          "participant_02": 394
+        },
+        "hour_of_day": 5
+      },
+      {
+        "label": "06:00",
+        "total_messages": 1891,
+        "participant_counts": {
+          "participant_01": 876,
+          "participant_02": 1015
+        },
+        "hour_of_day": 6
+      },
+      {
+        "label": "07:00",
+        "total_messages": 3636,
+        "participant_counts": {
+          "participant_01": 1529,
+          "participant_02": 2107
+        },
+        "hour_of_day": 7
+      },
+      {
+        "label": "08:00",
+        "total_messages": 5868,
+        "participant_counts": {
+          "participant_01": 2648,
+          "participant_02": 3220
+        },
+        "hour_of_day": 8
+      },
+      {
+        "label": "09:00",
+        "total_messages": 9866,
+        "participant_counts": {
+          "participant_01": 4491,
+          "participant_02": 5375
+        },
+        "hour_of_day": 9
+      },
+      {
+        "label": "10:00",
+        "total_messages": 11914,
+        "participant_counts": {
+          "participant_01": 5352,
+          "participant_02": 6562
+        },
+        "hour_of_day": 10
+      },
+      {
+        "label": "11:00",
+        "total_messages": 11321,
+        "participant_counts": {
+          "participant_01": 5063,
+          "participant_02": 6258
+        },
+        "hour_of_day": 11
+      },
+      {
+        "label": "12:00",
+        "total_messages": 12352,
+        "participant_counts": {
+          "participant_01": 5636,
+          "participant_02": 6716
+        },
+        "hour_of_day": 12
+      },
+      {
+        "label": "13:00",
+        "total_messages": 13917,
+        "participant_counts": {
+          "participant_01": 6122,
+          "participant_02": 7795
+        },
+        "hour_of_day": 13
+      },
+      {
+        "label": "14:00",
+        "total_messages": 12154,
+        "participant_counts": {
+          "participant_01": 5362,
+          "participant_02": 6792
+        },
+        "hour_of_day": 14
+      },
+      {
+        "label": "15:00",
+        "total_messages": 15269,
+        "participant_counts": {
+          "participant_01": 6954,
+          "participant_02": 8315
+        },
+        "hour_of_day": 15
+      },
+      {
+        "label": "16:00",
+        "total_messages": 14391,
+        "participant_counts": {
+          "participant_01": 6611,
+          "participant_02": 7780
+        },
+        "hour_of_day": 16
+      },
+      {
+        "label": "17:00",
+        "total_messages": 12351,
+        "participant_counts": {
+          "participant_01": 5695,
+          "participant_02": 6656
+        },
+        "hour_of_day": 17
+      },
+      {
+        "label": "18:00",
+        "total_messages": 13996,
+        "participant_counts": {
+          "participant_01": 6456,
+          "participant_02": 7540
+        },
+        "hour_of_day": 18
+      },
+      {
+        "label": "19:00",
+        "total_messages": 13892,
+        "participant_counts": {
+          "participant_01": 6421,
+          "participant_02": 7471
+        },
+        "hour_of_day": 19
+      },
+      {
+        "label": "20:00",
+        "total_messages": 19305,
+        "participant_counts": {
+          "participant_01": 9229,
+          "participant_02": 10076
+        },
+        "hour_of_day": 20
+      },
+      {
+        "label": "21:00",
+        "total_messages": 24362,
+        "participant_counts": {
+          "participant_01": 11457,
+          "participant_02": 12905
+        },
+        "hour_of_day": 21
+      },
+      {
+        "label": "22:00",
+        "total_messages": 25340,
+        "participant_counts": {
+          "participant_01": 11705,
+          "participant_02": 13635
+        },
+        "hour_of_day": 22
+      },
+      {
+        "label": "23:00",
+        "total_messages": 16958,
+        "participant_counts": {
+          "participant_01": 7622,
+          "participant_02": 9336
+        },
+        "hour_of_day": 23
+      }
+    ],
+    "late_night_trend": [
+      {
+        "month_key": "2024-05",
+        "total_messages": 27592,
+        "late_night_messages": 11202,
+        "late_night_share": 40.6,
+        "participant_counts": {
+          "participant_01": 5085,
+          "participant_02": 6117
+        }
+      },
+      {
+        "month_key": "2024-06",
+        "total_messages": 39038,
+        "late_night_messages": 10574,
+        "late_night_share": 27.09,
+        "participant_counts": {
+          "participant_01": 4700,
+          "participant_02": 5874
+        }
+      },
+      {
+        "month_key": "2024-07",
+        "total_messages": 23832,
+        "late_night_messages": 2592,
+        "late_night_share": 10.88,
+        "participant_counts": {
+          "participant_01": 987,
+          "participant_02": 1605
+        }
+      },
+      {
+        "month_key": "2024-08",
+        "total_messages": 17111,
+        "late_night_messages": 2324,
+        "late_night_share": 13.58,
+        "participant_counts": {
+          "participant_01": 925,
+          "participant_02": 1399
+        }
+      },
+      {
+        "month_key": "2024-09",
+        "total_messages": 12917,
+        "late_night_messages": 2828,
+        "late_night_share": 21.89,
+        "participant_counts": {
+          "participant_01": 1087,
+          "participant_02": 1741
+        }
+      },
+      {
+        "month_key": "2024-10",
+        "total_messages": 15297,
+        "late_night_messages": 3130,
+        "late_night_share": 20.46,
+        "participant_counts": {
+          "participant_01": 1367,
+          "participant_02": 1763
+        }
+      },
+      {
+        "month_key": "2024-11",
+        "total_messages": 14939,
+        "late_night_messages": 2900,
+        "late_night_share": 19.41,
+        "participant_counts": {
+          "participant_01": 1234,
+          "participant_02": 1666
+        }
+      },
+      {
+        "month_key": "2024-12",
+        "total_messages": 9978,
+        "late_night_messages": 2356,
+        "late_night_share": 23.61,
+        "participant_counts": {
+          "participant_01": 1032,
+          "participant_02": 1324
+        }
+      },
+      {
+        "month_key": "2025-01",
+        "total_messages": 8828,
+        "late_night_messages": 2189,
+        "late_night_share": 24.8,
+        "participant_counts": {
+          "participant_01": 964,
+          "participant_02": 1225
+        }
+      },
+      {
+        "month_key": "2025-02",
+        "total_messages": 7444,
+        "late_night_messages": 1204,
+        "late_night_share": 16.17,
+        "participant_counts": {
+          "participant_01": 513,
+          "participant_02": 691
+        }
+      },
+      {
+        "month_key": "2025-03",
+        "total_messages": 8835,
+        "late_night_messages": 3780,
+        "late_night_share": 42.78,
+        "participant_counts": {
+          "participant_01": 1693,
+          "participant_02": 2087
+        }
+      },
+      {
+        "month_key": "2025-04",
+        "total_messages": 12229,
+        "late_night_messages": 4443,
+        "late_night_share": 36.33,
+        "participant_counts": {
+          "participant_01": 2089,
+          "participant_02": 2354
+        }
+      },
+      {
+        "month_key": "2025-05",
+        "total_messages": 11506,
+        "late_night_messages": 3969,
+        "late_night_share": 34.5,
+        "participant_counts": {
+          "participant_01": 1931,
+          "participant_02": 2038
+        }
+      },
+      {
+        "month_key": "2025-06",
+        "total_messages": 11455,
+        "late_night_messages": 4489,
+        "late_night_share": 39.19,
+        "participant_counts": {
+          "participant_01": 2308,
+          "participant_02": 2181
+        }
+      },
+      {
+        "month_key": "2025-07",
+        "total_messages": 11447,
+        "late_night_messages": 4505,
+        "late_night_share": 39.36,
+        "participant_counts": {
+          "participant_01": 2252,
+          "participant_02": 2253
+        }
+      },
+      {
+        "month_key": "2025-08",
+        "total_messages": 8516,
+        "late_night_messages": 2369,
+        "late_night_share": 27.82,
+        "participant_counts": {
+          "participant_01": 1124,
+          "participant_02": 1245
+        }
+      },
+      {
+        "month_key": "2025-09",
+        "total_messages": 9874,
+        "late_night_messages": 2590,
+        "late_night_share": 26.23,
+        "participant_counts": {
+          "participant_01": 1150,
+          "participant_02": 1440
+        }
+      },
+      {
+        "month_key": "2025-10",
+        "total_messages": 7873,
+        "late_night_messages": 2428,
+        "late_night_share": 30.84,
+        "participant_counts": {
+          "participant_01": 1391,
+          "participant_02": 1037
+        }
+      },
+      {
+        "month_key": "2025-11",
+        "total_messages": 6415,
+        "late_night_messages": 2072,
+        "late_night_share": 32.3,
+        "participant_counts": {
+          "participant_01": 1038,
+          "participant_02": 1034
+        }
+      },
+      {
+        "month_key": "2025-12",
+        "total_messages": 910,
+        "late_night_messages": 494,
+        "late_night_share": 54.29,
+        "participant_counts": {
+          "participant_01": 226,
+          "participant_02": 268
+        }
+      },
+      {
+        "month_key": "2026-01",
+        "total_messages": 1500,
+        "late_night_messages": 68,
+        "late_night_share": 4.53,
+        "participant_counts": {
+          "participant_01": 11,
+          "participant_02": 57
+        }
+      },
+      {
+        "month_key": "2026-02",
+        "total_messages": 2995,
+        "late_night_messages": 1226,
+        "late_night_share": 40.93,
+        "participant_counts": {
+          "participant_01": 459,
+          "participant_02": 767
+        }
+      },
+      {
+        "month_key": "2026-03",
+        "total_messages": 597,
+        "late_night_messages": 259,
+        "late_night_share": 43.38,
+        "participant_counts": {
+          "participant_01": 97,
+          "participant_02": 162
+        }
+      }
+    ],
+    "month_winners": [
+      {
+        "month_key": "2024-05",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 15380,
+        "margin": 3168,
+        "total_messages": 27592
+      },
+      {
+        "month_key": "2024-06",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 21737,
+        "margin": 4436,
+        "total_messages": 39038
+      },
+      {
+        "month_key": "2024-07",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 13583,
+        "margin": 3334,
+        "total_messages": 23832
+      },
+      {
+        "month_key": "2024-08",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 9563,
+        "margin": 2015,
+        "total_messages": 17111
+      },
+      {
+        "month_key": "2024-09",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 7837,
+        "margin": 2757,
+        "total_messages": 12917
+      },
+      {
+        "month_key": "2024-10",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 8809,
+        "margin": 2321,
+        "total_messages": 15297
+      },
+      {
+        "month_key": "2024-11",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 8397,
+        "margin": 1855,
+        "total_messages": 14939
+      },
+      {
+        "month_key": "2024-12",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 5707,
+        "margin": 1436,
+        "total_messages": 9978
+      },
+      {
+        "month_key": "2025-01",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 4667,
+        "margin": 506,
+        "total_messages": 8828
+      },
+      {
+        "month_key": "2025-02",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 4007,
+        "margin": 570,
+        "total_messages": 7444
+      },
+      {
+        "month_key": "2025-03",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 4610,
+        "margin": 385,
+        "total_messages": 8835
+      },
+      {
+        "month_key": "2025-04",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 6496,
+        "margin": 763,
+        "total_messages": 12229
+      },
+      {
+        "month_key": "2025-05",
+        "winner_participant_id": "participant_01",
+        "winner_label": "Durriya",
+        "winner_count": 5840,
+        "margin": 174,
+        "total_messages": 11506
+      },
+      {
+        "month_key": "2025-06",
+        "winner_participant_id": "participant_01",
+        "winner_label": "Durriya",
+        "winner_count": 5846,
+        "margin": 237,
+        "total_messages": 11455
+      },
+      {
+        "month_key": "2025-07",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 5825,
+        "margin": 203,
+        "total_messages": 11447
+      },
+      {
+        "month_key": "2025-08",
+        "winner_participant_id": "participant_01",
+        "winner_label": "Durriya",
+        "winner_count": 4306,
+        "margin": 96,
+        "total_messages": 8516
+      },
+      {
+        "month_key": "2025-09",
+        "winner_participant_id": "participant_01",
+        "winner_label": "Durriya",
+        "winner_count": 4952,
+        "margin": 30,
+        "total_messages": 9874
+      },
+      {
+        "month_key": "2025-10",
+        "winner_participant_id": "participant_01",
+        "winner_label": "Durriya",
+        "winner_count": 4394,
+        "margin": 915,
+        "total_messages": 7873
+      },
+      {
+        "month_key": "2025-11",
+        "winner_participant_id": "participant_01",
+        "winner_label": "Durriya",
+        "winner_count": 3215,
+        "margin": 15,
+        "total_messages": 6415
+      },
+      {
+        "month_key": "2025-12",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 520,
+        "margin": 130,
+        "total_messages": 910
+      },
+      {
+        "month_key": "2026-01",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 947,
+        "margin": 394,
+        "total_messages": 1500
+      },
+      {
+        "month_key": "2026-02",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 1779,
+        "margin": 563,
+        "total_messages": 2995
+      },
+      {
+        "month_key": "2026-03",
+        "winner_participant_id": "participant_02",
+        "winner_label": "Maaz Siddiqui",
+        "winner_count": 355,
+        "margin": 113,
+        "total_messages": 597
+      }
+    ],
+    "participant_peak_windows": [
+      {
+        "participant_id": "participant_01",
+        "label": "Durriya",
+        "top_windows": [
+          {
+            "label": "Sun 22:00",
+            "weekday": 0,
+            "hour_of_day": 22,
+            "count": 2344
+          },
+          {
+            "label": "Sun 21:00",
+            "weekday": 0,
+            "hour_of_day": 21,
+            "count": 2061
+          },
+          {
+            "label": "Sat 22:00",
+            "weekday": 6,
+            "hour_of_day": 22,
+            "count": 1899
+          },
+          {
+            "label": "Sun 00:00",
+            "weekday": 0,
+            "hour_of_day": 0,
+            "count": 1857
+          }
+        ],
+        "top_weekdays": [
+          {
+            "label": "Sun",
+            "count": 20664
+          },
+          {
+            "label": "Mon",
+            "count": 18538
+          },
+          {
+            "label": "Fri",
+            "count": 17818
+          }
+        ],
+        "top_hours": [
+          {
+            "label": "22:00",
+            "count": 11705
+          },
+          {
+            "label": "21:00",
+            "count": 11457
+          },
+          {
+            "label": "20:00",
+            "count": 9229
+          }
+        ]
+      },
+      {
+        "participant_id": "participant_02",
+        "label": "Maaz Siddiqui",
+        "top_windows": [
+          {
+            "label": "Sun 22:00",
+            "weekday": 0,
+            "hour_of_day": 22,
+            "count": 2622
+          },
+          {
+            "label": "Sat 22:00",
+            "weekday": 6,
+            "hour_of_day": 22,
+            "count": 2160
+          },
+          {
+            "label": "Sun 21:00",
+            "weekday": 0,
+            "hour_of_day": 21,
+            "count": 2158
+          },
+          {
+            "label": "Mon 21:00",
+            "weekday": 1,
+            "hour_of_day": 21,
+            "count": 2029
+          }
+        ],
+        "top_weekdays": [
+          {
+            "label": "Sun",
+            "count": 23760
+          },
+          {
+            "label": "Mon",
+            "count": 21689
+          },
+          {
+            "label": "Fri",
+            "count": 21343
+          }
+        ],
+        "top_hours": [
+          {
+            "label": "22:00",
+            "count": 13635
+          },
+          {
+            "label": "21:00",
+            "count": 12905
+          },
+          {
+            "label": "20:00",
+            "count": 10076
+          }
+        ]
+      }
+    ],
+    "busiest_windows": [
+      {
+        "label": "Sun 22:00",
+        "weekday": 0,
+        "hour_of_day": 22,
+        "count": 4966
+      },
+      {
+        "label": "Sun 21:00",
+        "weekday": 0,
+        "hour_of_day": 21,
+        "count": 4219
+      },
+      {
+        "label": "Sat 22:00",
+        "weekday": 6,
+        "hour_of_day": 22,
+        "count": 4059
+      },
+      {
+        "label": "Sat 21:00",
+        "weekday": 6,
+        "hour_of_day": 21,
+        "count": 3824
+      },
+      {
+        "label": "Mon 21:00",
+        "weekday": 1,
+        "hour_of_day": 21,
+        "count": 3769
+      },
+      {
+        "label": "Fri 22:00",
+        "weekday": 5,
+        "hour_of_day": 22,
+        "count": 3703
+      }
+    ],
+    "quietest_windows": [
+      {
+        "label": "Wed 05:00",
+        "weekday": 3,
+        "hour_of_day": 5,
+        "count": 31
+      },
+      {
+        "label": "Sat 06:00",
+        "weekday": 6,
+        "hour_of_day": 6,
+        "count": 34
+      },
+      {
+        "label": "Sun 07:00",
+        "weekday": 0,
+        "hour_of_day": 7,
+        "count": 43
+      },
+      {
+        "label": "Sun 08:00",
+        "weekday": 0,
+        "hour_of_day": 8,
+        "count": 62
+      },
+      {
+        "label": "Mon 05:00",
+        "weekday": 1,
+        "hour_of_day": 5,
+        "count": 73
+      },
+      {
+        "label": "Sun 06:00",
+        "weekday": 0,
+        "hour_of_day": 6,
+        "count": 83
+      }
+    ]
+  },
+  "session_patterns": {
+    "longest_sessions": [
+      {
+        "technical_session_id": "tech_0026",
+        "start_timestamp": "2024-05-29T07:54:00",
+        "end_timestamp": "2024-06-13T01:51:00",
+        "message_count": 24916,
+        "density_score": 70.39,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_02": 13943,
+          "participant_01": 10972
+        }
+      },
+      {
+        "technical_session_id": "tech_0061",
+        "start_timestamp": "2024-09-22T11:31:00",
+        "end_timestamp": "2024-10-12T05:59:00",
+        "message_count": 9229,
+        "density_score": 19.45,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_01": 3656,
+          "participant_02": 5571
+        }
+      },
+      {
+        "technical_session_id": "tech_0067",
+        "start_timestamp": "2024-11-03T10:12:00",
+        "end_timestamp": "2024-11-18T22:05:00",
+        "message_count": 8210,
+        "density_score": 22.08,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_01": 3518,
+          "participant_02": 4692
+        }
+      },
+      {
+        "technical_session_id": "tech_0066",
+        "start_timestamp": "2024-10-21T05:44:00",
+        "end_timestamp": "2024-11-03T03:40:00",
+        "message_count": 6917,
+        "density_score": 22.32,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_02": 4084,
+          "participant_01": 2833
+        }
+      },
+      {
+        "technical_session_id": "tech_0034",
+        "start_timestamp": "2024-06-23T11:10:00",
+        "end_timestamp": "2024-06-30T03:13:00",
+        "message_count": 6719,
+        "density_score": 41.98,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_02": 3923,
+          "participant_01": 2796
+        }
+      },
+      {
+        "technical_session_id": "tech_0041",
+        "start_timestamp": "2024-07-28T11:21:00",
+        "end_timestamp": "2024-08-04T02:57:00",
+        "message_count": 6170,
+        "density_score": 38.66,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_02": 3408,
+          "participant_01": 2762
+        }
+      }
+    ],
+    "densest_sessions": [
+      {
+        "technical_session_id": "tech_0300",
+        "start_timestamp": "2026-02-14T22:19:00",
+        "end_timestamp": "2026-02-15T01:03:00",
+        "message_count": 470,
+        "density_score": 171.95,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_02": 302,
+          "participant_01": 168
+        }
+      },
+      {
+        "technical_session_id": "tech_0020",
+        "start_timestamp": "2024-05-18T18:18:00",
+        "end_timestamp": "2024-05-19T01:39:00",
+        "message_count": 1077,
+        "density_score": 146.53,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_01": 494,
+          "participant_02": 583
+        }
+      },
+      {
+        "technical_session_id": "tech_0007",
+        "start_timestamp": "2024-05-05T22:20:00",
+        "end_timestamp": "2024-05-05T23:16:00",
+        "message_count": 136,
+        "density_score": 136,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_01": 72,
+          "participant_02": 63
+        }
+      },
+      {
+        "technical_session_id": "tech_0295",
+        "start_timestamp": "2026-02-10T19:51:00",
+        "end_timestamp": "2026-02-10T21:09:00",
+        "message_count": 159,
+        "density_score": 122.31,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_02": 91,
+          "participant_01": 68
+        }
+      },
+      {
+        "technical_session_id": "tech_0157",
+        "start_timestamp": "2025-06-30T21:12:00",
+        "end_timestamp": "2025-07-01T00:06:00",
+        "message_count": 344,
+        "density_score": 118.62,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_01": 162,
+          "participant_02": 182
+        }
+      },
+      {
+        "technical_session_id": "tech_0298",
+        "start_timestamp": "2026-02-13T19:48:00",
+        "end_timestamp": "2026-02-14T00:39:00",
+        "message_count": 502,
+        "density_score": 103.51,
+        "dominant_emotion": "romantic",
+        "participant_counts": {
+          "participant_01": 202,
+          "participant_02": 300
+        }
+      }
+    ],
+    "highest_volume_days": [
+      {
+        "day_key": "2024-06-09",
+        "count": 3448
+      },
+      {
+        "day_key": "2024-06-13",
+        "count": 2209
+      },
+      {
+        "day_key": "2024-05-21",
+        "count": 2160
+      },
+      {
+        "day_key": "2024-06-05",
+        "count": 2000
+      },
+      {
+        "day_key": "2024-06-06",
+        "count": 1975
+      },
+      {
+        "day_key": "2024-05-30",
+        "count": 1888
+      }
+    ],
+    "longest_silence_gaps": [
+      {
+        "from_message_id": "msg_0267559",
+        "to_message_id": "msg_0267560",
+        "start_timestamp": "2026-01-22T19:36:00",
+        "end_timestamp": "2026-02-06T17:10:00",
+        "gap_minutes": 21454,
+        "from_sender_label": "Durriya",
+        "to_sender_label": "Durriya"
+      },
+      {
+        "from_message_id": "msg_0265820",
+        "to_message_id": "msg_0265821",
+        "start_timestamp": "2025-12-23T19:52:00",
+        "end_timestamp": "2025-12-31T18:34:00",
+        "gap_minutes": 11442,
+        "from_sender_label": "Durriya",
+        "to_sender_label": "Maaz Siddiqui"
+      },
+      {
+        "from_message_id": "msg_0265702",
+        "to_message_id": "msg_0265703",
+        "start_timestamp": "2025-12-14T19:00:00",
+        "end_timestamp": "2025-12-20T19:01:00",
+        "gap_minutes": 8641,
+        "from_sender_label": "Maaz Siddiqui",
+        "to_sender_label": "Maaz Siddiqui"
+      },
+      {
+        "from_message_id": "msg_0266374",
+        "to_message_id": "msg_0266375",
+        "start_timestamp": "2026-01-02T20:44:00",
+        "end_timestamp": "2026-01-08T16:40:00",
+        "gap_minutes": 8396,
+        "from_sender_label": "Maaz Siddiqui",
+        "to_sender_label": "Durriya"
+      },
+      {
+        "from_message_id": "msg_0269997",
+        "to_message_id": "msg_0269998",
+        "start_timestamp": "2026-02-20T23:15:00",
+        "end_timestamp": "2026-02-25T14:27:00",
+        "gap_minutes": 6672,
+        "from_sender_label": "Maaz Siddiqui",
+        "to_sender_label": "Maaz Siddiqui"
+      },
+      {
+        "from_message_id": "msg_0245230",
+        "to_message_id": "msg_0245231",
+        "start_timestamp": "2025-09-16T22:14:00",
+        "end_timestamp": "2025-09-20T22:04:00",
+        "gap_minutes": 5750,
+        "from_sender_label": "Durriya",
+        "to_sender_label": "Durriya"
+      }
+    ],
+    "fastest_exchange_windows": [
+      {
+        "technical_session_id": "tech_0007",
+        "start_timestamp": "2024-05-05T22:20:00",
+        "end_timestamp": "2024-05-05T23:16:00",
+        "average_reply_gap_minutes": 0.8,
+        "message_count": 135
+      },
+      {
+        "technical_session_id": "tech_0027",
+        "start_timestamp": "2024-06-13T09:17:00",
+        "end_timestamp": "2024-06-15T03:44:00",
+        "average_reply_gap_minutes": 1.46,
+        "message_count": 4112
+      },
+      {
+        "technical_session_id": "tech_0020",
+        "start_timestamp": "2024-05-18T18:18:00",
+        "end_timestamp": "2024-05-19T01:39:00",
+        "average_reply_gap_minutes": 1.55,
+        "message_count": 1077
+      },
+      {
+        "technical_session_id": "tech_0026",
+        "start_timestamp": "2024-05-29T07:54:00",
+        "end_timestamp": "2024-06-13T01:51:00",
+        "average_reply_gap_minutes": 1.74,
+        "message_count": 24915
+      },
+      {
+        "technical_session_id": "tech_0025",
+        "start_timestamp": "2024-05-28T08:32:00",
+        "end_timestamp": "2024-05-29T01:33:00",
+        "average_reply_gap_minutes": 1.81,
+        "message_count": 1665
+      },
+      {
+        "technical_session_id": "tech_0018",
+        "start_timestamp": "2024-05-17T10:30:00",
+        "end_timestamp": "2024-05-18T00:42:00",
+        "average_reply_gap_minutes": 2.14,
+        "message_count": 1349
+      }
+    ]
+  },
+  "emotion_patterns": {
+    "overall_emotion_mix": [
+      {
+        "label": "romantic",
+        "count": 257554
+      },
+      {
+        "label": "funny",
+        "count": 9587
+      },
+      {
+        "label": "supportive",
+        "count": 2537
+      },
+      {
+        "label": "conflict",
+        "count": 804
+      },
+      {
+        "label": "nostalgic",
+        "count": 646
+      }
+    ],
+    "participant_emotion_mix": [
+      {
+        "participant_id": "participant_01",
+        "label": "Durriya",
+        "breakdown": [
+          {
+            "label": "romantic",
+            "count": 117205
+          },
+          {
+            "label": "funny",
+            "count": 5387
+          },
+          {
+            "label": "supportive",
+            "count": 773
+          },
+          {
+            "label": "conflict",
+            "count": 352
+          },
+          {
+            "label": "nostalgic",
+            "count": 106
+          }
+        ]
+      },
+      {
+        "participant_id": "participant_02",
+        "label": "Maaz Siddiqui",
+        "breakdown": [
+          {
+            "label": "romantic",
+            "count": 140349
+          },
+          {
+            "label": "funny",
+            "count": 4200
+          },
+          {
+            "label": "supportive",
+            "count": 1764
+          },
+          {
+            "label": "nostalgic",
+            "count": 540
+          },
+          {
+            "label": "conflict",
+            "count": 452
+          }
+        ]
+      }
+    ],
+    "overall_archetype_mix": [
+      {
+        "label": "everyday_life",
+        "count": 245160
+      },
+      {
+        "label": "humor_banter",
+        "count": 9409
+      },
+      {
+        "label": "affection",
+        "count": 8673
+      },
+      {
+        "label": "planning",
+        "count": 4239
+      },
+      {
+        "label": "check-in",
+        "count": 2311
+      },
+      {
+        "label": "conflict",
+        "count": 1558
+      },
+      {
+        "label": "repair_reconnection",
+        "count": 1390
+      },
+      {
+        "label": "future_imagining",
+        "count": 987
+      },
+      {
+        "label": "reassurance",
+        "count": 754
+      },
+      {
+        "label": "longing_missing",
+        "count": 318
+      }
+    ],
+    "participant_archetype_mix": [
+      {
+        "participant_id": "participant_01",
+        "label": "Durriya",
+        "breakdown": [
+          {
+            "label": "everyday_life",
+            "count": 113165
+          },
+          {
+            "label": "humor_banter",
+            "count": 5212
+          },
+          {
+            "label": "affection",
+            "count": 3240
+          },
+          {
+            "label": "planning",
+            "count": 1079
+          },
+          {
+            "label": "check-in",
+            "count": 824
+          },
+          {
+            "label": "conflict",
+            "count": 625
+          },
+          {
+            "label": "repair_reconnection",
+            "count": 456
+          },
+          {
+            "label": "future_imagining",
+            "count": 309
+          },
+          {
+            "label": "longing_missing",
+            "count": 91
+          },
+          {
+            "label": "reassurance",
+            "count": 16
+          }
+        ]
+      },
+      {
+        "participant_id": "participant_02",
+        "label": "Maaz Siddiqui",
+        "breakdown": [
+          {
+            "label": "everyday_life",
+            "count": 131995
+          },
+          {
+            "label": "affection",
+            "count": 5433
+          },
+          {
+            "label": "humor_banter",
+            "count": 4197
+          },
+          {
+            "label": "planning",
+            "count": 3160
+          },
+          {
+            "label": "check-in",
+            "count": 1487
+          },
+          {
+            "label": "repair_reconnection",
+            "count": 934
+          },
+          {
+            "label": "conflict",
+            "count": 933
+          },
+          {
+            "label": "reassurance",
+            "count": 738
+          },
+          {
+            "label": "future_imagining",
+            "count": 678
+          },
+          {
+            "label": "longing_missing",
+            "count": 227
+          }
+        ]
+      }
+    ],
+    "participant_signal_totals": [
+      {
+        "participant_id": "participant_01",
+        "label": "Durriya",
+        "support_count": 766,
+        "conflict_count": 645,
+        "repair_count": 456
+      },
+      {
+        "participant_id": "participant_02",
+        "label": "Maaz Siddiqui",
+        "support_count": 891,
+        "conflict_count": 944,
+        "repair_count": 1398
+      }
+    ],
+    "chapter_tone_matrix": [
+      {
+        "chapter_id": "chapter_001",
+        "slug": "chapter-01-everyday-gravity",
+        "title": "Everyday Gravity",
+        "dominant_emotion": "romantic",
+        "dominant_archetype": "everyday_life",
+        "message_count": 48805
+      },
+      {
+        "chapter_id": "chapter_002",
+        "slug": "chapter-02-ordinary-days-real-closeness",
+        "title": "Ordinary Days, Real Closeness",
+        "dominant_emotion": "romantic",
+        "dominant_archetype": "everyday_life",
+        "message_count": 45292
+      },
+      {
+        "chapter_id": "chapter_003",
+        "slug": "chapter-03-shared-routine",
+        "title": "Shared Routine",
+        "dominant_emotion": "romantic",
+        "dominant_archetype": "everyday_life",
+        "message_count": 53371
+      },
+      {
+        "chapter_id": "chapter_004",
+        "slug": "chapter-04-everyday-gravity",
+        "title": "Everyday Gravity",
+        "dominant_emotion": "romantic",
+        "dominant_archetype": "everyday_life",
+        "message_count": 48130
+      },
+      {
+        "chapter_id": "chapter_005",
+        "slug": "chapter-05-ordinary-days-real-closeness",
+        "title": "Ordinary Days, Real Closeness",
+        "dominant_emotion": "romantic",
+        "dominant_archetype": "everyday_life",
+        "message_count": 45575
+      },
+      {
+        "chapter_id": "chapter_006",
+        "slug": "chapter-06-shared-routine",
+        "title": "Shared Routine",
+        "dominant_emotion": "romantic",
+        "dominant_archetype": "everyday_life",
+        "message_count": 29979
+      }
+    ],
+    "signal_trend": [
+      {
+        "month_key": "2024-05",
+        "support_count": 142,
+        "conflict_count": 70,
+        "repair_count": 125
+      },
+      {
+        "month_key": "2024-06",
+        "support_count": 148,
+        "conflict_count": 147,
+        "repair_count": 140
+      },
+      {
+        "month_key": "2024-07",
+        "support_count": 158,
+        "conflict_count": 143,
+        "repair_count": 153
+      },
+      {
+        "month_key": "2024-08",
+        "support_count": 111,
+        "conflict_count": 85,
+        "repair_count": 95
+      },
+      {
+        "month_key": "2024-09",
+        "support_count": 108,
+        "conflict_count": 42,
+        "repair_count": 95
+      },
+      {
+        "month_key": "2024-10",
+        "support_count": 171,
+        "conflict_count": 83,
+        "repair_count": 163
+      },
+      {
+        "month_key": "2024-11",
+        "support_count": 118,
+        "conflict_count": 74,
+        "repair_count": 108
+      },
+      {
+        "month_key": "2024-12",
+        "support_count": 73,
+        "conflict_count": 45,
+        "repair_count": 72
+      },
+      {
+        "month_key": "2025-01",
+        "support_count": 64,
+        "conflict_count": 35,
+        "repair_count": 53
+      },
+      {
+        "month_key": "2025-02",
+        "support_count": 36,
+        "conflict_count": 41,
+        "repair_count": 49
+      },
+      {
+        "month_key": "2025-03",
+        "support_count": 51,
+        "conflict_count": 48,
+        "repair_count": 74
+      },
+      {
+        "month_key": "2025-04",
+        "support_count": 58,
+        "conflict_count": 90,
+        "repair_count": 80
+      },
+      {
+        "month_key": "2025-05",
+        "support_count": 38,
+        "conflict_count": 66,
+        "repair_count": 56
+      },
+      {
+        "month_key": "2025-06",
+        "support_count": 73,
+        "conflict_count": 113,
+        "repair_count": 93
+      },
+      {
+        "month_key": "2025-07",
+        "support_count": 65,
+        "conflict_count": 89,
+        "repair_count": 97
+      },
+      {
+        "month_key": "2025-08",
+        "support_count": 57,
+        "conflict_count": 102,
+        "repair_count": 84
+      },
+      {
+        "month_key": "2025-09",
+        "support_count": 53,
+        "conflict_count": 82,
+        "repair_count": 78
+      },
+      {
+        "month_key": "2025-10",
+        "support_count": 42,
+        "conflict_count": 99,
+        "repair_count": 105
+      },
+      {
+        "month_key": "2025-11",
+        "support_count": 27,
+        "conflict_count": 61,
+        "repair_count": 54
+      },
+      {
+        "month_key": "2025-12",
+        "support_count": 14,
+        "conflict_count": 29,
+        "repair_count": 17
+      },
+      {
+        "month_key": "2026-01",
+        "support_count": 11,
+        "conflict_count": 24,
+        "repair_count": 12
+      },
+      {
+        "month_key": "2026-02",
+        "support_count": 31,
+        "conflict_count": 16,
+        "repair_count": 40
+      },
+      {
+        "month_key": "2026-03",
+        "support_count": 8,
+        "conflict_count": 5,
+        "repair_count": 11
+      }
+    ]
+  },
+  "detective_records": [
+    {
+      "record_id": "who_sent_more",
+      "label": "Who sent more",
+      "value": "Maaz Siddiqui - 147.3K",
+      "detail": "54.3% of the archive",
+      "winner_participant_id": "participant_02",
+      "winner_label": "Maaz Siddiqui",
+      "route": "/dashboard/",
+      "supporting_message_ids": [
+        "msg_0000009",
+        "msg_0000011",
+        "msg_0000012"
+      ]
+    },
+    {
+      "record_id": "who_replied_faster",
+      "label": "Who replied faster",
+      "value": "Maaz Siddiqui - 6.6 min",
+      "detail": "Average reply gap across the archive",
+      "winner_participant_id": "participant_02",
+      "winner_label": "Maaz Siddiqui",
+      "route": "/patterns/",
+      "supporting_message_ids": [
+        "msg_0000009",
+        "msg_0000011",
+        "msg_0000012"
+      ]
+    },
+    {
+      "record_id": "who_used_more_emojis",
+      "label": "Who used more emojis",
+      "value": "Durriya - 30.5K",
+      "detail": "Total emoji count across all sent messages",
+      "winner_participant_id": "participant_01",
+      "winner_label": "Durriya",
+      "route": "/dashboard/",
+      "supporting_message_ids": [
+        "msg_0000014",
+        "msg_0000038",
+        "msg_0000082"
+      ]
+    },
+    {
+      "record_id": "who_texted_later",
+      "label": "Who texted later",
+      "value": "Maaz Siddiqui - 27.4%",
+      "detail": "Share of each participant's messages sent after 10 PM",
+      "winner_participant_id": "participant_02",
+      "winner_label": "Maaz Siddiqui",
+      "route": "/timeline/",
+      "supporting_message_ids": [
+        "msg_0000009",
+        "msg_0000011",
+        "msg_0000012"
+      ]
+    },
+    {
+      "record_id": "most_active_month",
+      "label": "Most active month",
+      "value": "2024-06 - 39K",
+      "detail": "The archive's loudest month by message volume",
+      "winner_participant_id": null,
+      "winner_label": null,
+      "route": "/timeline/",
+      "supporting_message_ids": [
+        "msg_0027601",
+        "msg_0027602",
+        "msg_0027603"
+      ]
+    },
+    {
+      "record_id": "most_intense_week",
+      "label": "Most intense week",
+      "value": "2024-06-03 - 13.1K",
+      "detail": "Peak weekly exchange volume",
+      "winner_participant_id": null,
+      "winner_label": null,
+      "route": "/timeline/",
+      "supporting_message_ids": [
+        "msg_0030271",
+        "msg_0030272",
+        "msg_0030273"
+      ]
+    },
+    {
+      "record_id": "most_balanced_month",
+      "label": "Most balanced month",
+      "value": "2025-11 - 6.4K",
+      "detail": "The closest split between both sides without dropping into a quiet period",
+      "winner_participant_id": null,
+      "winner_label": null,
+      "route": "/dashboard/",
+      "supporting_message_ids": [
+        "msg_0258735",
+        "msg_0258736",
+        "msg_0258737"
+      ]
+    },
+    {
+      "record_id": "highest_support_stretch",
+      "label": "Highest support stretch",
+      "value": "2024-10 - 171",
+      "detail": "Where support signals clustered most heavily",
+      "winner_participant_id": null,
+      "winner_label": null,
+      "route": "/lenses/reassurance/",
+      "supporting_message_ids": [
+        "msg_0120502",
+        "msg_0120503",
+        "msg_0120504"
+      ]
+    },
+    {
+      "record_id": "strongest_repair_stretch",
+      "label": "Strongest repair stretch",
+      "value": "2024-10 - 163",
+      "detail": "The stretch with the clearest repair energy",
+      "winner_participant_id": null,
+      "winner_label": null,
+      "route": "/lenses/repair-reconnection/",
+      "supporting_message_ids": [
+        "msg_0120502",
+        "msg_0120503",
+        "msg_0120504"
+      ]
+    },
+    {
+      "record_id": "who_writes_longer",
+      "label": "Who writes longer messages",
+      "value": "Maaz Siddiqui - 23.4 chars/msg",
+      "detail": "Average character length per sent message",
+      "winner_participant_id": "participant_02",
+      "winner_label": "Maaz Siddiqui",
+      "route": "/dashboard/",
+      "supporting_message_ids": [
+        "msg_0000009",
+        "msg_0000011",
+        "msg_0000012"
+      ]
+    },
+    {
+      "record_id": "who_shares_more_links",
+      "label": "Who shares more links",
+      "value": "Maaz Siddiqui - 491",
+      "detail": "Total links dropped across the archive",
+      "winner_participant_id": "participant_02",
+      "winner_label": "Maaz Siddiqui",
+      "route": "/dashboard/",
+      "supporting_message_ids": [
+        "msg_0000024",
+        "msg_0000393",
+        "msg_0000394"
+      ]
+    },
+    {
+      "record_id": "who_starts_more_conversations",
+      "label": "Who starts more conversations",
+      "value": "Durriya - 167",
+      "detail": "Who opens more technical sessions",
+      "winner_participant_id": "participant_01",
+      "winner_label": "Durriya",
+      "route": "/dashboard/",
+      "supporting_message_ids": [
+        "msg_0000008",
+        "msg_0000010",
+        "msg_0000014"
+      ]
+    },
+    {
+      "record_id": "who_sends_more_multiline",
+      "label": "Who sends more multiline notes",
+      "value": "Maaz Siddiqui - 562",
+      "detail": "Longer note-style messages instead of one-liners",
+      "winner_participant_id": "participant_02",
+      "winner_label": "Maaz Siddiqui",
+      "route": "/moments/",
+      "supporting_message_ids": [
+        "msg_0000967",
+        "msg_0001172",
+        "msg_0003869"
+      ]
+    },
+    {
+      "record_id": "who_owns_more_weekends",
+      "label": "Who owns more weekends",
+      "value": "Durriya - 29.6%",
+      "detail": "Share of each person's messages sent on weekends",
+      "winner_participant_id": "participant_01",
+      "winner_label": "Durriya",
+      "route": "/patterns/",
+      "supporting_message_ids": [
+        "msg_0000008",
+        "msg_0000010",
+        "msg_0000014"
+      ]
+    },
+    {
+      "record_id": "biggest_monthly_takeover",
+      "label": "Biggest monthly takeover",
+      "value": "2024-06 - Maaz Siddiqui",
+      "detail": "4.4K message lead",
+      "winner_participant_id": "participant_02",
+      "winner_label": "Maaz Siddiqui",
+      "route": "/timeline/",
+      "supporting_message_ids": [
+        "msg_0027601",
+        "msg_0027602",
+        "msg_0027603"
+      ]
+    },
+    {
+      "record_id": "most_night_owl_month",
+      "label": "Most night-owl month",
+      "value": "2025-12 - 54.3%",
+      "detail": "Month with the highest late-night message share",
+      "winner_participant_id": null,
+      "winner_label": null,
+      "route": "/timeline/",
+      "supporting_message_ids": [
+        "msg_0265150",
+        "msg_0265151",
+        "msg_0265152"
+      ]
+    }
+  ]
+}

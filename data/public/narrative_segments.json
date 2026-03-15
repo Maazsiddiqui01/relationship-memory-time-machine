@@ -1,0 +1,3304 @@
+[
+  {
+    "narrative_segment_id": "segment_0001",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Difficult Conversation themes.",
+    "start_message_id": "msg_0000001",
+    "end_message_id": "msg_0000001",
+    "start_timestamp": "2023-01-23T20:02:00",
+    "end_timestamp": "2023-01-23T20:02:00",
+    "message_count": 1,
+    "technical_session_ids": [
+      "tech_0001"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0002",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Difficult Conversation themes.",
+    "start_message_id": "msg_0000002",
+    "end_message_id": "msg_0000003",
+    "start_timestamp": "2023-08-13T16:06:00",
+    "end_timestamp": "2023-08-14T14:39:00",
+    "message_count": 2,
+    "technical_session_ids": [
+      "tech_0002",
+      "tech_0003"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0003",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Difficult Conversation themes.",
+    "start_message_id": "msg_0000004",
+    "end_message_id": "msg_0000004",
+    "start_timestamp": "2023-09-05T21:58:00",
+    "end_timestamp": "2023-09-05T21:58:00",
+    "message_count": 1,
+    "technical_session_ids": [
+      "tech_0004"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0004",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Difficult Conversation themes.",
+    "start_message_id": "msg_0000005",
+    "end_message_id": "msg_0000005",
+    "start_timestamp": "2023-12-18T14:42:00",
+    "end_timestamp": "2023-12-18T14:42:00",
+    "message_count": 1,
+    "technical_session_ids": [
+      "tech_0005"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0005",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Difficult Conversation themes.",
+    "start_message_id": "msg_0000006",
+    "end_message_id": "msg_0000006",
+    "start_timestamp": "2024-03-05T00:38:00",
+    "end_timestamp": "2024-03-05T00:38:00",
+    "message_count": 1,
+    "technical_session_ids": [
+      "tech_0006"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0006",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Yess🥰 I'm a highly optimistic person so it's okay even if things don't go well. I'm just glad to find someone else too\"",
+    "start_message_id": "msg_0000007",
+    "end_message_id": "msg_0002496",
+    "start_timestamp": "2024-05-05T22:20:00",
+    "end_timestamp": "2024-05-09T00:25:00",
+    "message_count": 2490,
+    "technical_session_ids": [
+      "tech_0007",
+      "tech_0008",
+      "tech_0009",
+      "tech_0010"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0000639",
+      "msg_0001334"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0007",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"That reminds mein ne wo bhai se transfer hi nahi karwayeen, he may have in usb or something so I'll show those once I go\"",
+    "start_message_id": "msg_0002497",
+    "end_message_id": "msg_0007085",
+    "start_timestamp": "2024-05-09T07:38:00",
+    "end_timestamp": "2024-05-13T23:17:00",
+    "message_count": 4589,
+    "technical_session_ids": [
+      "tech_0011",
+      "tech_0012",
+      "tech_0013",
+      "tech_0014"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0003976",
+      "msg_0006616"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0008",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Before meeting you, I was so sad tbh about uni ending. After meeting you, it feels like I wish time stops and ah there's\"",
+    "start_message_id": "msg_0007086",
+    "end_message_id": "msg_0011060",
+    "start_timestamp": "2024-05-14T10:47:00",
+    "end_timestamp": "2024-05-18T00:42:00",
+    "message_count": 3975,
+    "technical_session_ids": [
+      "tech_0015",
+      "tech_0016",
+      "tech_0017",
+      "tech_0018"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "humor",
+      "relationship"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0007267",
+      "msg_0007190",
+      "msg_0008702",
+      "msg_0008434",
+      "msg_0008369",
+      "msg_0008349",
+      "msg_0009495",
+      "msg_0009266"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0009",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Thank you for coming to campus today and for staying so late🥺 you looked sublime today and ah your blue dress was suiti\"",
+    "start_message_id": "msg_0011061",
+    "end_message_id": "msg_0018255",
+    "start_timestamp": "2024-05-18T09:28:00",
+    "end_timestamp": "2024-05-24T00:54:00",
+    "message_count": 7195,
+    "technical_session_ids": [
+      "tech_0019",
+      "tech_0020",
+      "tech_0021",
+      "tech_0022"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0011098",
+      "msg_0011430",
+      "msg_0013657",
+      "msg_0012993",
+      "msg_0013301",
+      "msg_0014027",
+      "msg_0014316",
+      "msg_0018114"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0010",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"This morning, I saw you in a dream again😭 I was trying to reach out to you but couldn't and I got so worried, but thank\"",
+    "start_message_id": "msg_0018256",
+    "end_message_id": "msg_0048805",
+    "start_timestamp": "2024-05-24T08:14:00",
+    "end_timestamp": "2024-06-13T01:51:00",
+    "message_count": 30550,
+    "technical_session_ids": [
+      "tech_0023",
+      "tech_0024",
+      "tech_0025",
+      "tech_0026"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0019183",
+      "msg_0021499",
+      "msg_0021708",
+      "msg_0021714",
+      "msg_0021122",
+      "msg_0020752",
+      "msg_0023069",
+      "msg_0022670"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0011",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"So sorry I hope this topic didn't upset u\"",
+    "start_message_id": "msg_0048806",
+    "end_message_id": "msg_0056232",
+    "start_timestamp": "2024-06-13T09:17:00",
+    "end_timestamp": "2024-06-19T02:52:00",
+    "message_count": 7427,
+    "technical_session_ids": [
+      "tech_0027",
+      "tech_0028",
+      "tech_0029",
+      "tech_0030"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0050971",
+      "msg_0050364",
+      "msg_0050715",
+      "msg_0049883",
+      "msg_0050458",
+      "msg_0053123",
+      "msg_0055938"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0012",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"yoghurt bhi khula nai khati just the one mama makes ya nestle ka kha leti hun its better\"",
+    "start_message_id": "msg_0056233",
+    "end_message_id": "msg_0066194",
+    "start_timestamp": "2024-06-19T09:58:00",
+    "end_timestamp": "2024-06-30T03:13:00",
+    "message_count": 9962,
+    "technical_session_ids": [
+      "tech_0031",
+      "tech_0032",
+      "tech_0033",
+      "tech_0034"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0056661",
+      "msg_0057406",
+      "msg_0057264",
+      "msg_0058774",
+      "msg_0064211",
+      "msg_0066194",
+      "msg_0066147",
+      "msg_0062457"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0013",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"To the girl on whom my happiness depends, With love that never ends. You light up my life with your cute ways, And fill \"",
+    "start_message_id": "msg_0066195",
+    "end_message_id": "msg_0080791",
+    "start_timestamp": "2024-06-30T10:36:00",
+    "end_timestamp": "2024-07-20T01:57:00",
+    "message_count": 14597,
+    "technical_session_ids": [
+      "tech_0035",
+      "tech_0036",
+      "tech_0037",
+      "tech_0038"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0067880",
+      "msg_0067784",
+      "msg_0066371",
+      "msg_0068575",
+      "msg_0069023",
+      "msg_0075562",
+      "msg_0071077",
+      "msg_0072539"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0014",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"That thank you for existing, even a mere sight of yours just brightens my whole mood and day🥺 Life is fine but with you\"",
+    "start_message_id": "msg_0080792",
+    "end_message_id": "msg_0094097",
+    "start_timestamp": "2024-07-20T09:43:00",
+    "end_timestamp": "2024-08-05T22:36:00",
+    "message_count": 13306,
+    "technical_session_ids": [
+      "tech_0039",
+      "tech_0040",
+      "tech_0041",
+      "tech_0042"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0083940",
+      "msg_0083934",
+      "msg_0081803",
+      "msg_0082779",
+      "msg_0083176",
+      "msg_0088098",
+      "msg_0087977",
+      "msg_0089417"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0015",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"After six weeks of immersive learning, (im not sure if i wanna say this right in the start?) I'm excited to conclude (sh\"",
+    "start_message_id": "msg_0094098",
+    "end_message_id": "msg_0102228",
+    "start_timestamp": "2024-08-06T05:35:00",
+    "end_timestamp": "2024-08-18T01:13:00",
+    "message_count": 8131,
+    "technical_session_ids": [
+      "tech_0043",
+      "tech_0044",
+      "tech_0045",
+      "tech_0046"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0096863",
+      "msg_0096874",
+      "msg_0095120",
+      "msg_0096772",
+      "msg_0096858",
+      "msg_0097881",
+      "msg_0100456",
+      "msg_0100442"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0016",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Assalam o Alaikum, We could not convince the administration to block the fee hike. As we had expected, we could not deba\"",
+    "start_message_id": "msg_0102229",
+    "end_message_id": "msg_0107160",
+    "start_timestamp": "2024-08-18T10:15:00",
+    "end_timestamp": "2024-08-31T03:35:00",
+    "message_count": 4932,
+    "technical_session_ids": [
+      "tech_0047",
+      "tech_0048",
+      "tech_0049",
+      "tech_0050"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0103340",
+      "msg_0103462",
+      "msg_0103468",
+      "msg_0103475",
+      "msg_0104193",
+      "msg_0103454",
+      "msg_0104854",
+      "msg_0107027"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0017",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"And so sorry for this, I thought it was your group only thingy so I thought I won't be a part but thank you for includin\"",
+    "start_message_id": "msg_0107161",
+    "end_message_id": "msg_0112171",
+    "start_timestamp": "2024-08-31T10:37:00",
+    "end_timestamp": "2024-09-13T23:05:00",
+    "message_count": 5011,
+    "technical_session_ids": [
+      "tech_0051",
+      "tech_0052",
+      "tech_0053",
+      "tech_0054"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0108752",
+      "msg_0108862",
+      "msg_0108902",
+      "msg_0111677",
+      "msg_0111690",
+      "msg_0109844",
+      "msg_0111674",
+      "msg_0109783"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0018",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Dear Osamah, Im glad to have connected with you yesterday. As discussed, please find our ELP proposal attached. Would lo\"",
+    "start_message_id": "msg_0112172",
+    "end_message_id": "msg_0114408",
+    "start_timestamp": "2024-09-14T07:49:00",
+    "end_timestamp": "2024-09-18T23:00:00",
+    "message_count": 2237,
+    "technical_session_ids": [
+      "tech_0055",
+      "tech_0056",
+      "tech_0057",
+      "tech_0058"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0112250",
+      "msg_0112312",
+      "msg_0112841",
+      "msg_0112942",
+      "msg_0113600",
+      "msg_0113989",
+      "msg_0114111",
+      "msg_0114102"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0019",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"I can't wait to make lasting memories with you, travel a lot of places, try a lot of food stuff and give each other infi\"",
+    "start_message_id": "msg_0114409",
+    "end_message_id": "msg_0126727",
+    "start_timestamp": "2024-09-19T07:15:00",
+    "end_timestamp": "2024-10-15T00:22:00",
+    "message_count": 12319,
+    "technical_session_ids": [
+      "tech_0059",
+      "tech_0060",
+      "tech_0061",
+      "tech_0062"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0115810",
+      "msg_0114681",
+      "msg_0115809",
+      "msg_0115065",
+      "msg_0115821",
+      "msg_0116012",
+      "msg_0118663",
+      "msg_0119689"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0020",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Hi Asad, hope you're doing well! We have an upcoming ELP meeting scheduled for tomorrow. However due to some unfortunate\"",
+    "start_message_id": "msg_0126728",
+    "end_message_id": "msg_0137027",
+    "start_timestamp": "2024-10-15T07:53:00",
+    "end_timestamp": "2024-11-03T03:40:00",
+    "message_count": 10300,
+    "technical_session_ids": [
+      "tech_0063",
+      "tech_0064",
+      "tech_0065",
+      "tech_0066"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0127368",
+      "msg_0127104",
+      "msg_0127352",
+      "msg_0128668",
+      "msg_0129152",
+      "msg_0130111",
+      "msg_0132643",
+      "msg_0132213"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0021",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"i hope ur not upset baby i wasnjust saying awein ke ap stickers bheja karte thay but nowadays ull just like n leave my m\"",
+    "start_message_id": "msg_0137028",
+    "end_message_id": "msg_0147468",
+    "start_timestamp": "2024-11-03T10:12:00",
+    "end_timestamp": "2024-11-23T00:44:00",
+    "message_count": 10441,
+    "technical_session_ids": [
+      "tech_0067",
+      "tech_0068",
+      "tech_0069",
+      "tech_0070"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0139393",
+      "msg_0139405",
+      "msg_0139445",
+      "msg_0143260",
+      "msg_0143300",
+      "msg_0145371",
+      "msg_0146223"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0022",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"24041 Durriya Suhail: hii ayesha, can i keep my camera off today pls 😭 actually, ive been wearing the hijab since 9 am \"",
+    "start_message_id": "msg_0147469",
+    "end_message_id": "msg_0150745",
+    "start_timestamp": "2024-11-23T07:10:00",
+    "end_timestamp": "2024-12-01T04:16:00",
+    "message_count": 3277,
+    "technical_session_ids": [
+      "tech_0071",
+      "tech_0072",
+      "tech_0073",
+      "tech_0074"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0147595",
+      "msg_0147786",
+      "msg_0147724",
+      "msg_0148275",
+      "msg_0148598",
+      "msg_0150459",
+      "msg_0149697",
+      "msg_0150277"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0023",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Life after graduation? Smooth sailing at GSK! One month ago, I began my journey at GSK as a Finance Trainee, and it’s be\"",
+    "start_message_id": "msg_0150746",
+    "end_message_id": "msg_0158992",
+    "start_timestamp": "2024-12-01T10:21:00",
+    "end_timestamp": "2024-12-26T22:59:00",
+    "message_count": 8247,
+    "technical_session_ids": [
+      "tech_0075",
+      "tech_0076",
+      "tech_0077",
+      "tech_0078"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0151230",
+      "msg_0151816",
+      "msg_0151212",
+      "msg_0154145",
+      "msg_0150792",
+      "msg_0155050",
+      "msg_0155024",
+      "msg_0156139"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0024",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"It shouldn't upset him, trip mein sath time tou spend hoga hi. Choose a bus where you feel most comfortable\"",
+    "start_message_id": "msg_0158993",
+    "end_message_id": "msg_0160320",
+    "start_timestamp": "2024-12-27T09:13:00",
+    "end_timestamp": "2024-12-31T00:46:00",
+    "message_count": 1328,
+    "technical_session_ids": [
+      "tech_0079",
+      "tech_0080",
+      "tech_0081",
+      "tech_0082"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0159090",
+      "msg_0159868",
+      "msg_0160238",
+      "msg_0160129",
+      "msg_0160304"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0025",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"And now as 2025 has started, I'd like to make countless memories with you this year🥺❤️ manifesting so many more lunch a\"",
+    "start_message_id": "msg_0160321",
+    "end_message_id": "msg_0164596",
+    "start_timestamp": "2024-12-31T09:42:00",
+    "end_timestamp": "2025-01-10T22:10:00",
+    "message_count": 4276,
+    "technical_session_ids": [
+      "tech_0083",
+      "tech_0084",
+      "tech_0085",
+      "tech_0086"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0160623",
+      "msg_0160773",
+      "msg_0160627",
+      "msg_0160801",
+      "msg_0161396",
+      "msg_0161584",
+      "msg_0162700",
+      "msg_0161605"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0026",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Dear sir, Please facilitate if possible. It's my final semester and need this course to graduate! Is it possible for man\"",
+    "start_message_id": "msg_0164597",
+    "end_message_id": "msg_0168044",
+    "start_timestamp": "2025-01-11T08:45:00",
+    "end_timestamp": "2025-01-24T22:29:00",
+    "message_count": 3448,
+    "technical_session_ids": [
+      "tech_0087",
+      "tech_0088",
+      "tech_0089",
+      "tech_0090"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0164934",
+      "msg_0165037",
+      "msg_0166835",
+      "msg_0166903",
+      "msg_0167457",
+      "msg_0167361",
+      "msg_0167497"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0027",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Hi guys, a well renowned MNC has finalized some exciting projects and are looking to onboard groups for ELP. Is there an\"",
+    "start_message_id": "msg_0168045",
+    "end_message_id": "msg_0169068",
+    "start_timestamp": "2025-01-25T10:17:00",
+    "end_timestamp": "2025-01-29T22:31:00",
+    "message_count": 1024,
+    "technical_session_ids": [
+      "tech_0091",
+      "tech_0092",
+      "tech_0093",
+      "tech_0094"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0168811",
+      "msg_0168810",
+      "msg_0168867",
+      "msg_0168890"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0028",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Its a long read. So sit down, keep some water with you and read it with an honest heart. I have to tell you something an\"",
+    "start_message_id": "msg_0169069",
+    "end_message_id": "msg_0171895",
+    "start_timestamp": "2025-01-30T07:54:00",
+    "end_timestamp": "2025-02-08T00:25:00",
+    "message_count": 2827,
+    "technical_session_ids": [
+      "tech_0095",
+      "tech_0096",
+      "tech_0097",
+      "tech_0098"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0170038",
+      "msg_0170463",
+      "msg_0170225",
+      "msg_0170217",
+      "msg_0170526",
+      "msg_0171033",
+      "msg_0171041",
+      "msg_0171780"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0029",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"But I think it'll be late because mama has some stops to make and she wants to leave earlier :( Is it possible to go by \"",
+    "start_message_id": "msg_0171896",
+    "end_message_id": "msg_0176228",
+    "start_timestamp": "2025-02-08T07:20:00",
+    "end_timestamp": "2025-02-24T21:58:00",
+    "message_count": 4333,
+    "technical_session_ids": [
+      "tech_0099",
+      "tech_0100",
+      "tech_0101",
+      "tech_0102"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0173643",
+      "msg_0173811",
+      "msg_0173330",
+      "msg_0173333",
+      "msg_0174689",
+      "msg_0176121"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0030",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Hey everyone! We've received a lot of questions, and with time running out, we’ve arranged for a Salesflo representative\"",
+    "start_message_id": "msg_0176229",
+    "end_message_id": "msg_0177263",
+    "start_timestamp": "2025-02-25T04:13:00",
+    "end_timestamp": "2025-03-02T04:18:00",
+    "message_count": 1035,
+    "technical_session_ids": [
+      "tech_0103",
+      "tech_0104",
+      "tech_0105",
+      "tech_0106"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "check-in"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0176444",
+      "msg_0176446",
+      "msg_0176454"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0031",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"bohat zyada pasand karti hun lekin wou toh bas alag waqt tha i rmr i wasnt even sure if u liked me but u texted me all d\"",
+    "start_message_id": "msg_0177264",
+    "end_message_id": "msg_0186431",
+    "start_timestamp": "2025-03-02T11:20:00",
+    "end_timestamp": "2025-04-02T02:54:00",
+    "message_count": 9168,
+    "technical_session_ids": [
+      "tech_0107",
+      "tech_0108",
+      "tech_0109",
+      "tech_0110"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0178977",
+      "msg_0178302",
+      "msg_0178323",
+      "msg_0177651",
+      "msg_0183004",
+      "msg_0185059",
+      "msg_0179544",
+      "msg_0179290"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0032",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Just want you to be patient w me🥺 and forgive me if I do something and teach me\"",
+    "start_message_id": "msg_0186432",
+    "end_message_id": "msg_0191737",
+    "start_timestamp": "2025-04-02T10:52:00",
+    "end_timestamp": "2025-04-13T01:51:00",
+    "message_count": 5306,
+    "technical_session_ids": [
+      "tech_0111",
+      "tech_0112",
+      "tech_0113",
+      "tech_0114"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0186698",
+      "msg_0186604",
+      "msg_0189806",
+      "msg_0188464",
+      "msg_0190302",
+      "msg_0189470",
+      "msg_0189748",
+      "msg_0190946"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0033",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Hey guys, I am not in the country currently and therefore unable to continue with the TAship of this course. I've added \"",
+    "start_message_id": "msg_0191738",
+    "end_message_id": "msg_0195598",
+    "start_timestamp": "2025-04-13T10:29:00",
+    "end_timestamp": "2025-04-25T00:29:00",
+    "message_count": 3861,
+    "technical_session_ids": [
+      "tech_0115",
+      "tech_0116",
+      "tech_0117",
+      "tech_0118"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0192081",
+      "msg_0192132",
+      "msg_0192134",
+      "msg_0192198",
+      "msg_0192152",
+      "msg_0193099",
+      "msg_0193890",
+      "msg_0193888"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0034",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"happy birthdayymeri jaan 🥺❤️ finally the mostest best day is here cos my soulmate was born on this day!!<3 hmm baby whe\"",
+    "start_message_id": "msg_0195599",
+    "end_message_id": "msg_0197882",
+    "start_timestamp": "2025-04-25T07:01:00",
+    "end_timestamp": "2025-04-30T00:39:00",
+    "message_count": 2284,
+    "technical_session_ids": [
+      "tech_0119",
+      "tech_0120",
+      "tech_0121",
+      "tech_0122"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0197255",
+      "msg_0195865",
+      "msg_0195896",
+      "msg_0195906",
+      "msg_0196201"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0035",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Hi Ahsan, I hope you are doing well. I just wanted to reach out to you to ask whether L'Oreal has started reaching out f\"",
+    "start_message_id": "msg_0197883",
+    "end_message_id": "msg_0201920",
+    "start_timestamp": "2025-04-30T06:47:00",
+    "end_timestamp": "2025-05-10T01:02:00",
+    "message_count": 4038,
+    "technical_session_ids": [
+      "tech_0123",
+      "tech_0124",
+      "tech_0125",
+      "tech_0126"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0198197",
+      "msg_0198211",
+      "msg_0201912",
+      "msg_0201223",
+      "msg_0201624",
+      "msg_0201608",
+      "msg_0201040"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0036",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"-Keep cash in hand as internet/power blackouts won't allow for online transactions. -Keep water with the idea that you w\"",
+    "start_message_id": "msg_0201921",
+    "end_message_id": "msg_0205427",
+    "start_timestamp": "2025-05-10T07:16:00",
+    "end_timestamp": "2025-05-18T23:35:00",
+    "message_count": 3507,
+    "technical_session_ids": [
+      "tech_0127",
+      "tech_0128",
+      "tech_0129",
+      "tech_0130"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0201943",
+      "msg_0203327",
+      "msg_0203227",
+      "msg_0203744",
+      "msg_0204580",
+      "msg_0204840",
+      "msg_0204858",
+      "msg_0204875"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0037",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"As an alumnus how you navigated your initial phase of your career, what helped you and I would love your tips? On that n\"",
+    "start_message_id": "msg_0205428",
+    "end_message_id": "msg_0208993",
+    "start_timestamp": "2025-05-19T06:57:00",
+    "end_timestamp": "2025-05-29T00:51:00",
+    "message_count": 3566,
+    "technical_session_ids": [
+      "tech_0131",
+      "tech_0132",
+      "tech_0133",
+      "tech_0134"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0205714",
+      "msg_0205487",
+      "msg_0206706",
+      "msg_0208592",
+      "msg_0208047",
+      "msg_0208049",
+      "msg_0208050",
+      "msg_0206838"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0038",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Salam Miss, hope you're doing well! Just got off the phone with Asad. He's planning to come to IBA for our presentation \"",
+    "start_message_id": "msg_0208994",
+    "end_message_id": "msg_0211320",
+    "start_timestamp": "2025-05-29T06:56:00",
+    "end_timestamp": "2025-06-06T02:36:00",
+    "message_count": 2327,
+    "technical_session_ids": [
+      "tech_0135",
+      "tech_0136",
+      "tech_0137",
+      "tech_0138"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0209836",
+      "msg_0209954",
+      "msg_0209982",
+      "msg_0210227",
+      "msg_0210095",
+      "msg_0211222",
+      "msg_0211253"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0039",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"I am sorry for missing ur stories earlier today :( I love you and youve been on my mind the whole day\"",
+    "start_message_id": "msg_0211321",
+    "end_message_id": "msg_0214310",
+    "start_timestamp": "2025-06-06T10:19:00",
+    "end_timestamp": "2025-06-12T23:26:00",
+    "message_count": 2990,
+    "technical_session_ids": [
+      "tech_0139",
+      "tech_0140",
+      "tech_0141",
+      "tech_0142"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0211448",
+      "msg_0212698",
+      "msg_0212629",
+      "msg_0213308",
+      "msg_0213320",
+      "msg_0213327",
+      "msg_0213351",
+      "msg_0213373"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0040",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Hi Maaz, I have some last minute chores to handle hence I’d not come to office and will work from home. I’ll log in earl\"",
+    "start_message_id": "msg_0214311",
+    "end_message_id": "msg_0216354",
+    "start_timestamp": "2025-06-13T06:52:00",
+    "end_timestamp": "2025-06-20T00:04:00",
+    "message_count": 2044,
+    "technical_session_ids": [
+      "tech_0143",
+      "tech_0144",
+      "tech_0145",
+      "tech_0146"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "travel"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "check-in",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0214316",
+      "msg_0215908",
+      "msg_0215904",
+      "msg_0215488",
+      "msg_0215875",
+      "msg_0215448",
+      "msg_0216295",
+      "msg_0216329"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0041",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"ahaha i cant believe that im suppsoed to compare how u acted during a life threatening situation to previous acts 😭 (no\"",
+    "start_message_id": "msg_0216355",
+    "end_message_id": "msg_0218748",
+    "start_timestamp": "2025-06-20T14:35:00",
+    "end_timestamp": "2025-06-23T23:24:00",
+    "message_count": 2394,
+    "technical_session_ids": [
+      "tech_0147",
+      "tech_0148",
+      "tech_0149",
+      "tech_0150"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "future_plans"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0216531",
+      "msg_0216527",
+      "msg_0216468",
+      "msg_0216565",
+      "msg_0216680",
+      "msg_0217171",
+      "msg_0217172",
+      "msg_0217108"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0042",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"I spent my whole day fixing what went wrong in my n8n setup as I was adding some new cool tech stack for free and messed\"",
+    "start_message_id": "msg_0218749",
+    "end_message_id": "msg_0220146",
+    "start_timestamp": "2025-06-24T06:58:00",
+    "end_timestamp": "2025-06-28T00:43:00",
+    "message_count": 1398,
+    "technical_session_ids": [
+      "tech_0151",
+      "tech_0152",
+      "tech_0153",
+      "tech_0154"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0219295",
+      "msg_0219186",
+      "msg_0219450",
+      "msg_0219832",
+      "msg_0219727",
+      "msg_0220063",
+      "msg_0219942",
+      "msg_0220089"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0043",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Error processing transaction We're unable to complete your sign up. Common errors that prevent sign up include: a) Enter\"",
+    "start_message_id": "msg_0220147",
+    "end_message_id": "msg_0221957",
+    "start_timestamp": "2025-06-28T10:08:00",
+    "end_timestamp": "2025-07-03T00:10:00",
+    "message_count": 1811,
+    "technical_session_ids": [
+      "tech_0155",
+      "tech_0156",
+      "tech_0157",
+      "tech_0158"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0220262",
+      "msg_0220446",
+      "msg_0220545",
+      "msg_0220714",
+      "msg_0220458",
+      "msg_0220401",
+      "msg_0220751",
+      "msg_0221692"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0044",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"i felt so fricking angry when samiya told me that hamzah (when telling her abt his breakup) went like durr aur maaz ka s\"",
+    "start_message_id": "msg_0221958",
+    "end_message_id": "msg_0225143",
+    "start_timestamp": "2025-07-03T08:42:00",
+    "end_timestamp": "2025-07-11T00:19:00",
+    "message_count": 3186,
+    "technical_session_ids": [
+      "tech_0159",
+      "tech_0160",
+      "tech_0161",
+      "tech_0162"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0222960",
+      "msg_0222714",
+      "msg_0223127",
+      "msg_0222262",
+      "msg_0222800",
+      "msg_0223319",
+      "msg_0224805",
+      "msg_0224785"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0045",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"I saw your PSX website. It is quite amazing. I am currently working at Akseer as an Equity Research Analyst. I showed yo\"",
+    "start_message_id": "msg_0225144",
+    "end_message_id": "msg_0227617",
+    "start_timestamp": "2025-07-11T08:50:00",
+    "end_timestamp": "2025-07-17T00:52:00",
+    "message_count": 2474,
+    "technical_session_ids": [
+      "tech_0163",
+      "tech_0164",
+      "tech_0165",
+      "tech_0166"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": true,
+    "highlight_message_ids": [
+      "msg_0225215",
+      "msg_0225244",
+      "msg_0225736",
+      "msg_0225740",
+      "msg_0225984",
+      "msg_0225904",
+      "msg_0226127",
+      "msg_0226403"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0046",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"it wasnt the best experience considering my dad got married the day after i left and then my mom n sis kept it secret fr\"",
+    "start_message_id": "msg_0227618",
+    "end_message_id": "msg_0230401",
+    "start_timestamp": "2025-07-17T08:15:00",
+    "end_timestamp": "2025-07-24T00:46:00",
+    "message_count": 2784,
+    "technical_session_ids": [
+      "tech_0167",
+      "tech_0168",
+      "tech_0169",
+      "tech_0170"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0227967",
+      "msg_0227774",
+      "msg_0228223",
+      "msg_0229463",
+      "msg_0229190",
+      "msg_0229335",
+      "msg_0229156",
+      "msg_0229579"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0047",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"I got logged out from that, can you join this You are “LG-Outreach-Agent”, a specialist copy-writer for Lindsay Goldberg\"",
+    "start_message_id": "msg_0230402",
+    "end_message_id": "msg_0232662",
+    "start_timestamp": "2025-07-24T06:57:00",
+    "end_timestamp": "2025-08-02T01:03:00",
+    "message_count": 2261,
+    "technical_session_ids": [
+      "tech_0171",
+      "tech_0172",
+      "tech_0173",
+      "tech_0174"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "future_plans"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "check-in"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0231058",
+      "msg_0231733",
+      "msg_0231943",
+      "msg_0232417",
+      "msg_0232360",
+      "msg_0232418",
+      "msg_0232452",
+      "msg_0232580"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0048",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Error processing transaction We're unable to complete your sign up. Common errors that prevent sign up include: a) Enter\"",
+    "start_message_id": "msg_0232663",
+    "end_message_id": "msg_0233374",
+    "start_timestamp": "2025-08-02T10:53:00",
+    "end_timestamp": "2025-08-05T22:08:00",
+    "message_count": 712,
+    "technical_session_ids": [
+      "tech_0175",
+      "tech_0176",
+      "tech_0177",
+      "tech_0178"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "future_plans"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": true,
+    "highlight_message_ids": [
+      "msg_0232879",
+      "msg_0233074",
+      "msg_0232942",
+      "msg_0233165",
+      "msg_0232991"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0049",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Generate a high-resolution, cinematic video sequence for a futuristic landing screen. Set in a sleek, softly lit digital\"",
+    "start_message_id": "msg_0233375",
+    "end_message_id": "msg_0234659",
+    "start_timestamp": "2025-08-06T06:17:00",
+    "end_timestamp": "2025-08-10T21:47:00",
+    "message_count": 1285,
+    "technical_session_ids": [
+      "tech_0179",
+      "tech_0180",
+      "tech_0181",
+      "tech_0182"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0233451",
+      "msg_0233827",
+      "msg_0234494",
+      "msg_0234495",
+      "msg_0234505"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0050",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"It's okay, carry laptop or leave in car after interview not sure if that'd be safe\"",
+    "start_message_id": "msg_0234660",
+    "end_message_id": "msg_0235702",
+    "start_timestamp": "2025-08-11T06:14:00",
+    "end_timestamp": "2025-08-14T22:13:00",
+    "message_count": 1043,
+    "technical_session_ids": [
+      "tech_0183",
+      "tech_0184",
+      "tech_0185",
+      "tech_0186"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "future_plans"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "check-in"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0234785",
+      "msg_0234804",
+      "msg_0235568",
+      "msg_0235111"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0051",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Hi everyone, I’m Durriya. I grew up with 70 first cousins on my dad’s side—so collaboration became a survival skill. I a\"",
+    "start_message_id": "msg_0235703",
+    "end_message_id": "msg_0238625",
+    "start_timestamp": "2025-08-15T06:17:00",
+    "end_timestamp": "2025-08-24T04:34:00",
+    "message_count": 2923,
+    "technical_session_ids": [
+      "tech_0187",
+      "tech_0188",
+      "tech_0189",
+      "tech_0190"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": true,
+    "highlight_message_ids": [
+      "msg_0235907",
+      "msg_0235967",
+      "msg_0236562",
+      "msg_0236604",
+      "msg_0236551",
+      "msg_0236654",
+      "msg_0237789",
+      "msg_0237124"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0052",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Yes but i also think abhi agaya i might not be able to go on leaves and since nani ko I have to accompany tou bas tabhi\"",
+    "start_message_id": "msg_0238626",
+    "end_message_id": "msg_0240641",
+    "start_timestamp": "2025-08-24T10:45:00",
+    "end_timestamp": "2025-08-30T00:05:00",
+    "message_count": 2016,
+    "technical_session_ids": [
+      "tech_0191",
+      "tech_0192",
+      "tech_0193",
+      "tech_0194"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "check-in"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0239065",
+      "msg_0239053",
+      "msg_0238756",
+      "msg_0239296",
+      "msg_0240325",
+      "msg_0240611",
+      "msg_0239923",
+      "msg_0239922"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0053",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"I'm sorry if I came off as rude. I just want u to not worry about anything for now\"",
+    "start_message_id": "msg_0240642",
+    "end_message_id": "msg_0241173",
+    "start_timestamp": "2025-08-30T08:55:00",
+    "end_timestamp": "2025-09-02T19:41:00",
+    "message_count": 532,
+    "technical_session_ids": [
+      "tech_0195",
+      "tech_0196",
+      "tech_0197",
+      "tech_0198"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "future_plans"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "check-in"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0240885",
+      "msg_0241060",
+      "msg_0241161"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0054",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"I think it's time for you to save yourself from the misery of this horrible man who have hurt you countless times and ca\"",
+    "start_message_id": "msg_0241174",
+    "end_message_id": "msg_0241824",
+    "start_timestamp": "2025-09-03T17:17:00",
+    "end_timestamp": "2025-09-07T03:24:00",
+    "message_count": 651,
+    "technical_session_ids": [
+      "tech_0199",
+      "tech_0200",
+      "tech_0201",
+      "tech_0202"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "future_plans"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "check-in"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0241548"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0055",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"It's a mutual relationship, we both can try. It's okay if we can't figure out one day because of possibility. I won't ho\"",
+    "start_message_id": "msg_0241825",
+    "end_message_id": "msg_0243354",
+    "start_timestamp": "2025-09-07T10:04:00",
+    "end_timestamp": "2025-09-10T21:50:00",
+    "message_count": 1530,
+    "technical_session_ids": [
+      "tech_0203",
+      "tech_0204",
+      "tech_0205",
+      "tech_0206"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "future_plans"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0242532",
+      "msg_0242468",
+      "msg_0242464",
+      "msg_0242524",
+      "msg_0242378",
+      "msg_0243058"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0056",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"heyy guis wanted to say ke pls stay vigilant when ur on the road in Karachi, even in the traffic. me and friend literall\"",
+    "start_message_id": "msg_0243355",
+    "end_message_id": "msg_0244876",
+    "start_timestamp": "2025-09-11T06:34:00",
+    "end_timestamp": "2025-09-15T22:40:00",
+    "message_count": 1522,
+    "technical_session_ids": [
+      "tech_0207",
+      "tech_0208",
+      "tech_0209",
+      "tech_0210"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0244292",
+      "msg_0244294",
+      "msg_0244791"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0057",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"But yes I expected a different response maybe, I wanted some response on vn but all I got was just a sticker and when I \"",
+    "start_message_id": "msg_0244877",
+    "end_message_id": "msg_0245230",
+    "start_timestamp": "2025-09-16T08:01:00",
+    "end_timestamp": "2025-09-16T22:14:00",
+    "message_count": 354,
+    "technical_session_ids": [
+      "tech_0211"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "repair_reconnection",
+      "affection"
+    ],
+    "turning_point": true,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0245043"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0058",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"I also realized that most of the times instead of thinking logically (men do) it's okay to listen emotionally without ju\"",
+    "start_message_id": "msg_0245231",
+    "end_message_id": "msg_0248854",
+    "start_timestamp": "2025-09-20T22:04:00",
+    "end_timestamp": "2025-09-28T00:46:00",
+    "message_count": 3624,
+    "technical_session_ids": [
+      "tech_0212",
+      "tech_0213",
+      "tech_0214",
+      "tech_0215"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0245395",
+      "msg_0245529",
+      "msg_0246361",
+      "msg_0246367",
+      "msg_0245805",
+      "msg_0247307",
+      "msg_0247300",
+      "msg_0247235"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0059",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Ik and I am sorry should have asked yesterday, wasn't totally well so couldn't think of it\"",
+    "start_message_id": "msg_0248855",
+    "end_message_id": "msg_0251076",
+    "start_timestamp": "2025-09-28T13:07:00",
+    "end_timestamp": "2025-10-01T21:56:00",
+    "message_count": 2222,
+    "technical_session_ids": [
+      "tech_0216",
+      "tech_0217",
+      "tech_0218",
+      "tech_0219"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0248885",
+      "msg_0250272",
+      "msg_0250122",
+      "msg_0249447",
+      "msg_0249784",
+      "msg_0250124",
+      "msg_0250482",
+      "msg_0250413"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0060",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"i am compiling a surprise scrapbook for muhammad ahmed, with letters from family and friends, and since you’ve been an i\"",
+    "start_message_id": "msg_0251077",
+    "end_message_id": "msg_0252376",
+    "start_timestamp": "2025-10-02T04:43:00",
+    "end_timestamp": "2025-10-06T22:00:00",
+    "message_count": 1300,
+    "technical_session_ids": [
+      "tech_0220",
+      "tech_0221",
+      "tech_0222",
+      "tech_0223"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0251258",
+      "msg_0251630",
+      "msg_0252029",
+      "msg_0252219"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0061",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"powerbi session was RLLYYYY GOODDD bht acha sikhaya tha unhone i paid attention for a good ampumt but laptop pe nai chal\"",
+    "start_message_id": "msg_0252377",
+    "end_message_id": "msg_0252712",
+    "start_timestamp": "2025-10-07T06:49:00",
+    "end_timestamp": "2025-10-08T22:40:00",
+    "message_count": 336,
+    "technical_session_ids": [
+      "tech_0224",
+      "tech_0225"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "check-in",
+      "conflict"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0252498"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0062",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"i am genuinely sorry for attacking u, tbh i j read the chat i wasnt really rude i was just voicing my valid concerns w u\"",
+    "start_message_id": "msg_0252713",
+    "end_message_id": "msg_0255808",
+    "start_timestamp": "2025-10-09T06:09:00",
+    "end_timestamp": "2025-10-19T02:46:00",
+    "message_count": 3096,
+    "technical_session_ids": [
+      "tech_0226",
+      "tech_0227",
+      "tech_0228",
+      "tech_0229"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0252958",
+      "msg_0253382",
+      "msg_0253673",
+      "msg_0253671",
+      "msg_0253405",
+      "msg_0253732",
+      "msg_0253757",
+      "msg_0253734"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0063",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"No it's okay I got this, I'll need to brainstorm and try out a couple of ideas. We can review together once done\"",
+    "start_message_id": "msg_0255809",
+    "end_message_id": "msg_0256381",
+    "start_timestamp": "2025-10-19T09:59:00",
+    "end_timestamp": "2025-10-22T22:23:00",
+    "message_count": 573,
+    "technical_session_ids": [
+      "tech_0230",
+      "tech_0231",
+      "tech_0232",
+      "tech_0233"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0255870",
+      "msg_0255830",
+      "msg_0256257"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0064",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"im not side stepping im saving my time from repeating the samr thing a billion times u urself are saying i repeat shit a\"",
+    "start_message_id": "msg_0256382",
+    "end_message_id": "msg_0257802",
+    "start_timestamp": "2025-10-23T05:07:00",
+    "end_timestamp": "2025-10-26T14:38:00",
+    "message_count": 1421,
+    "technical_session_ids": [
+      "tech_0234",
+      "tech_0235",
+      "tech_0236",
+      "tech_0237"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0257618",
+      "msg_0257353",
+      "msg_0257749",
+      "msg_0257511"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0065",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Did I say that? I am sorry if I did, I don't recall and I won't have meant it\"",
+    "start_message_id": "msg_0257803",
+    "end_message_id": "msg_0258135",
+    "start_timestamp": "2025-10-26T22:06:00",
+    "end_timestamp": "2025-10-29T22:03:00",
+    "message_count": 333,
+    "technical_session_ids": [
+      "tech_0238",
+      "tech_0239",
+      "tech_0240",
+      "tech_0241"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "future_plans",
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "conflict"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": true,
+    "highlight_message_ids": [
+      "msg_0258080"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0066",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"And he can't even understand that you're on a leave and had to go doc in the morning\"",
+    "start_message_id": "msg_0258136",
+    "end_message_id": "msg_0258904",
+    "start_timestamp": "2025-10-30T10:04:00",
+    "end_timestamp": "2025-11-02T21:34:00",
+    "message_count": 769,
+    "technical_session_ids": [
+      "tech_0242",
+      "tech_0243",
+      "tech_0244",
+      "tech_0245"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0258589",
+      "msg_0258854"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0067",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"But agar tabiyat na hoee theek so will take a sick leave and take the 2 critical meetings\"",
+    "start_message_id": "msg_0258905",
+    "end_message_id": "msg_0260360",
+    "start_timestamp": "2025-11-03T08:20:00",
+    "end_timestamp": "2025-11-09T22:22:00",
+    "message_count": 1456,
+    "technical_session_ids": [
+      "tech_0246",
+      "tech_0247",
+      "tech_0248",
+      "tech_0249"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0259308",
+      "msg_0259754",
+      "msg_0259742"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0068",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes.",
+    "start_message_id": "msg_0260361",
+    "end_message_id": "msg_0260501",
+    "start_timestamp": "2025-11-10T05:22:00",
+    "end_timestamp": "2025-11-11T02:30:00",
+    "message_count": 141,
+    "technical_session_ids": [
+      "tech_0250"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "conflict",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0069",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"i am sorry to hurt you not my intention it hurts me too\"",
+    "start_message_id": "msg_0260502",
+    "end_message_id": "msg_0264388",
+    "start_timestamp": "2025-11-11T10:28:00",
+    "end_timestamp": "2025-11-25T23:42:00",
+    "message_count": 3887,
+    "technical_session_ids": [
+      "tech_0251",
+      "tech_0252",
+      "tech_0253",
+      "tech_0254"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0261664",
+      "msg_0260632",
+      "msg_0260722",
+      "msg_0261003",
+      "msg_0261959",
+      "msg_0263148",
+      "msg_0263223",
+      "msg_0263212"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0070",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Hi Durriya! Hope you are well. I'm very happy to announce that we have decided to move forward with you based on our cha\"",
+    "start_message_id": "msg_0264389",
+    "end_message_id": "msg_0265168",
+    "start_timestamp": "2025-11-26T06:02:00",
+    "end_timestamp": "2025-12-01T21:13:00",
+    "message_count": 780,
+    "technical_session_ids": [
+      "tech_0255",
+      "tech_0256",
+      "tech_0257",
+      "tech_0258"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "check-in",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": true,
+    "highlight_message_ids": [
+      "msg_0264494",
+      "msg_0264723",
+      "msg_0264705",
+      "msg_0264449",
+      "msg_0265029",
+      "msg_0264894",
+      "msg_0264985",
+      "msg_0264947"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0071",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes.",
+    "start_message_id": "msg_0265169",
+    "end_message_id": "msg_0265179",
+    "start_timestamp": "2025-12-02T16:39:00",
+    "end_timestamp": "2025-12-03T21:19:00",
+    "message_count": 11,
+    "technical_session_ids": [
+      "tech_0259",
+      "tech_0260"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "future_plans"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "check-in",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0072",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Just wanted to say a big congrats plus goodluck and best wishes for tomorrow and making it to the final moment, roller c\"",
+    "start_message_id": "msg_0265180",
+    "end_message_id": "msg_0265226",
+    "start_timestamp": "2025-12-04T20:37:00",
+    "end_timestamp": "2025-12-06T23:08:00",
+    "message_count": 47,
+    "technical_session_ids": [
+      "tech_0261",
+      "tech_0262",
+      "tech_0263",
+      "tech_0264"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "humor_banter"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0265202"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0073",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes.",
+    "start_message_id": "msg_0265227",
+    "end_message_id": "msg_0265257",
+    "start_timestamp": "2025-12-07T21:37:00",
+    "end_timestamp": "2025-12-08T18:56:00",
+    "message_count": 31,
+    "technical_session_ids": [
+      "tech_0265",
+      "tech_0266"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "future_plans",
+      "relationship"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0074",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"You're right, I have hurt you so much and I can't even apologize for the times probably. I am sorry for everything and I\"",
+    "start_message_id": "msg_0265258",
+    "end_message_id": "msg_0265677",
+    "start_timestamp": "2025-12-10T11:18:00",
+    "end_timestamp": "2025-12-12T10:38:00",
+    "message_count": 420,
+    "technical_session_ids": [
+      "tech_0267",
+      "tech_0268",
+      "tech_0269"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "travel",
+      "relationship"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "conflict",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0265413",
+      "msg_0265274",
+      "msg_0265354",
+      "msg_0265482",
+      "msg_0265352"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0075",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"hey, its better if you inform your family subtly that u and i dont talk a lot and theres no pressure to make decisions o\"",
+    "start_message_id": "msg_0265678",
+    "end_message_id": "msg_0265702",
+    "start_timestamp": "2025-12-14T18:06:00",
+    "end_timestamp": "2025-12-14T19:00:00",
+    "message_count": 25,
+    "technical_session_ids": [
+      "tech_0270"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "future_plans",
+      "relationship"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "reassurance"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0265678",
+      "msg_0265680"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0076",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes.",
+    "start_message_id": "msg_0265703",
+    "end_message_id": "msg_0265735",
+    "start_timestamp": "2025-12-20T19:01:00",
+    "end_timestamp": "2025-12-20T23:32:00",
+    "message_count": 33,
+    "technical_session_ids": [
+      "tech_0271"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0077",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"If I'm being very honest I can't stop loving you, and I pray a lot that if you're good for me, if I'm good for you, plea\"",
+    "start_message_id": "msg_0265736",
+    "end_message_id": "msg_0265820",
+    "start_timestamp": "2025-12-22T04:53:00",
+    "end_timestamp": "2025-12-23T19:52:00",
+    "message_count": 85,
+    "technical_session_ids": [
+      "tech_0272",
+      "tech_0273",
+      "tech_0274"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "conflict",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0265766"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0078",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Hey ​I just wanted to wish u a very pleasant new year ahead as this almost ends. I also wanted to take a moment to thank\"",
+    "start_message_id": "msg_0265821",
+    "end_message_id": "msg_0266374",
+    "start_timestamp": "2025-12-31T18:34:00",
+    "end_timestamp": "2026-01-02T20:44:00",
+    "message_count": 554,
+    "technical_session_ids": [
+      "tech_0275",
+      "tech_0276",
+      "tech_0277"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "conflict"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0265821",
+      "msg_0265822",
+      "msg_0266058",
+      "msg_0265950",
+      "msg_0265864",
+      "msg_0266142",
+      "msg_0266140",
+      "msg_0266078"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0079",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"It's okay to make mistakes, don't worry you'll see in the feedback, they'd give InnshaAllah a very good one because know\"",
+    "start_message_id": "msg_0266375",
+    "end_message_id": "msg_0266894",
+    "start_timestamp": "2026-01-08T16:40:00",
+    "end_timestamp": "2026-01-10T21:38:00",
+    "message_count": 520,
+    "technical_session_ids": [
+      "tech_0278",
+      "tech_0279",
+      "tech_0280",
+      "tech_0281"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0266431",
+      "msg_0266443",
+      "msg_0266497",
+      "msg_0266572",
+      "msg_0266570",
+      "msg_0266569",
+      "msg_0266564",
+      "msg_0266557"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0080",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Dear Omer and Kashif, I hope you are both well. As discussed informally earlier this month, I am writing to formally res\"",
+    "start_message_id": "msg_0266895",
+    "end_message_id": "msg_0267184",
+    "start_timestamp": "2026-01-11T10:43:00",
+    "end_timestamp": "2026-01-13T07:26:00",
+    "message_count": 290,
+    "technical_session_ids": [
+      "tech_0282",
+      "tech_0283",
+      "tech_0284",
+      "tech_0285"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "check-in"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0267020"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0081",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Can you send your latest resume? If not I can start with the one that I've and tailor it a bit with HR stuff. I'll be ho\"",
+    "start_message_id": "msg_0267185",
+    "end_message_id": "msg_0267350",
+    "start_timestamp": "2026-01-13T19:46:00",
+    "end_timestamp": "2026-01-16T13:43:00",
+    "message_count": 166,
+    "technical_session_ids": [
+      "tech_0286",
+      "tech_0287",
+      "tech_0288",
+      "tech_0289"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "future_plans"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0267241",
+      "msg_0267332",
+      "msg_0267335"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0082",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes.",
+    "start_message_id": "msg_0267351",
+    "end_message_id": "msg_0267368",
+    "start_timestamp": "2026-01-18T18:41:00",
+    "end_timestamp": "2026-01-18T21:09:00",
+    "message_count": 18,
+    "technical_session_ids": [
+      "tech_0290"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship"
+    ],
+    "dominant_archetypes": [
+      "everyday_life"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0083",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Hey I'm sure you'd know but make sure to leave timely to avoid getting stuck due to rain as it already started here. Sta\"",
+    "start_message_id": "msg_0267369",
+    "end_message_id": "msg_0267559",
+    "start_timestamp": "2026-01-22T12:24:00",
+    "end_timestamp": "2026-01-22T19:36:00",
+    "message_count": 191,
+    "technical_session_ids": [
+      "tech_0291"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "conflict"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0267369",
+      "msg_0267475"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0084",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes.",
+    "start_message_id": "msg_0267560",
+    "end_message_id": "msg_0267651",
+    "start_timestamp": "2026-02-06T17:10:00",
+    "end_timestamp": "2026-02-06T23:17:00",
+    "message_count": 92,
+    "technical_session_ids": [
+      "tech_0292"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0085",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Still getting used to saying this: I’m officially an IBA graduate. 🎓 Walking into IBA four years ago, I knew I wanted t\"",
+    "start_message_id": "msg_0267652",
+    "end_message_id": "msg_0268195",
+    "start_timestamp": "2026-02-08T16:55:00",
+    "end_timestamp": "2026-02-11T21:22:00",
+    "message_count": 544,
+    "technical_session_ids": [
+      "tech_0293",
+      "tech_0294",
+      "tech_0295",
+      "tech_0296"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "repair_reconnection"
+    ],
+    "turning_point": true,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0267796",
+      "msg_0267755",
+      "msg_0267790",
+      "msg_0267791",
+      "msg_0267792",
+      "msg_0267833",
+      "msg_0267986",
+      "msg_0268081"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0086",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"You have been a real friend, a shoulder to lean on, someone I could share my good and bad news without thinking twice, s\"",
+    "start_message_id": "msg_0268196",
+    "end_message_id": "msg_0269177",
+    "start_timestamp": "2026-02-13T09:57:00",
+    "end_timestamp": "2026-02-15T01:03:00",
+    "message_count": 982,
+    "technical_session_ids": [
+      "tech_0297",
+      "tech_0298",
+      "tech_0299",
+      "tech_0300"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "repair_reconnection"
+    ],
+    "turning_point": true,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0268371",
+      "msg_0268365",
+      "msg_0268370",
+      "msg_0268331",
+      "msg_0268835",
+      "msg_0268758",
+      "msg_0269026",
+      "msg_0268838"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0087",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"I'm so sorryyyy i sent u so much stuff, I just woke up seeing you in very happy dreams and I was missing you like crazy \"",
+    "start_message_id": "msg_0269178",
+    "end_message_id": "msg_0269901",
+    "start_timestamp": "2026-02-15T11:50:00",
+    "end_timestamp": "2026-02-18T06:24:00",
+    "message_count": 724,
+    "technical_session_ids": [
+      "tech_0301",
+      "tech_0302",
+      "tech_0303",
+      "tech_0304"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "humor"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "planning"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0269182",
+      "msg_0269193",
+      "msg_0269386",
+      "msg_0269381",
+      "msg_0269621",
+      "msg_0269515",
+      "msg_0269523",
+      "msg_0269585"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0088",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Ramadan Mubarak ❤️ May this turns out to be a month which brings you closer to Allah, helps you with everything your hea\"",
+    "start_message_id": "msg_0269902",
+    "end_message_id": "msg_0269997",
+    "start_timestamp": "2026-02-18T18:30:00",
+    "end_timestamp": "2026-02-20T23:15:00",
+    "message_count": 96,
+    "technical_session_ids": [
+      "tech_0305",
+      "tech_0306"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "future_plans"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "planning",
+      "check-in"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0269902",
+      "msg_0269974"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0089",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"I learnt a lot of things, some day if you find time just tell me the things where you feel like spending the most amount\"",
+    "start_message_id": "msg_0269998",
+    "end_message_id": "msg_0270555",
+    "start_timestamp": "2026-02-25T14:27:00",
+    "end_timestamp": "2026-02-28T23:35:00",
+    "message_count": 558,
+    "technical_session_ids": [
+      "tech_0307",
+      "tech_0308",
+      "tech_0309",
+      "tech_0310"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "study_work",
+      "relationship"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "humor_banter",
+      "affection"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0270220",
+      "msg_0269999",
+      "msg_0270498",
+      "msg_0270474",
+      "msg_0270443",
+      "msg_0270411",
+      "msg_0270540"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0090",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Sorry for worrying, I texted bilkul sleepy head, dil aik dam se dhak dhak karraha tha so just automatically texted\"",
+    "start_message_id": "msg_0270556",
+    "end_message_id": "msg_0270609",
+    "start_timestamp": "2026-03-01T07:34:00",
+    "end_timestamp": "2026-03-02T21:39:00",
+    "message_count": 54,
+    "technical_session_ids": [
+      "tech_0311",
+      "tech_0312",
+      "tech_0313",
+      "tech_0314"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "repair_reconnection",
+      "affection"
+    ],
+    "turning_point": true,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0270562",
+      "msg_0270595"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0091",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes.",
+    "start_message_id": "msg_0270610",
+    "end_message_id": "msg_0270626",
+    "start_timestamp": "2026-03-03T08:11:00",
+    "end_timestamp": "2026-03-05T12:43:00",
+    "message_count": 17,
+    "technical_session_ids": [
+      "tech_0315",
+      "tech_0316",
+      "tech_0317",
+      "tech_0318"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship"
+    ],
+    "dominant_archetypes": [
+      "everyday_life"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": []
+  },
+  {
+    "narrative_segment_id": "segment_0092",
+    "title": "Ordinary Days, Real Closeness",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"I repeat things I'm sorry but ik you find it hard to open up and talk and I just you to know that this space is and will\"",
+    "start_message_id": "msg_0270627",
+    "end_message_id": "msg_0271009",
+    "start_timestamp": "2026-03-05T20:05:00",
+    "end_timestamp": "2026-03-09T16:28:00",
+    "message_count": 383,
+    "technical_session_ids": [
+      "tech_0319",
+      "tech_0320",
+      "tech_0321",
+      "tech_0322"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "difficult_conversation"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "repair_reconnection",
+      "conflict"
+    ],
+    "turning_point": true,
+    "conflict_repair_cycle": true,
+    "highlight_message_ids": [
+      "msg_0270854",
+      "msg_0270864",
+      "msg_0270719"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0093",
+    "title": "Shared Routine",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"- Pray for hidayat and guidance to the right path - may Allah makes me a good human and good Muslim who's away from all \"",
+    "start_message_id": "msg_0271010",
+    "end_message_id": "msg_0271030",
+    "start_timestamp": "2026-03-10T16:33:00",
+    "end_timestamp": "2026-03-12T11:32:00",
+    "message_count": 21,
+    "technical_session_ids": [
+      "tech_0323",
+      "tech_0324",
+      "tech_0325"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "support"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "affection",
+      "conflict"
+    ],
+    "turning_point": false,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0271013"
+    ]
+  },
+  {
+    "narrative_segment_id": "segment_0094",
+    "title": "Everyday Gravity",
+    "summary": "Romantic energy with Everyday Life moments and Daily Life themes. Representative line: \"Remember if you can, do a bit of charity donation or zakat tonight, on 27th and 29th. It felt in the morning of the sign\"",
+    "start_message_id": "msg_0271031",
+    "end_message_id": "msg_0271152",
+    "start_timestamp": "2026-03-14T18:53:00",
+    "end_timestamp": "2026-03-14T23:17:00",
+    "message_count": 122,
+    "technical_session_ids": [
+      "tech_0326"
+    ],
+    "dominant_emotion": "romantic",
+    "dominant_topics": [
+      "daily_life",
+      "relationship",
+      "study_work"
+    ],
+    "dominant_archetypes": [
+      "everyday_life",
+      "reassurance",
+      "repair_reconnection"
+    ],
+    "turning_point": true,
+    "conflict_repair_cycle": false,
+    "highlight_message_ids": [
+      "msg_0271120",
+      "msg_0271137",
+      "msg_0271056"
+    ]
+  }
+]

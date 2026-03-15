@@ -1,0 +1,681 @@
+[
+  {
+    "period_start": "2024-04-29",
+    "period_label": "2024-04-29",
+    "average_intensity": 0.3882770370370367,
+    "dominant_emotion": "romantic",
+    "message_count": 135
+  },
+  {
+    "period_start": "2024-05-06",
+    "period_label": "2024-05-06",
+    "average_intensity": 0.3820196359346103,
+    "dominant_emotion": "romantic",
+    "message_count": 5933
+  },
+  {
+    "period_start": "2024-05-13",
+    "period_label": "2024-05-13",
+    "average_intensity": 0.38514368373221397,
+    "dominant_emotion": "romantic",
+    "message_count": 6602
+  },
+  {
+    "period_start": "2024-05-20",
+    "period_label": "2024-05-20",
+    "average_intensity": 0.38306010961517206,
+    "dominant_emotion": "romantic",
+    "message_count": 8393
+  },
+  {
+    "period_start": "2024-05-27",
+    "period_label": "2024-05-27",
+    "average_intensity": 0.3761111425155188,
+    "dominant_emotion": "romantic",
+    "message_count": 9199
+  },
+  {
+    "period_start": "2024-06-03",
+    "period_label": "2024-06-03",
+    "average_intensity": 0.37352943779082975,
+    "dominant_emotion": "romantic",
+    "message_count": 13109
+  },
+  {
+    "period_start": "2024-06-10",
+    "period_label": "2024-06-10",
+    "average_intensity": 0.3774916406250159,
+    "dominant_emotion": "romantic",
+    "message_count": 11520
+  },
+  {
+    "period_start": "2024-06-17",
+    "period_label": "2024-06-17",
+    "average_intensity": 0.37446523264401443,
+    "dominant_emotion": "romantic",
+    "message_count": 5416
+  },
+  {
+    "period_start": "2024-06-24",
+    "period_label": "2024-06-24",
+    "average_intensity": 0.37184092993832546,
+    "dominant_emotion": "romantic",
+    "message_count": 6323
+  },
+  {
+    "period_start": "2024-07-01",
+    "period_label": "2024-07-01",
+    "average_intensity": 0.37122276930189285,
+    "dominant_emotion": "romantic",
+    "message_count": 4326
+  },
+  {
+    "period_start": "2024-07-08",
+    "period_label": "2024-07-08",
+    "average_intensity": 0.37088966251638744,
+    "dominant_emotion": "romantic",
+    "message_count": 6104
+  },
+  {
+    "period_start": "2024-07-15",
+    "period_label": "2024-07-15",
+    "average_intensity": 0.37277159976033325,
+    "dominant_emotion": "romantic",
+    "message_count": 5007
+  },
+  {
+    "period_start": "2024-07-22",
+    "period_label": "2024-07-22",
+    "average_intensity": 0.37385559356136605,
+    "dominant_emotion": "romantic",
+    "message_count": 4970
+  },
+  {
+    "period_start": "2024-07-29",
+    "period_label": "2024-07-29",
+    "average_intensity": 0.37718248825531314,
+    "dominant_emotion": "romantic",
+    "message_count": 6173
+  },
+  {
+    "period_start": "2024-08-05",
+    "period_label": "2024-08-05",
+    "average_intensity": 0.37298045178105654,
+    "dominant_emotion": "romantic",
+    "message_count": 4604
+  },
+  {
+    "period_start": "2024-08-12",
+    "period_label": "2024-08-12",
+    "average_intensity": 0.3712954682779415,
+    "dominant_emotion": "romantic",
+    "message_count": 4634
+  },
+  {
+    "period_start": "2024-08-19",
+    "period_label": "2024-08-19",
+    "average_intensity": 0.37178496846530684,
+    "dominant_emotion": "romantic",
+    "message_count": 2854
+  },
+  {
+    "period_start": "2024-08-26",
+    "period_label": "2024-08-26",
+    "average_intensity": 0.3696431210691772,
+    "dominant_emotion": "romantic",
+    "message_count": 2544
+  },
+  {
+    "period_start": "2024-09-02",
+    "period_label": "2024-09-02",
+    "average_intensity": 0.36825613845321603,
+    "dominant_emotion": "romantic",
+    "message_count": 1849
+  },
+  {
+    "period_start": "2024-09-09",
+    "period_label": "2024-09-09",
+    "average_intensity": 0.37477798257372325,
+    "dominant_emotion": "romantic",
+    "message_count": 2984
+  },
+  {
+    "period_start": "2024-09-16",
+    "period_label": "2024-09-16",
+    "average_intensity": 0.3708537575425095,
+    "dominant_emotion": "romantic",
+    "message_count": 3646
+  },
+  {
+    "period_start": "2024-09-23",
+    "period_label": "2024-09-23",
+    "average_intensity": 0.3757283804238104,
+    "dominant_emotion": "romantic",
+    "message_count": 3964
+  },
+  {
+    "period_start": "2024-09-30",
+    "period_label": "2024-09-30",
+    "average_intensity": 0.37373662640206784,
+    "dominant_emotion": "romantic",
+    "message_count": 2318
+  },
+  {
+    "period_start": "2024-10-07",
+    "period_label": "2024-10-07",
+    "average_intensity": 0.37372928209710804,
+    "dominant_emotion": "romantic",
+    "message_count": 3357
+  },
+  {
+    "period_start": "2024-10-14",
+    "period_label": "2024-10-14",
+    "average_intensity": 0.3734732946298973,
+    "dominant_emotion": "romantic",
+    "message_count": 4134
+  },
+  {
+    "period_start": "2024-10-21",
+    "period_label": "2024-10-21",
+    "average_intensity": 0.37478679196032183,
+    "dominant_emotion": "romantic",
+    "message_count": 3831
+  },
+  {
+    "period_start": "2024-10-28",
+    "period_label": "2024-10-28",
+    "average_intensity": 0.36856123168746224,
+    "dominant_emotion": "romantic",
+    "message_count": 3686
+  },
+  {
+    "period_start": "2024-11-04",
+    "period_label": "2024-11-04",
+    "average_intensity": 0.3718198357164549,
+    "dominant_emotion": "romantic",
+    "message_count": 3287
+  },
+  {
+    "period_start": "2024-11-11",
+    "period_label": "2024-11-11",
+    "average_intensity": 0.37277197691197445,
+    "dominant_emotion": "romantic",
+    "message_count": 3465
+  },
+  {
+    "period_start": "2024-11-18",
+    "period_label": "2024-11-18",
+    "average_intensity": 0.37075654834761085,
+    "dominant_emotion": "romantic",
+    "message_count": 4085
+  },
+  {
+    "period_start": "2024-11-25",
+    "period_label": "2024-11-25",
+    "average_intensity": 0.37345667160859375,
+    "dominant_emotion": "romantic",
+    "message_count": 2698
+  },
+  {
+    "period_start": "2024-12-02",
+    "period_label": "2024-12-02",
+    "average_intensity": 0.36623410256409733,
+    "dominant_emotion": "romantic",
+    "message_count": 2340
+  },
+  {
+    "period_start": "2024-12-09",
+    "period_label": "2024-12-09",
+    "average_intensity": 0.372041126641249,
+    "dominant_emotion": "romantic",
+    "message_count": 2361
+  },
+  {
+    "period_start": "2024-12-16",
+    "period_label": "2024-12-16",
+    "average_intensity": 0.37181235471372753,
+    "dominant_emotion": "romantic",
+    "message_count": 2323
+  },
+  {
+    "period_start": "2024-12-23",
+    "period_label": "2024-12-23",
+    "average_intensity": 0.37288857142857096,
+    "dominant_emotion": "romantic",
+    "message_count": 1575
+  },
+  {
+    "period_start": "2024-12-30",
+    "period_label": "2024-12-30",
+    "average_intensity": 0.3741352629837865,
+    "dominant_emotion": "romantic",
+    "message_count": 3023
+  },
+  {
+    "period_start": "2025-01-06",
+    "period_label": "2025-01-06",
+    "average_intensity": 0.37318462327011576,
+    "dominant_emotion": "romantic",
+    "message_count": 1951
+  },
+  {
+    "period_start": "2025-01-13",
+    "period_label": "2025-01-13",
+    "average_intensity": 0.3752483365949116,
+    "dominant_emotion": "romantic",
+    "message_count": 1533
+  },
+  {
+    "period_start": "2025-01-20",
+    "period_label": "2025-01-20",
+    "average_intensity": 0.37101925612052444,
+    "dominant_emotion": "romantic",
+    "message_count": 2124
+  },
+  {
+    "period_start": "2025-01-27",
+    "period_label": "2025-01-27",
+    "average_intensity": 0.3689314893617006,
+    "dominant_emotion": "romantic",
+    "message_count": 1645
+  },
+  {
+    "period_start": "2025-02-03",
+    "period_label": "2025-02-03",
+    "average_intensity": 0.3739724770642162,
+    "dominant_emotion": "romantic",
+    "message_count": 2180
+  },
+  {
+    "period_start": "2025-02-10",
+    "period_label": "2025-02-10",
+    "average_intensity": 0.371757457922227,
+    "dominant_emotion": "romantic",
+    "message_count": 1723
+  },
+  {
+    "period_start": "2025-02-17",
+    "period_label": "2025-02-17",
+    "average_intensity": 0.37262189712128085,
+    "dominant_emotion": "romantic",
+    "message_count": 2119
+  },
+  {
+    "period_start": "2025-02-24",
+    "period_label": "2025-02-24",
+    "average_intensity": 0.370149460819556,
+    "dominant_emotion": "romantic",
+    "message_count": 1391
+  },
+  {
+    "period_start": "2025-03-03",
+    "period_label": "2025-03-03",
+    "average_intensity": 0.37221524329691874,
+    "dominant_emotion": "romantic",
+    "message_count": 2014
+  },
+  {
+    "period_start": "2025-03-10",
+    "period_label": "2025-03-10",
+    "average_intensity": 0.37462954966069845,
+    "dominant_emotion": "romantic",
+    "message_count": 3242
+  },
+  {
+    "period_start": "2025-03-17",
+    "period_label": "2025-03-17",
+    "average_intensity": 0.37369985465116357,
+    "dominant_emotion": "romantic",
+    "message_count": 1376
+  },
+  {
+    "period_start": "2025-03-24",
+    "period_label": "2025-03-24",
+    "average_intensity": 0.3691568627450971,
+    "dominant_emotion": "romantic",
+    "message_count": 1632
+  },
+  {
+    "period_start": "2025-03-31",
+    "period_label": "2025-03-31",
+    "average_intensity": 0.3780241095890403,
+    "dominant_emotion": "romantic",
+    "message_count": 3285
+  },
+  {
+    "period_start": "2025-04-07",
+    "period_label": "2025-04-07",
+    "average_intensity": 0.37568352601155813,
+    "dominant_emotion": "romantic",
+    "message_count": 3460
+  },
+  {
+    "period_start": "2025-04-14",
+    "period_label": "2025-04-14",
+    "average_intensity": 0.37252221210741593,
+    "dominant_emotion": "romantic",
+    "message_count": 2197
+  },
+  {
+    "period_start": "2025-04-21",
+    "period_label": "2025-04-21",
+    "average_intensity": 0.37153249235473645,
+    "dominant_emotion": "romantic",
+    "message_count": 2616
+  },
+  {
+    "period_start": "2025-04-28",
+    "period_label": "2025-04-28",
+    "average_intensity": 0.36778605072463455,
+    "dominant_emotion": "romantic",
+    "message_count": 2208
+  },
+  {
+    "period_start": "2025-05-05",
+    "period_label": "2025-05-05",
+    "average_intensity": 0.37181022727272567,
+    "dominant_emotion": "romantic",
+    "message_count": 3696
+  },
+  {
+    "period_start": "2025-05-12",
+    "period_label": "2025-05-12",
+    "average_intensity": 0.3717483035714251,
+    "dominant_emotion": "romantic",
+    "message_count": 2240
+  },
+  {
+    "period_start": "2025-05-19",
+    "period_label": "2025-05-19",
+    "average_intensity": 0.3711753840094483,
+    "dominant_emotion": "romantic",
+    "message_count": 2539
+  },
+  {
+    "period_start": "2025-05-26",
+    "period_label": "2025-05-26",
+    "average_intensity": 0.36678527397260124,
+    "dominant_emotion": "romantic",
+    "message_count": 1752
+  },
+  {
+    "period_start": "2025-06-02",
+    "period_label": "2025-06-02",
+    "average_intensity": 0.37016848673946506,
+    "dominant_emotion": "romantic",
+    "message_count": 2564
+  },
+  {
+    "period_start": "2025-06-09",
+    "period_label": "2025-06-09",
+    "average_intensity": 0.37251121794871533,
+    "dominant_emotion": "romantic",
+    "message_count": 2496
+  },
+  {
+    "period_start": "2025-06-16",
+    "period_label": "2025-06-16",
+    "average_intensity": 0.37301802999317923,
+    "dominant_emotion": "romantic",
+    "message_count": 2934
+  },
+  {
+    "period_start": "2025-06-23",
+    "period_label": "2025-06-23",
+    "average_intensity": 0.3695284287616471,
+    "dominant_emotion": "romantic",
+    "message_count": 3004
+  },
+  {
+    "period_start": "2025-06-30",
+    "period_label": "2025-06-30",
+    "average_intensity": 0.3677291729778826,
+    "dominant_emotion": "romantic",
+    "message_count": 3301
+  },
+  {
+    "period_start": "2025-07-07",
+    "period_label": "2025-07-07",
+    "average_intensity": 0.37377743569757954,
+    "dominant_emotion": "romantic",
+    "message_count": 2566
+  },
+  {
+    "period_start": "2025-07-14",
+    "period_label": "2025-07-14",
+    "average_intensity": 0.37428489383918867,
+    "dominant_emotion": "romantic",
+    "message_count": 2873
+  },
+  {
+    "period_start": "2025-07-21",
+    "period_label": "2025-07-21",
+    "average_intensity": 0.3742882963662079,
+    "dominant_emotion": "romantic",
+    "message_count": 2119
+  },
+  {
+    "period_start": "2025-07-28",
+    "period_label": "2025-07-28",
+    "average_intensity": 0.37173854707190745,
+    "dominant_emotion": "romantic",
+    "message_count": 1349
+  },
+  {
+    "period_start": "2025-08-04",
+    "period_label": "2025-08-04",
+    "average_intensity": 0.3709552161383275,
+    "dominant_emotion": "romantic",
+    "message_count": 1735
+  },
+  {
+    "period_start": "2025-08-11",
+    "period_label": "2025-08-11",
+    "average_intensity": 0.3688644582470678,
+    "dominant_emotion": "romantic",
+    "message_count": 1449
+  },
+  {
+    "period_start": "2025-08-18",
+    "period_label": "2025-08-18",
+    "average_intensity": 0.37012921079603284,
+    "dominant_emotion": "romantic",
+    "message_count": 2927
+  },
+  {
+    "period_start": "2025-08-25",
+    "period_label": "2025-08-25",
+    "average_intensity": 0.3686196721311453,
+    "dominant_emotion": "romantic",
+    "message_count": 1952
+  },
+  {
+    "period_start": "2025-09-01",
+    "period_label": "2025-09-01",
+    "average_intensity": 0.37025372866127665,
+    "dominant_emotion": "romantic",
+    "message_count": 1113
+  },
+  {
+    "period_start": "2025-09-08",
+    "period_label": "2025-09-08",
+    "average_intensity": 0.3676263609246785,
+    "dominant_emotion": "romantic",
+    "message_count": 2682
+  },
+  {
+    "period_start": "2025-09-15",
+    "period_label": "2025-09-15",
+    "average_intensity": 0.37090416473854404,
+    "dominant_emotion": "romantic",
+    "message_count": 2161
+  },
+  {
+    "period_start": "2025-09-22",
+    "period_label": "2025-09-22",
+    "average_intensity": 0.36937366034624547,
+    "dominant_emotion": "romantic",
+    "message_count": 2426
+  },
+  {
+    "period_start": "2025-09-29",
+    "period_label": "2025-09-29",
+    "average_intensity": 0.3743261287934809,
+    "dominant_emotion": "romantic",
+    "message_count": 2702
+  },
+  {
+    "period_start": "2025-10-06",
+    "period_label": "2025-10-06",
+    "average_intensity": 0.37156546324488615,
+    "dominant_emotion": "romantic",
+    "message_count": 2299
+  },
+  {
+    "period_start": "2025-10-13",
+    "period_label": "2025-10-13",
+    "average_intensity": 0.3712626312538603,
+    "dominant_emotion": "romantic",
+    "message_count": 1619
+  },
+  {
+    "period_start": "2025-10-20",
+    "period_label": "2025-10-20",
+    "average_intensity": 0.3727409691629941,
+    "dominant_emotion": "romantic",
+    "message_count": 1816
+  },
+  {
+    "period_start": "2025-10-27",
+    "period_label": "2025-10-27",
+    "average_intensity": 0.3708726114649689,
+    "dominant_emotion": "romantic",
+    "message_count": 1099
+  },
+  {
+    "period_start": "2025-11-03",
+    "period_label": "2025-11-03",
+    "average_intensity": 0.36793626373626387,
+    "dominant_emotion": "romantic",
+    "message_count": 1456
+  },
+  {
+    "period_start": "2025-11-10",
+    "period_label": "2025-11-10",
+    "average_intensity": 0.37075117565698174,
+    "dominant_emotion": "romantic",
+    "message_count": 2169
+  },
+  {
+    "period_start": "2025-11-17",
+    "period_label": "2025-11-17",
+    "average_intensity": 0.36628307379824127,
+    "dominant_emotion": "romantic",
+    "message_count": 1477
+  },
+  {
+    "period_start": "2025-11-24",
+    "period_label": "2025-11-24",
+    "average_intensity": 0.3664958880139995,
+    "dominant_emotion": "romantic",
+    "message_count": 1143
+  },
+  {
+    "period_start": "2025-12-01",
+    "period_label": "2025-12-01",
+    "average_intensity": 0.3605186813186813,
+    "dominant_emotion": "romantic",
+    "message_count": 91
+  },
+  {
+    "period_start": "2025-12-08",
+    "period_label": "2025-12-08",
+    "average_intensity": 0.37913766233766255,
+    "dominant_emotion": "romantic",
+    "message_count": 462
+  },
+  {
+    "period_start": "2025-12-15",
+    "period_label": "2025-12-15",
+    "average_intensity": 0.3663090909090909,
+    "dominant_emotion": "romantic",
+    "message_count": 33
+  },
+  {
+    "period_start": "2025-12-22",
+    "period_label": "2025-12-22",
+    "average_intensity": 0.37795764705882373,
+    "dominant_emotion": "romantic",
+    "message_count": 85
+  },
+  {
+    "period_start": "2025-12-29",
+    "period_label": "2025-12-29",
+    "average_intensity": 0.38761877256317673,
+    "dominant_emotion": "romantic",
+    "message_count": 554
+  },
+  {
+    "period_start": "2026-01-05",
+    "period_label": "2026-01-05",
+    "average_intensity": 0.3799200351493849,
+    "dominant_emotion": "romantic",
+    "message_count": 569
+  },
+  {
+    "period_start": "2026-01-12",
+    "period_label": "2026-01-12",
+    "average_intensity": 0.37240000000000045,
+    "dominant_emotion": "romantic",
+    "message_count": 425
+  },
+  {
+    "period_start": "2026-01-19",
+    "period_label": "2026-01-19",
+    "average_intensity": 0.3782664921465968,
+    "dominant_emotion": "romantic",
+    "message_count": 191
+  },
+  {
+    "period_start": "2026-02-02",
+    "period_label": "2026-02-02",
+    "average_intensity": 0.3684928251121078,
+    "dominant_emotion": "romantic",
+    "message_count": 223
+  },
+  {
+    "period_start": "2026-02-09",
+    "period_label": "2026-02-09",
+    "average_intensity": 0.3713316084788027,
+    "dominant_emotion": "romantic",
+    "message_count": 1604
+  },
+  {
+    "period_start": "2026-02-16",
+    "period_label": "2026-02-16",
+    "average_intensity": 0.375161047463175,
+    "dominant_emotion": "romantic",
+    "message_count": 611
+  },
+  {
+    "period_start": "2026-02-23",
+    "period_label": "2026-02-23",
+    "average_intensity": 0.3745140703517589,
+    "dominant_emotion": "romantic",
+    "message_count": 597
+  },
+  {
+    "period_start": "2026-03-02",
+    "period_label": "2026-03-02",
+    "average_intensity": 0.36953545232273877,
+    "dominant_emotion": "romantic",
+    "message_count": 409
+  },
+  {
+    "period_start": "2026-03-09",
+    "period_label": "2026-03-09",
+    "average_intensity": 0.37143986486486463,
+    "dominant_emotion": "romantic",
+    "message_count": 148
+  }
+]

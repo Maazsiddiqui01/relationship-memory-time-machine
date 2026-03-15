@@ -1,0 +1,451 @@
+{
+  "generated_at": "2026-03-15T19:55:42.723Z",
+  "intro": {
+    "title": "Relationship Memory Time Machine",
+    "subtitle": "A curated journey through Durriya and Maaz Siddiqui across messages, moods, and milestones.",
+    "time_span": "Jan 2023 to Mar 2026"
+  },
+  "headline_metrics": [
+    {
+      "label": "Messages shared",
+      "value": "271.1K",
+      "supporting_message_ids": [
+        "msg_0000008",
+        "msg_0000009",
+        "msg_0000010"
+      ]
+    },
+    {
+      "label": "Longest streak",
+      "value": "500 days",
+      "supporting_message_ids": [
+        "msg_0000008",
+        "msg_0000009",
+        "msg_0000010"
+      ]
+    },
+    {
+      "label": "Most active month",
+      "value": "2024-06 (39K)",
+      "supporting_message_ids": [
+        "msg_0027601",
+        "msg_0027602",
+        "msg_0027603"
+      ]
+    },
+    {
+      "label": "Late-night share",
+      "value": "27.3%",
+      "supporting_message_ids": [
+        "msg_0000008",
+        "msg_0000009",
+        "msg_0000010"
+      ]
+    }
+  ],
+  "selected_highlights": [
+    {
+      "highlight_id": "highlight_0029",
+      "message_id": "msg_0267332",
+      "timestamp_local": "2026-01-15T21:11:00",
+      "sender_id": "participant_02",
+      "sender_label": "Maaz Siddiqui",
+      "quote": "Please forgive me for anything, any harm that I caused because of my words or actions. I'm genuinely sorry for anything and wish u nothing but the best. Take care and Allah Hafiz❤️",
+      "emotion_label": "supportive",
+      "archetype_tags": [
+        "repair_reconnection"
+      ],
+      "topic_tags": [
+        "difficult_conversation",
+        "relationship",
+        "support"
+      ],
+      "importance_score": 1,
+      "narrative_segment_id": "segment_0081",
+      "chapter_id": "chapter_006"
+    },
+    {
+      "highlight_id": "highlight_0045",
+      "message_id": "msg_0173643",
+      "timestamp_local": "2025-02-15T10:47:00",
+      "sender_id": "participant_02",
+      "sender_label": "Maaz Siddiqui",
+      "quote": "But I think it'll be late because mama has some stops to make and she wants to leave earlier :( Is it possible to go by yourself 🥺 I'd have loved to come but I think time is very short",
+      "emotion_label": "romantic",
+      "archetype_tags": [
+        "affection",
+        "conflict"
+      ],
+      "topic_tags": [
+        "relationship"
+      ],
+      "importance_score": 0.9584,
+      "narrative_segment_id": "segment_0029",
+      "chapter_id": "chapter_004"
+    },
+    {
+      "highlight_id": "highlight_0059",
+      "message_id": "msg_0195865",
+      "timestamp_local": "2025-04-26T13:41:00",
+      "sender_id": "participant_01",
+      "sender_label": "Durriya",
+      "quote": "one would assume ud pamper ur girl while shes on her period but yahan toh apse reply nai arha apparently ur too lazy u dont wanna talk u dont wann meet udc if im not replying properly or trying to tell if im upset",
+      "emotion_label": "conflict",
+      "archetype_tags": [
+        "conflict",
+        "planning"
+      ],
+      "topic_tags": [
+        "difficult_conversation",
+        "future_plans"
+      ],
+      "importance_score": 0.9404,
+      "narrative_segment_id": "segment_0034",
+      "chapter_id": "chapter_005"
+    }
+  ],
+  "milestone_previews": [
+    {
+      "milestone_id": "milestone_0001",
+      "milestone_type": "support",
+      "title": "A Strong Support Moment",
+      "summary": "A Strong Support Moment around May 16, 2024 with supportive tone and Everyday Life energy.",
+      "start_timestamp": "2024-05-16T22:52:00",
+      "end_timestamp": "2024-05-16T22:52:00",
+      "message_ids": [
+        "msg_0009495"
+      ],
+      "representative_quote": "Helloo Durr, ik your exams are tomorrow and you'd be super busy but i just wanted to drop a quick message to say how awesome you are for getting this far in the finals prep, seriously, your dedication is no joke, and I'm super proud of you! I know exams can be soo stressful specially when u have two in one day, but hey, you've totally got this, take a breather when you need it, okay? keep taking breaks and don't forget to keep telling urself u r proud. I'm sure you'll be balancing both subjects with perfection! Don't forget to take short breaks. netflix, snacks, texting—anything that makes you smile, you've aced prep, and you know your stuff, keep taking care of yourself and treat urself to nice food and sleep your brain deserves the full VIP setup. PROM bhi nikal jayega easily IA and Arabic like your baby. Please Please sleep early as your exam is early morning. Your mind needs to be well rested so you can ace both the exams back to back. It's gonna be challenging but my Durr is a warrior and she'll overcome anything!🩷 Also, if you need a study break buddy or just wanna vent, i'm here, you're not in this alone! You're going to crush it IA 🫶🏻 يا حبي، سوف تقوم بعمل رائع في امتحاناتك غدًا، لقد حصلت على هذا!",
+      "narrative_segment_id": "segment_0008",
+      "chapter_id": "chapter_001",
+      "importance_score": 1
+    },
+    {
+      "milestone_id": "milestone_0002",
+      "milestone_type": "support",
+      "title": "A Strong Support Moment",
+      "summary": "A Strong Support Moment around May 27, 2024 with supportive tone and Affection energy.",
+      "start_timestamp": "2024-05-27T18:35:00",
+      "end_timestamp": "2024-05-27T18:35:00",
+      "message_ids": [
+        "msg_0021499"
+      ],
+      "representative_quote": "Hi guys, as the semester has officially ended, I just wanted to extend a heartfelt congratulations to each and every one of you on making it through! This semester must have been hard with courses like FM, but your unwavering dedication helped you through. I am super glad that I took this opportunity to be your TA (honestly, I said no once to NJA already but reconsidered). You all are a bunch of wonderful souls, and I'd never forget when you all celebrated my birthday and gave me those cute chits🫶🏻 I hope I was able to, in some way, make some impact in your lives. Many of you would have just 2 years left in IBA. While grades and parhayee do matter, remember to make *MEMORIES* and live every moment to the fulleet because you're not going to get this time back. Lots of amazing things to come your way, so make sure to grab every opportunity and avail them to the fullest! Also now for some real talk bas ab semester poora houne wala hai, idk how it was for you guys but it was absolutely amazing for me and I wish it never ended but here we are :( But the point i’m trying to make here is, most of u have 2 years left in uni; make the most of them! Also enjoy your summer vacations too as third year mein aakar itni unnecessary stress hai; you start thinking about your future ke internship kahan karni hai job kahan karni hai generally future ka kya hona hai and pata nahi kya kya. And I hope you guys remember that whatever happens, it’s always always always for your betterment Here are a few things i’ve learnt this year, and i kind of want you all to know: - God’s plan is always better. It’s always a good idea to accept and adapt rather than whine about how things are - If you really want something to happen, you pray for it, and you work for it. Never let anyone tell you, you can't do something because u can! - You do not get the results you want if you are not putting in the hours consistently. So, while it may seem cliché you need to be dedicated. Things aren't always gifted in a plate. - Sometimes, things do not seem good at the surface level, but everything always turns out okay, let it be grades or anything else. Don't worry about them and just give your best. There are things you can control and things you can't. Always focus on things you CAN control. - Your nature and manners are the most important thing you have. People will always remember the respect you give them the most, and they'll also reciprocate. - Make sure you have your priorities straight and your goals aligned - If anything goes wrong, always pray. prayer is key to success and your efforts serve as a roadmap in achieving that success. Take care of yourself!🥺 it’s completely okay if you don’t get the grade you want, bas ye course nikal gaya bari baat hai tbh. Keep working hard, IA sab ki GPA raise hougi and agar nahi hui tou next semester hai na; aag laga dena sab🥰 After the final marks come, it’s unlikely that we will interact related to FM again. But in future if you're ever in need of any support or guidance or you find yourself at some crossroads in life, i’m always here and always a dm away, please never hesitate🫶🏻 Love and prayers for you all! Your fav TA",
+      "narrative_segment_id": "segment_0010",
+      "chapter_id": "chapter_001",
+      "importance_score": 1
+    },
+    {
+      "milestone_id": "milestone_0003",
+      "milestone_type": "conflict",
+      "title": "A Tense Exchange",
+      "summary": "A Tense Exchange around Jun 28, 2024 with romantic tone and Affection energy.",
+      "start_timestamp": "2024-06-28T03:10:00",
+      "end_timestamp": "2024-06-28T03:10:00",
+      "message_ids": [
+        "msg_0064211"
+      ],
+      "representative_quote": "hi maazu, j before sleeping i was thinking abt how u cover up when u might be upset or having an off day, yet you're always there for me <3 ap bologe ap nai chuppate lekin bS 🙄🙄🙄 j want u to know that i love u so much words cant describe but also that i 100% believe in u and every single day im in awe and inspired by ur sabr and unconditional kindness, you're a wonderful and incredibly talented person allahuma barik dont ever doubt this 💗 you're going to achieve so much in life inshallah and ill be there w u for all of it 🥰 apki har baat mere liye behadh precious tareen hai and i appreciate u a lot n honestly i wish it was possible to show u just how much i cherish u 🙁❤️ mere words are not enough <3 but i hope it'll give u an idea :) khair,, never lose ur optimism, i adore it to bits 😚 hope youre sleeping welllll, ilysm 💗",
+      "narrative_segment_id": "segment_0012",
+      "chapter_id": "chapter_002",
+      "importance_score": 1
+    },
+    {
+      "milestone_id": "milestone_0004",
+      "milestone_type": "repair",
+      "title": "A Return to Warmth",
+      "summary": "A Return to Warmth around Jul 3, 2024 with romantic tone and Affection energy.",
+      "start_timestamp": "2024-07-03T03:53:00",
+      "end_timestamp": "2024-07-03T03:53:00",
+      "message_ids": [
+        "msg_0067880"
+      ],
+      "representative_quote": "To the girl on whom my happiness depends, With love that never ends. You light up my life with your cute ways, And fill my heart with love and grace. Every day, I will want you to know, You mean the world to me, and my love will continue to grow. I am so grateful for our bond true, Here's wishing all our dreams come true. Have the third day as wonderful as you, Filled with love, laughter and all good things too🥰 I am sorry I got rude and got you hurt,🥺 Should have been shameless and rather flirt Never meant to make you sad, Because your love is all I'm fed 💓 You'll always be the one I love🥺 Always my cuto baby shining like a dove✨️ Just want to wish you a pleasant day Allah bless you forever, I pray! ❤ (Just wanted to write for you because i love you so much and I just wanted you to know that you're just toooooo important for me🥺❤️ and I couldn't sleep thinking about you)",
+      "narrative_segment_id": "segment_0013",
+      "chapter_id": "chapter_002",
+      "importance_score": 1
+    }
+  ],
+  "chapter_previews": [
+    {
+      "chapter_id": "chapter_001",
+      "slug": "chapter-01-everyday-gravity",
+      "title": "Everyday Gravity",
+      "summary": "Everyday Gravity leans romantic with Everyday Life and Difficult Conversation shaping the phase.",
+      "start_timestamp": "2023-01-23T20:02:00",
+      "end_timestamp": "2024-06-13T01:51:00",
+      "narrative_segment_ids": [
+        "segment_0001",
+        "segment_0002",
+        "segment_0003",
+        "segment_0004",
+        "segment_0005",
+        "segment_0006",
+        "segment_0007",
+        "segment_0008",
+        "segment_0009",
+        "segment_0010"
+      ],
+      "milestone_ids": [
+        "milestone_0001",
+        "milestone_0002"
+      ],
+      "highlight_ids": [
+        "highlight_0001",
+        "highlight_0002",
+        "highlight_0003",
+        "highlight_0031"
+      ],
+      "dominant_emotion": "romantic",
+      "dominant_topics": [
+        "difficult_conversation",
+        "daily_life",
+        "relationship"
+      ],
+      "dominant_archetypes": [
+        "everyday_life",
+        "affection",
+        "humor_banter"
+      ],
+      "message_count": 48805
+    },
+    {
+      "chapter_id": "chapter_002",
+      "slug": "chapter-02-ordinary-days-real-closeness",
+      "title": "Ordinary Days, Real Closeness",
+      "summary": "Ordinary Days, Real Closeness leans romantic with Everyday Life and Daily Life shaping the phase.",
+      "start_timestamp": "2024-06-13T09:17:00",
+      "end_timestamp": "2024-08-05T22:36:00",
+      "narrative_segment_ids": [
+        "segment_0011",
+        "segment_0012",
+        "segment_0013",
+        "segment_0014"
+      ],
+      "milestone_ids": [
+        "milestone_0003",
+        "milestone_0004",
+        "milestone_0005"
+      ],
+      "highlight_ids": [
+        "highlight_0004",
+        "highlight_0005",
+        "highlight_0006",
+        "highlight_0007",
+        "highlight_0054",
+        "highlight_0055",
+        "highlight_0056",
+        "highlight_0057"
+      ],
+      "dominant_emotion": "romantic",
+      "dominant_topics": [
+        "daily_life",
+        "relationship",
+        "humor"
+      ],
+      "dominant_archetypes": [
+        "everyday_life",
+        "humor_banter",
+        "affection"
+      ],
+      "message_count": 45292
+    },
+    {
+      "chapter_id": "chapter_003",
+      "slug": "chapter-03-shared-routine",
+      "title": "Shared Routine",
+      "summary": "Shared Routine leans romantic with Everyday Life and Daily Life shaping the phase.",
+      "start_timestamp": "2024-08-06T05:35:00",
+      "end_timestamp": "2024-11-23T00:44:00",
+      "narrative_segment_ids": [
+        "segment_0015",
+        "segment_0016",
+        "segment_0017",
+        "segment_0018",
+        "segment_0019",
+        "segment_0020",
+        "segment_0021"
+      ],
+      "milestone_ids": [
+        "milestone_0006",
+        "milestone_0007",
+        "milestone_0021",
+        "milestone_0022"
+      ],
+      "highlight_ids": [
+        "highlight_0008",
+        "highlight_0009",
+        "highlight_0010",
+        "highlight_0011",
+        "highlight_0012",
+        "highlight_0035",
+        "highlight_0036",
+        "highlight_0047"
+      ],
+      "dominant_emotion": "romantic",
+      "dominant_topics": [
+        "daily_life",
+        "relationship",
+        "humor"
+      ],
+      "dominant_archetypes": [
+        "everyday_life",
+        "humor_banter",
+        "affection"
+      ],
+      "message_count": 53371
+    },
+    {
+      "chapter_id": "chapter_004",
+      "slug": "chapter-04-everyday-gravity",
+      "title": "Everyday Gravity",
+      "summary": "Everyday Gravity leans romantic with Everyday Life and Daily Life shaping the phase.",
+      "start_timestamp": "2024-11-23T07:10:00",
+      "end_timestamp": "2025-04-25T00:29:00",
+      "narrative_segment_ids": [
+        "segment_0022",
+        "segment_0023",
+        "segment_0024",
+        "segment_0025",
+        "segment_0026",
+        "segment_0027",
+        "segment_0028",
+        "segment_0029",
+        "segment_0030",
+        "segment_0031",
+        "segment_0032",
+        "segment_0033"
+      ],
+      "milestone_ids": [
+        "milestone_0008",
+        "milestone_0009",
+        "milestone_0010"
+      ],
+      "highlight_ids": [
+        "highlight_0013",
+        "highlight_0014",
+        "highlight_0015",
+        "highlight_0016",
+        "highlight_0032",
+        "highlight_0037",
+        "highlight_0042",
+        "highlight_0043"
+      ],
+      "dominant_emotion": "romantic",
+      "dominant_topics": [
+        "daily_life",
+        "relationship",
+        "humor"
+      ],
+      "dominant_archetypes": [
+        "everyday_life",
+        "affection",
+        "humor_banter"
+      ],
+      "message_count": 48130
+    },
+    {
+      "chapter_id": "chapter_005",
+      "slug": "chapter-05-ordinary-days-real-closeness",
+      "title": "Ordinary Days, Real Closeness",
+      "summary": "Ordinary Days, Real Closeness leans romantic with Everyday Life and Daily Life shaping the phase.",
+      "start_timestamp": "2025-04-25T07:01:00",
+      "end_timestamp": "2025-09-02T19:41:00",
+      "narrative_segment_ids": [
+        "segment_0034",
+        "segment_0035",
+        "segment_0036",
+        "segment_0037",
+        "segment_0038",
+        "segment_0039",
+        "segment_0040",
+        "segment_0041",
+        "segment_0042",
+        "segment_0043",
+        "segment_0044",
+        "segment_0045",
+        "segment_0046",
+        "segment_0047",
+        "segment_0048",
+        "segment_0049",
+        "segment_0050",
+        "segment_0051",
+        "segment_0052",
+        "segment_0053"
+      ],
+      "milestone_ids": [
+        "milestone_0011",
+        "milestone_0012",
+        "milestone_0013",
+        "milestone_0014",
+        "milestone_0015"
+      ],
+      "highlight_ids": [
+        "highlight_0017",
+        "highlight_0018",
+        "highlight_0019",
+        "highlight_0020",
+        "highlight_0021",
+        "highlight_0022",
+        "highlight_0023",
+        "highlight_0024"
+      ],
+      "dominant_emotion": "romantic",
+      "dominant_topics": [
+        "daily_life",
+        "relationship",
+        "humor"
+      ],
+      "dominant_archetypes": [
+        "everyday_life",
+        "affection",
+        "humor_banter"
+      ],
+      "message_count": 45575
+    }
+  ],
+  "emotional_arc_summary": {
+    "opening_tone": "romantic",
+    "midpoint_tone": "romantic",
+    "closing_tone": "romantic",
+    "peak_period": "2024-04-29"
+  },
+  "signature_spotlights": [
+    {
+      "label": "Messages shared",
+      "value": "271.1K",
+      "supporting_message_ids": [
+        "msg_0000008",
+        "msg_0000009",
+        "msg_0000010"
+      ]
+    },
+    {
+      "label": "Longest streak",
+      "value": "500 days",
+      "supporting_message_ids": [
+        "msg_0000008",
+        "msg_0000009",
+        "msg_0000010"
+      ]
+    },
+    {
+      "label": "Most active month",
+      "value": "2024-06 (39K)",
+      "supporting_message_ids": [
+        "msg_0027601",
+        "msg_0027602",
+        "msg_0027603"
+      ]
+    },
+    {
+      "label": "Late-night share",
+      "value": "27.3%",
+      "supporting_message_ids": [
+        "msg_0000008",
+        "msg_0000009",
+        "msg_0000010"
+      ]
+    }
+  ]
+}

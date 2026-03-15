@@ -1,0 +1,14 @@
+[
+  {
+    "participant_id": "participant_01",
+    "label": "Durriya",
+    "message_count": 123823,
+    "first_message_id": "msg_0000008"
+  },
+  {
+    "participant_id": "participant_02",
+    "label": "Maaz Siddiqui",
+    "message_count": 147305,
+    "first_message_id": "msg_0000009"
+  }
+]

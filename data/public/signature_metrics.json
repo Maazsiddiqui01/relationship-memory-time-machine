@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-03-15T19:55:40.678Z",
+  "headline": {
+    "total_messages": 271128,
+    "average_daily_messages": 429.68,
+    "longest_daily_streak": 500,
+    "most_active_day": {
+      "day_key": "2024-06-09",
+      "count": 3448
+    },
+    "most_active_month": {
+      "month_key": "2024-06",
+      "count": 39038
+    },
+    "longest_technical_session": {
+      "technical_session_id": "tech_0026",
+      "message_count": 24916
+    },
+    "late_night_percentage": 27.29,
+    "support_moments_count": 1657,
+    "conflict_repair_cycles": 2
+  },
+  "participant_reply_gaps": [
+    {
+      "participant_id": "participant_01",
+      "label": "Durriya",
+      "average_reply_gap_minutes": 7.89
+    },
+    {
+      "participant_id": "participant_02",
+      "label": "Maaz Siddiqui",
+      "average_reply_gap_minutes": 6.63
+    }
+  ],
+  "chapter_tones": [
+    {
+      "chapter_id": "chapter_001",
+      "title": "Everyday Gravity",
+      "dominant_emotion": "romantic"
+    },
+    {
+      "chapter_id": "chapter_002",
+      "title": "Ordinary Days, Real Closeness",
+      "dominant_emotion": "romantic"
+    },
+    {
+      "chapter_id": "chapter_003",
+      "title": "Shared Routine",
+      "dominant_emotion": "romantic"
+    },
+    {
+      "chapter_id": "chapter_004",
+      "title": "Everyday Gravity",
+      "dominant_emotion": "romantic"
+    },
+    {
+      "chapter_id": "chapter_005",
+      "title": "Ordinary Days, Real Closeness",
+      "dominant_emotion": "romantic"
+    },
+    {
+      "chapter_id": "chapter_006",
+      "title": "Shared Routine",
+      "dominant_emotion": "romantic"
+    }
+  ],
+  "story_spotlights": [
+    {
+      "label": "Messages shared",
+      "value": "271.1K",
+      "supporting_message_ids": [
+        "msg_0000008",
+        "msg_0000009",
+        "msg_0000010"
+      ]
+    },
+    {
+      "label": "Longest streak",
+      "value": "500 days",
+      "supporting_message_ids": [
+        "msg_0000008",
+        "msg_0000009",
+        "msg_0000010"
+      ]
+    },
+    {
+      "label": "Most active month",
+      "value": "2024-06 (39K)",
+      "supporting_message_ids": [
+        "msg_0027601",
+        "msg_0027602",
+        "msg_0027603"
+      ]
+    },
+    {
+      "label": "Late-night share",
+      "value": "27.3%",
+      "supporting_message_ids": [
+        "msg_0000008",
+        "msg_0000009",
+        "msg_0000010"
+      ]
+    }
+  ]
+}

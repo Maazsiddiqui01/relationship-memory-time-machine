@@ -1,0 +1,200 @@
+[
+  {
+    "topic_id": "topic_0001",
+    "label": "daily_life",
+    "count": 234168,
+    "representative_message_ids": [
+      "msg_0000007",
+      "msg_0000009",
+      "msg_0000010",
+      "msg_0000011",
+      "msg_0000012",
+      "msg_0000013",
+      "msg_0000014",
+      "msg_0000016"
+    ],
+    "representative_quotes": [
+      "Durriya is a contact",
+      "No more deadline extension kid",
+      "pretty pls?",
+      "<Media omitted>",
+      "Flattery hmm"
+    ]
+  },
+  {
+    "topic_id": "topic_0002",
+    "label": "relationship",
+    "count": 21181,
+    "representative_message_ids": [
+      "msg_0000022",
+      "msg_0000028",
+      "msg_0000044",
+      "msg_0000068",
+      "msg_0000091",
+      "msg_0000124",
+      "msg_0000126",
+      "msg_0000127"
+    ],
+    "representative_quotes": [
+      "Ofcourse they'd die for me if I say, they love me so much. So I was like I'd do u a favor you'd me too",
+      "See using all the brain ;)",
+      "altho mere group mein 2 ya 3 IBA ke log thay just by luck",
+      "wou kaam ek hi member pr chordiya hai he loves doing it",
+      "It just feels like a work of art"
+    ]
+  },
+  {
+    "topic_id": "topic_0003",
+    "label": "humor",
+    "count": 8975,
+    "representative_message_ids": [
+      "msg_0000015",
+      "msg_0000050",
+      "msg_0000079",
+      "msg_0000099",
+      "msg_0000155",
+      "msg_0000158",
+      "msg_0000166",
+      "msg_0000176"
+    ],
+    "representative_quotes": [
+      "HHAHAHA",
+      "HAHAHHA shutup",
+      "HAHAHA",
+      "HAHAHHAHA thank uuuu",
+      "HAHAHHAHAHA"
+    ]
+  },
+  {
+    "topic_id": "topic_0004",
+    "label": "study_work",
+    "count": 3785,
+    "representative_message_ids": [
+      "msg_0000008",
+      "msg_0000091",
+      "msg_0000107",
+      "msg_0000227",
+      "msg_0000264",
+      "msg_0000266",
+      "msg_0000273",
+      "msg_0000499"
+    ],
+    "representative_quotes": [
+      "fm student here erp 35682, pls marks barhado mere",
+      "It just feels like a work of art",
+      "This was the one I worked for hours",
+      "It's gonna be your first driving class",
+      "We can do aram se kal parson too, you'd be tired and have class too"
+    ]
+  },
+  {
+    "topic_id": "topic_0005",
+    "label": "future_plans",
+    "count": 3417,
+    "representative_message_ids": [
+      "msg_0000136",
+      "msg_0000181",
+      "msg_0000230",
+      "msg_0000250",
+      "msg_0000303",
+      "msg_0000536",
+      "msg_0000756",
+      "msg_0000805"
+    ],
+    "representative_quotes": [
+      "Oh yes you've a presentation tomorrow!!",
+      "plants wali?",
+      "I see, same usually. My schedule is TT and FS",
+      "oki oki kuch na khch plan ho hi jayega",
+      "Oh yes I meant see you tomorrow"
+    ]
+  },
+  {
+    "topic_id": "topic_0006",
+    "label": "difficult_conversation",
+    "count": 2118,
+    "representative_message_ids": [
+      "msg_0000001",
+      "msg_0000002",
+      "msg_0000003",
+      "msg_0000004",
+      "msg_0000005",
+      "msg_0000006",
+      "msg_0000577",
+      "msg_0000687"
+    ],
+    "representative_quotes": [
+      "Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them. *Learn more*.",
+      "Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them. *Learn more*.",
+      "Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them. *Learn more*.",
+      "Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them. *Learn more*.",
+      "Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them. *Learn more*."
+    ]
+  },
+  {
+    "topic_id": "topic_0007",
+    "label": "support",
+    "count": 1724,
+    "representative_message_ids": [
+      "msg_0000032",
+      "msg_0000140",
+      "msg_0000460",
+      "msg_0000879",
+      "msg_0001027",
+      "msg_0001036",
+      "msg_0001377",
+      "msg_0001539"
+    ],
+    "representative_quotes": [
+      "GOOD LUCK!!!",
+      "Goodnight then, take careee",
+      "aw good luck IA ull learnnn<333",
+      "must be proud father",
+      "And we are PTI (I hope you are PTI supporter please please)"
+    ]
+  },
+  {
+    "topic_id": "topic_0008",
+    "label": "travel",
+    "count": 671,
+    "representative_message_ids": [
+      "msg_0000300",
+      "msg_0000805",
+      "msg_0001578",
+      "msg_0001592",
+      "msg_0003249",
+      "msg_0003252",
+      "msg_0003258",
+      "msg_0003261"
+    ],
+    "representative_quotes": [
+      "Ooo okay okay safe travels",
+      "he said uske liyw toh paid thi trip",
+      "yes aur fri ko field trip bhi",
+      "Oh but chalo fun trip",
+      "i guess i am not going to my field trip tmrw"
+    ]
+  },
+  {
+    "topic_id": "topic_0009",
+    "label": "longing",
+    "count": 310,
+    "representative_message_ids": [
+      "msg_0003367",
+      "msg_0012552",
+      "msg_0018684",
+      "msg_0019322",
+      "msg_0024301",
+      "msg_0027174",
+      "msg_0034705",
+      "msg_0035483"
+    ],
+    "representative_quotes": [
+      "So I came across and you were at a distance",
+      "Gonna miss you more when I'll go campus",
+      "Will miss you",
+      "I miss you every day",
+      "I wish you were there too"
+    ]
+  }
+]

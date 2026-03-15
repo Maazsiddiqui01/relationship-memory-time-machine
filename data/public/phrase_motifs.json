@@ -1,0 +1,682 @@
+[
+  {
+    "motif_id": "motif_0001",
+    "label": "Yes baby",
+    "normalized_phrase": "yes baby",
+    "count": 1364,
+    "representative_message_ids": [
+      "msg_0064592",
+      "msg_0065471",
+      "msg_0066506",
+      "msg_0068103",
+      "msg_0068384",
+      "msg_0068826",
+      "msg_0068899",
+      "msg_0069004"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0002",
+    "label": "Okay baby",
+    "normalized_phrase": "okay baby",
+    "count": 1195,
+    "representative_message_ids": [
+      "msg_0064429",
+      "msg_0064666",
+      "msg_0065123",
+      "msg_0066315",
+      "msg_0067167",
+      "msg_0067281",
+      "msg_0068237",
+      "msg_0068292"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0003",
+    "label": "Love you",
+    "normalized_phrase": "love you",
+    "count": 639,
+    "representative_message_ids": [
+      "msg_0045674",
+      "msg_0047635",
+      "msg_0050988",
+      "msg_0051087",
+      "msg_0052686",
+      "msg_0052717",
+      "msg_0053259",
+      "msg_0055076"
+    ],
+    "archetype_hint": "affection"
+  },
+  {
+    "motif_id": "motif_0004",
+    "label": "Hi baby",
+    "normalized_phrase": "hi baby",
+    "count": 487,
+    "representative_message_ids": [
+      "msg_0064257",
+      "msg_0064680",
+      "msg_0065461",
+      "msg_0065462",
+      "msg_0066045",
+      "msg_0068726",
+      "msg_0070722",
+      "msg_0070723"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0005",
+    "label": "Good morning baby",
+    "normalized_phrase": "good morning baby",
+    "count": 474,
+    "representative_message_ids": [
+      "msg_0066195",
+      "msg_0066671",
+      "msg_0068390",
+      "msg_0068411",
+      "msg_0069216",
+      "msg_0070966",
+      "msg_0075444",
+      "msg_0082088"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0006",
+    "label": "Love you more",
+    "normalized_phrase": "love you more",
+    "count": 471,
+    "representative_message_ids": [
+      "msg_0051088",
+      "msg_0052362",
+      "msg_0052687",
+      "msg_0052719",
+      "msg_0054413",
+      "msg_0057618",
+      "msg_0059337",
+      "msg_0059830"
+    ],
+    "archetype_hint": "affection"
+  },
+  {
+    "motif_id": "motif_0007",
+    "label": "Goodnight baby",
+    "normalized_phrase": "goodnight baby",
+    "count": 355,
+    "representative_message_ids": [
+      "msg_0064205",
+      "msg_0065313",
+      "msg_0065370",
+      "msg_0065380",
+      "msg_0066189",
+      "msg_0066655",
+      "msg_0066666",
+      "msg_0067857"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0008",
+    "label": "Thank you",
+    "normalized_phrase": "thank you",
+    "count": 343,
+    "representative_message_ids": [
+      "msg_0002272",
+      "msg_0013374",
+      "msg_0017543",
+      "msg_0019721",
+      "msg_0024408",
+      "msg_0031259",
+      "msg_0032548",
+      "msg_0033765"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0009",
+    "label": "Allah hafiz",
+    "normalized_phrase": "allah hafiz",
+    "count": 329,
+    "representative_message_ids": [
+      "msg_0000142",
+      "msg_0002066",
+      "msg_0002492",
+      "msg_0002494",
+      "msg_0005251",
+      "msg_0007083",
+      "msg_0008096",
+      "msg_0008155"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0010",
+    "label": "Uh oh",
+    "normalized_phrase": "uh oh",
+    "count": 291,
+    "representative_message_ids": [
+      "msg_0000858",
+      "msg_0001762",
+      "msg_0003659",
+      "msg_0004263",
+      "msg_0005015",
+      "msg_0005398",
+      "msg_0005808",
+      "msg_0006617"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0011",
+    "label": "Good morning",
+    "normalized_phrase": "good morning",
+    "count": 262,
+    "representative_message_ids": [
+      "msg_0003374",
+      "msg_0005255",
+      "msg_0007088",
+      "msg_0008157",
+      "msg_0009112",
+      "msg_0012234",
+      "msg_0014283",
+      "msg_0014284"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0012",
+    "label": "Thank baby",
+    "normalized_phrase": "thank baby",
+    "count": 239,
+    "representative_message_ids": [
+      "msg_0064963",
+      "msg_0066293",
+      "msg_0067428",
+      "msg_0069122",
+      "msg_0070557",
+      "msg_0070913",
+      "msg_0076443",
+      "msg_0076923"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0013",
+    "label": "Take care",
+    "normalized_phrase": "take care",
+    "count": 231,
+    "representative_message_ids": [
+      "msg_0003620",
+      "msg_0008095",
+      "msg_0010645",
+      "msg_0012170",
+      "msg_0017437",
+      "msg_0018571",
+      "msg_0019079",
+      "msg_0019652"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0014",
+    "label": "Thank you baby",
+    "normalized_phrase": "thank you baby",
+    "count": 199,
+    "representative_message_ids": [
+      "msg_0066218",
+      "msg_0066524",
+      "msg_0066709",
+      "msg_0068344",
+      "msg_0068746",
+      "msg_0069509",
+      "msg_0076468",
+      "msg_0077585"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0015",
+    "label": "Oh no",
+    "normalized_phrase": "oh no",
+    "count": 198,
+    "representative_message_ids": [
+      "msg_0000667",
+      "msg_0000691",
+      "msg_0002770",
+      "msg_0004544",
+      "msg_0019631",
+      "msg_0021220",
+      "msg_0023680",
+      "msg_0027814"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0016",
+    "label": "No baby",
+    "normalized_phrase": "no baby",
+    "count": 189,
+    "representative_message_ids": [
+      "msg_0067438",
+      "msg_0068612",
+      "msg_0069087",
+      "msg_0069602",
+      "msg_0070422",
+      "msg_0070840",
+      "msg_0071645",
+      "msg_0074464"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0017",
+    "label": "Bye baby",
+    "normalized_phrase": "bye baby",
+    "count": 184,
+    "representative_message_ids": [
+      "msg_0065356",
+      "msg_0067550",
+      "msg_0068013",
+      "msg_0070028",
+      "msg_0070031",
+      "msg_0070560",
+      "msg_0072503",
+      "msg_0073261"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0018",
+    "label": "Oks baby",
+    "normalized_phrase": "oks baby",
+    "count": 160,
+    "representative_message_ids": [
+      "msg_0104385",
+      "msg_0105969",
+      "msg_0109091",
+      "msg_0110950",
+      "msg_0136950",
+      "msg_0137564",
+      "msg_0137909",
+      "msg_0139277"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0019",
+    "label": "Oh yes",
+    "normalized_phrase": "oh yes",
+    "count": 147,
+    "representative_message_ids": [
+      "msg_0000688",
+      "msg_0001557",
+      "msg_0002020",
+      "msg_0002499",
+      "msg_0002557",
+      "msg_0003133",
+      "msg_0003963",
+      "msg_0004226"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0020",
+    "label": "Ah baby",
+    "normalized_phrase": "ah baby",
+    "count": 146,
+    "representative_message_ids": [
+      "msg_0065998",
+      "msg_0066109",
+      "msg_0075926",
+      "msg_0099805",
+      "msg_0121066",
+      "msg_0121320",
+      "msg_0128124",
+      "msg_0132763"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0021",
+    "label": "Too baby",
+    "normalized_phrase": "too baby",
+    "count": 146,
+    "representative_message_ids": [
+      "msg_0076871",
+      "msg_0088857",
+      "msg_0091746",
+      "msg_0092253",
+      "msg_0101432",
+      "msg_0102040",
+      "msg_0106656",
+      "msg_0113840"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0022",
+    "label": "Miss more",
+    "normalized_phrase": "miss more",
+    "count": 143,
+    "representative_message_ids": [
+      "msg_0008242",
+      "msg_0013108",
+      "msg_0020184",
+      "msg_0021304",
+      "msg_0027823",
+      "msg_0030939",
+      "msg_0032087",
+      "msg_0048574"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0023",
+    "label": "No worries",
+    "normalized_phrase": "no worries",
+    "count": 142,
+    "representative_message_ids": [
+      "msg_0000963",
+      "msg_0004412",
+      "msg_0006946",
+      "msg_0009538",
+      "msg_0011355",
+      "msg_0011447",
+      "msg_0014335",
+      "msg_0021094"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0024",
+    "label": "Love you more baby",
+    "normalized_phrase": "love you more baby",
+    "count": 138,
+    "representative_message_ids": [
+      "msg_0066153",
+      "msg_0066205",
+      "msg_0070458",
+      "msg_0072482",
+      "msg_0082293",
+      "msg_0083946",
+      "msg_0090364",
+      "msg_0092713"
+    ],
+    "archetype_hint": "affection"
+  },
+  {
+    "motif_id": "motif_0025",
+    "label": "Love you so much",
+    "normalized_phrase": "love you so much",
+    "count": 135,
+    "representative_message_ids": [
+      "msg_0052908",
+      "msg_0058331",
+      "msg_0067883",
+      "msg_0074222",
+      "msg_0076477",
+      "msg_0076976",
+      "msg_0085040",
+      "msg_0096639"
+    ],
+    "archetype_hint": "affection"
+  },
+  {
+    "motif_id": "motif_0026",
+    "label": "Miss more baby",
+    "normalized_phrase": "miss more baby",
+    "count": 135,
+    "representative_message_ids": [
+      "msg_0067134",
+      "msg_0068484",
+      "msg_0070136",
+      "msg_0080460",
+      "msg_0084445",
+      "msg_0085859",
+      "msg_0086534",
+      "msg_0091442"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0027",
+    "label": "Aww baby",
+    "normalized_phrase": "aww baby",
+    "count": 131,
+    "representative_message_ids": [
+      "msg_0065141",
+      "msg_0068172",
+      "msg_0069810",
+      "msg_0070150",
+      "msg_0075600",
+      "msg_0078122",
+      "msg_0078806",
+      "msg_0087539"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0028",
+    "label": "Hey baby",
+    "normalized_phrase": "hey baby",
+    "count": 131,
+    "representative_message_ids": [
+      "msg_0074338",
+      "msg_0084963",
+      "msg_0088944",
+      "msg_0091607",
+      "msg_0098896",
+      "msg_0099542",
+      "msg_0103589",
+      "msg_0107585"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0029",
+    "label": "Leaving now",
+    "normalized_phrase": "leaving now",
+    "count": 125,
+    "representative_message_ids": [
+      "msg_0055714",
+      "msg_0057178",
+      "msg_0058941",
+      "msg_0058950",
+      "msg_0059005",
+      "msg_0059045",
+      "msg_0062915",
+      "msg_0079801"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0030",
+    "label": "My baby",
+    "normalized_phrase": "my baby",
+    "count": 121,
+    "representative_message_ids": [
+      "msg_0066108",
+      "msg_0066137",
+      "msg_0066624",
+      "msg_0067532",
+      "msg_0067847",
+      "msg_0069177",
+      "msg_0075260",
+      "msg_0079000"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0031",
+    "label": "Oh okay",
+    "normalized_phrase": "oh okay",
+    "count": 120,
+    "representative_message_ids": [
+      "msg_0002127",
+      "msg_0002151",
+      "msg_0003665",
+      "msg_0004369",
+      "msg_0009398",
+      "msg_0010014",
+      "msg_0013855",
+      "msg_0019287"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0032",
+    "label": "Love you baby",
+    "normalized_phrase": "love you baby",
+    "count": 112,
+    "representative_message_ids": [
+      "msg_0065571",
+      "msg_0066294",
+      "msg_0066466",
+      "msg_0068244",
+      "msg_0068650",
+      "msg_0072479",
+      "msg_0073161",
+      "msg_0076337"
+    ],
+    "archetype_hint": "affection"
+  },
+  {
+    "motif_id": "motif_0033",
+    "label": "Sleep well",
+    "normalized_phrase": "sleep well",
+    "count": 107,
+    "representative_message_ids": [
+      "msg_0009088",
+      "msg_0009702",
+      "msg_0022210",
+      "msg_0023841",
+      "msg_0028784",
+      "msg_0032076",
+      "msg_0033590",
+      "msg_0034379"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0034",
+    "label": "Oh god",
+    "normalized_phrase": "oh god",
+    "count": 107,
+    "representative_message_ids": [
+      "msg_0015484",
+      "msg_0022446",
+      "msg_0024467",
+      "msg_0037029",
+      "msg_0039444",
+      "msg_0039477",
+      "msg_0040335",
+      "msg_0043233"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0035",
+    "label": "How you",
+    "normalized_phrase": "how you",
+    "count": 106,
+    "representative_message_ids": [
+      "msg_0023254",
+      "msg_0031310",
+      "msg_0032386",
+      "msg_0038375",
+      "msg_0042625",
+      "msg_0051111",
+      "msg_0059119",
+      "msg_0060808"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0036",
+    "label": "Oh baby",
+    "normalized_phrase": "oh baby",
+    "count": 101,
+    "representative_message_ids": [
+      "msg_0067621",
+      "msg_0082150",
+      "msg_0083967",
+      "msg_0084003",
+      "msg_0086477",
+      "msg_0089854",
+      "msg_0092116",
+      "msg_0095934"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0037",
+    "label": "See baby",
+    "normalized_phrase": "see baby",
+    "count": 100,
+    "representative_message_ids": [
+      "msg_0086569",
+      "msg_0087078",
+      "msg_0091268",
+      "msg_0092072",
+      "msg_0095900",
+      "msg_0097842",
+      "msg_0118398",
+      "msg_0132957"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0038",
+    "label": "No no",
+    "normalized_phrase": "no no",
+    "count": 95,
+    "representative_message_ids": [
+      "msg_0000446",
+      "msg_0005004",
+      "msg_0005031",
+      "msg_0012683",
+      "msg_0012732",
+      "msg_0013162",
+      "msg_0020226",
+      "msg_0020791"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0039",
+    "label": "Meri jaan",
+    "normalized_phrase": "meri jaan",
+    "count": 94,
+    "representative_message_ids": [
+      "msg_0046017",
+      "msg_0047103",
+      "msg_0050192",
+      "msg_0061146",
+      "msg_0064160",
+      "msg_0084970",
+      "msg_0085965",
+      "msg_0088831"
+    ],
+    "archetype_hint": "everyday_life"
+  },
+  {
+    "motif_id": "motif_0040",
+    "label": "Kya baat",
+    "normalized_phrase": "kya baat",
+    "count": 91,
+    "representative_message_ids": [
+      "msg_0000027",
+      "msg_0000815",
+      "msg_0001215",
+      "msg_0002963",
+      "msg_0004339",
+      "msg_0007058",
+      "msg_0009783",
+      "msg_0010605"
+    ],
+    "archetype_hint": "everyday_life"
+  }
+]

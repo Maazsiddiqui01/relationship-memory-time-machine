@@ -1,0 +1,25 @@
+node_modules
+.next
+out
+coverage
+*.log
+.next-dev.log
+.next-start.log
+tsconfig.tsbuildinfo
+.env*
+*.env
+
+# Data & Personal Assets
+data/**/*.json
+data/**/*.ndjson
+data/cache/
+data/canonical/
+data/annotations/
+data/derived/
+WhatsApp Chat with Durriya.txt
+
+# Outputs
+output/
+output/pdf/
+output/imagegen/
+ui-ux-pro-max

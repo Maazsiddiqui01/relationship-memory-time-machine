@@ -14,6 +14,7 @@ import {
 } from "@/lib/curation";
 import { loadAllChapters, loadChapterData } from "@/lib/data";
 import { formatCompact, formatIsoDate } from "@/lib/format";
+import { addressReader, deriveProjectProfile } from "@/lib/project-profile";
 
 type ChapterPageProps = {
   params: Promise<{
@@ -40,8 +41,9 @@ function getDurationInDays(startTimestamp: string, endTimestamp: string): number
 
 export default async function ChapterPage({ params }: ChapterPageProps) {
   const { slug } = await params;
-  const { chapter, highlights, milestones } = await loadChapterData(slug);
+  const { chapter, highlights, milestones, participants } = await loadChapterData(slug);
   const allChapters = decorateChapters(await loadAllChapters());
+  const profile = deriveProjectProfile(participants);
 
   if (!chapter) {
     notFound();
@@ -89,7 +91,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
           <div className="chapter-cover-copy">
             <span className="hero-kicker">Chapter {getPhaseNumber(chapter.chapter_id)}</span>
             <h1>{displayChapter.display_title}</h1>
-            <p>{`Durriya, this was one version of us. ${summarizeChapter(displayChapter)}`}</p>
+            <p>{addressReader(profile.primaryReader, `this was one version of us. ${summarizeChapter(displayChapter)}`)}</p>
           </div>
 
           <div className="hero-stat-strip hero-stat-strip--tight">

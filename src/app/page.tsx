@@ -18,6 +18,7 @@ import {
 } from "@/lib/curation";
 import { loadHomepageData } from "@/lib/data";
 import { formatCompact } from "@/lib/format";
+import { addressReader, deriveProjectProfile } from "@/lib/project-profile";
 import { loadTopStoryLenses } from "@/lib/story-lenses";
 
 export default async function HomePage() {
@@ -49,9 +50,9 @@ export default async function HomePage() {
     }),
   );
   const monthlyVolume = getMonthlyVolume(messageFrequency).slice(-18);
-  const participantNames = participants.map((participant) => participant.label.split(" ")[0]).join(" and ");
-  const primaryReader =
-    participants.find((participant) => /durriya|durr/i.test(participant.label))?.label.split(" ")[0] ?? "Durriya";
+  const profile = deriveProjectProfile(participants);
+  const participantNames = profile.participantNames.join(" and ");
+  const primaryReader = profile.primaryReader;
   const displayChapters = decorateChapters(chapters).slice(0, 6);
   const previewInsights = [
     "who_sent_more",
@@ -162,7 +163,7 @@ export default async function HomePage() {
                 <span className="hero-kicker">Dashboard</span>
                 <h3>Open the deeper board</h3>
               </div>
-              <p>Who chased harder, who stayed up later, which months went loudest, and where the warmth kept returning.</p>
+              <p>{addressReader(primaryReader, "who chased harder, who stayed up later, which months went loudest, and where the warmth kept returning.")}</p>
             </Link>
           </article>
         </section>

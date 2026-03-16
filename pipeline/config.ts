@@ -1,8 +1,44 @@
+import fs from "node:fs";
 import path from "node:path";
 
 export const ROOT_DIR = process.cwd();
 export const DATA_DIR = path.join(ROOT_DIR, "data");
 const LATE_NIGHT_HOURS: number[] = [22, 23, 0, 1, 2, 3, 4];
+
+function newestTranscriptIn(directory: string): string | null {
+  if (!fs.existsSync(directory)) {
+    return null;
+  }
+
+  const candidates = fs
+    .readdirSync(directory, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith(".txt"))
+    .map((entry) => {
+      const fullPath = path.join(directory, entry.name);
+      return {
+        fullPath,
+        modifiedAt: fs.statSync(fullPath).mtimeMs,
+      };
+    })
+    .sort((left, right) => right.modifiedAt - left.modifiedAt);
+
+  return candidates[0]?.fullPath ?? null;
+}
+
+function resolveSourceTranscript(): string {
+  const configuredSource = process.env.RELATIONSHIP_MEMORY_SOURCE?.trim();
+  if (configuredSource) {
+    return path.isAbsolute(configuredSource)
+      ? configuredSource
+      : path.resolve(ROOT_DIR, configuredSource);
+  }
+
+  return (
+    newestTranscriptIn(path.join(DATA_DIR, "raw")) ??
+    newestTranscriptIn(ROOT_DIR) ??
+    path.join(ROOT_DIR, "WhatsApp Chat with Durriya.txt")
+  );
+}
 
 export const PATHS = {
   rawDir: path.join(DATA_DIR, "raw"),
@@ -13,9 +49,7 @@ export const PATHS = {
   publicMessagesDir: path.join(DATA_DIR, "public", "messages"),
   cacheDir: path.join(DATA_DIR, "cache"),
   cacheDb: path.join(DATA_DIR, "cache", "pipeline-cache.sqlite"),
-  sourceTranscript:
-    process.env.RELATIONSHIP_MEMORY_SOURCE ??
-    path.join(ROOT_DIR, "WhatsApp Chat with Durriya.txt"),
+  sourceTranscript: resolveSourceTranscript(),
   canonicalMessages: path.join(DATA_DIR, "canonical", "messages.ndjson"),
   participants: path.join(DATA_DIR, "canonical", "participants.json"),
   sourceManifest: path.join(DATA_DIR, "canonical", "source_manifest.json"),

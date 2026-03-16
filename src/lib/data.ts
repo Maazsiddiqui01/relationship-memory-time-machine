@@ -16,6 +16,7 @@ import type {
 } from "../../pipeline/schemas.js";
 
 const PUBLIC_DIR = path.join(process.cwd(), "data", "public");
+type ParticipantPreview = { participant_id: string; label: string };
 
 async function readDataset<T>(fileName: string): Promise<T> {
   const content = await fs.readFile(path.join(PUBLIC_DIR, fileName), "utf8");
@@ -51,23 +52,27 @@ export async function loadHomepageData(): Promise<{
 export async function loadTimelineData(): Promise<{
   chapters: ChapterSegment[];
   milestones: Milestone[];
+  participants: ParticipantPreview[];
 }> {
-  const [chapters, milestones] = await Promise.all([
+  const [chapters, milestones, participants] = await Promise.all([
     readDataset<ChapterSegment[]>("chapter_segments.json"),
     readDataset<Milestone[]>("milestones.json"),
+    readDataset<ParticipantPreview[]>("participants.json"),
   ]);
-  return { chapters, milestones };
+  return { chapters, milestones, participants };
 }
 
 export async function loadMomentsData(): Promise<{
   milestones: Milestone[];
   highlights: Highlight[];
+  participants: ParticipantPreview[];
 }> {
-  const [milestones, highlights] = await Promise.all([
+  const [milestones, highlights, participants] = await Promise.all([
     readDataset<Milestone[]>("milestones.json"),
     readDataset<Highlight[]>("highlights.json"),
+    readDataset<ParticipantPreview[]>("participants.json"),
   ]);
-  return { milestones, highlights };
+  return { milestones, highlights, participants };
 }
 
 export async function loadThemesData(): Promise<{
@@ -104,27 +109,31 @@ export async function loadDashboardData(): Promise<{
   emotionTimeline: EmotionTimelinePoint[];
   messageFrequency: MessageFrequency;
   chapters: ChapterSegment[];
+  participants: ParticipantPreview[];
 }> {
-  const [dashboardInsights, signatureMetrics, emotionTimeline, messageFrequency, chapters] = await Promise.all([
+  const [dashboardInsights, signatureMetrics, emotionTimeline, messageFrequency, chapters, participants] = await Promise.all([
     readDataset<DashboardInsights>("dashboard_insights.json"),
     readDataset<SignatureMetrics>("signature_metrics.json"),
     readDataset<EmotionTimelinePoint[]>("emotion_timeline.json"),
     readDataset<MessageFrequency>("message_frequency.json"),
     readDataset<ChapterSegment[]>("chapter_segments.json"),
+    readDataset<ParticipantPreview[]>("participants.json"),
   ]);
 
-  return { dashboardInsights, signatureMetrics, emotionTimeline, messageFrequency, chapters };
+  return { dashboardInsights, signatureMetrics, emotionTimeline, messageFrequency, chapters, participants };
 }
 
 export async function loadChapterData(slug: string): Promise<{
   chapter: ChapterSegment | undefined;
   highlights: Highlight[];
   milestones: Milestone[];
+  participants: ParticipantPreview[];
 }> {
-  const [chapters, highlights, milestones] = await Promise.all([
+  const [chapters, highlights, milestones, participants] = await Promise.all([
     readDataset<ChapterSegment[]>("chapter_segments.json"),
     readDataset<Highlight[]>("highlights.json"),
     readDataset<Milestone[]>("milestones.json"),
+    readDataset<ParticipantPreview[]>("participants.json"),
   ]);
 
   const chapter = chapters.find((entry) => entry.slug === slug);
@@ -132,6 +141,7 @@ export async function loadChapterData(slug: string): Promise<{
     chapter,
     highlights: highlights.filter((highlight) => highlight.chapter_id === chapter?.chapter_id),
     milestones: milestones.filter((milestone) => milestone.chapter_id === chapter?.chapter_id),
+    participants,
   };
 }
 

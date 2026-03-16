@@ -6,9 +6,11 @@ import { SectionHeading } from "@/components/section-heading";
 import { curateMilestones, decorateChapters, differentiateMilestoneTitles, summarizeChapter } from "@/lib/curation";
 import { loadTimelineData } from "@/lib/data";
 import { formatIsoDate } from "@/lib/format";
+import { addressReader, deriveProjectProfile } from "@/lib/project-profile";
 
 export default async function TimelinePage() {
-  const { chapters, milestones } = await loadTimelineData();
+  const { chapters, milestones, participants } = await loadTimelineData();
+  const profile = deriveProjectProfile(participants);
   const displayChapters = decorateChapters(chapters);
   const visibleMilestones = differentiateMilestoneTitles(
     curateMilestones(milestones, {
@@ -25,10 +27,7 @@ export default async function TimelinePage() {
         <section className="route-hero">
           <span className="hero-kicker">Timeline</span>
           <h1>The story, in the order you lived it.</h1>
-          <p>
-            Durriya, this is the clearer path through it all: the phases, the turns, and the moments that quietly
-            changed the tone.
-          </p>
+          <p>{addressReader(profile.primaryReader, "this is the clearer path through it all: the phases, the turns, and the moments that quietly changed the tone.")}</p>
         </section>
       </Reveal>
 

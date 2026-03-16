@@ -40,6 +40,7 @@ const MIX_COLORS = ["#d88da5", "#efb6c4", "#f6cfd8", "#9f8790", "#c66c82", "#f4e
 type DashboardGalleryProps = {
   insights: DashboardInsights;
   signatureMetrics: SignatureMetrics;
+  primaryReader: string;
 };
 
 function tooltipStyle() {
@@ -54,7 +55,7 @@ function formatRecordRoute(route: string | null): Route {
   return (route ?? "/dashboard/") as Route;
 }
 
-export function DashboardGallery({ insights, signatureMetrics }: DashboardGalleryProps) {
+export function DashboardGallery({ insights, signatureMetrics, primaryReader }: DashboardGalleryProps) {
   const [scope, setScope] = useState<"overall" | string>("overall");
   const selectedParticipant =
     scope === "overall"
@@ -213,7 +214,11 @@ export function DashboardGallery({ insights, signatureMetrics }: DashboardGaller
           <div className="dashboard-hero-copy">
             <span className="hero-kicker">Dashboard</span>
             <h1>If you ever want the detective version of us.</h1>
-            <p>Durriya, this is where the patterns show themselves: who started, who stayed up late, which months went loud, and how the feeling kept changing.</p>
+            <p>
+              {primaryReader && primaryReader.toLowerCase() !== "you"
+                ? `${primaryReader}, this is where the patterns show themselves: who started, who stayed up late, which months went loud, and how the feeling kept changing.`
+                : "This is where the patterns show themselves: who started, who stayed up late, which months went loud, and how the feeling kept changing."}
+            </p>
           </div>
           <div className="hero-stat-strip hero-stat-strip--tight">
             <article className="stat-chip">

@@ -26,6 +26,7 @@ import {
   summarizeChapter,
 } from "../src/lib/curation.js";
 import { formatCompact, formatIsoDate, formatMonthYear } from "../src/lib/format.js";
+import { deriveProjectProfile } from "../src/lib/project-profile.js";
 
 const ROOT_DIR = process.cwd();
 const OUTPUT_DIR = path.join(ROOT_DIR, "output", "pdf");
@@ -35,11 +36,6 @@ const JSON_PATH = path.join(OUTPUT_DIR, "durr-and-maaz-story.json");
 const IMAGE_DIR = path.join(ROOT_DIR, "public", "images");
 const DATA_DIR = path.join(ROOT_DIR, "data", "public");
 const MESSAGE_ANNOTATIONS_PATH = path.join(ROOT_DIR, "data", "annotations", "message_annotations.ndjson");
-
-const BOOK_TITLE = "Durr & Maaz";
-const BOOK_SUBTITLE = "For Durriya";
-const BOOK_TAGLINE =
-  "A keepsake of our rhythm, our phases, and all the quiet ways we kept finding each other.";
 
 const ARCHETYPE_META: Record<
   ArchetypeLabel,
@@ -106,6 +102,7 @@ type BookPayload = {
   lenses: BookLens[];
   signature_metrics: SignatureMetrics;
   closing_quote: BookHighlight | null;
+  keepsake_line: string;
 };
 
 function readPublicJson<T>(fileName: string): Promise<T> {
@@ -620,6 +617,7 @@ async function buildPayload(): Promise<BookPayload> {
 
   const monthlyVolume = getMonthlyVolume(messageFrequency).slice(-22);
   const { topics, motifs } = pickTopicMotifs(topicClusters, phraseMotifs);
+  const profile = deriveProjectProfile(participants);
 
   const headlineMetrics: BookMetric[] = [
     {
@@ -664,9 +662,9 @@ async function buildPayload(): Promise<BookPayload> {
     )[0] ?? null;
 
   return {
-    title: BOOK_TITLE,
-    subtitle: BOOK_SUBTITLE,
-    tagline: BOOK_TAGLINE,
+    title: profile.bookTitle,
+    subtitle: profile.bookSubtitle,
+    tagline: profile.bookTagline,
     participants: participants.map((participant) => participant.label),
     time_span: `${formatMonthYear(curatedChapters[0]?.start_timestamp ?? "")} - ${formatMonthYear(curatedChapters.at(-1)?.end_timestamp ?? "")}`,
     cover_image: coverImage,
@@ -685,6 +683,7 @@ async function buildPayload(): Promise<BookPayload> {
     lenses,
     signature_metrics: signatureMetrics,
     closing_quote: closingQuote,
+    keepsake_line: profile.keepsakeLine,
   };
 }
 
@@ -1175,7 +1174,7 @@ function renderHtml(payload: BookPayload): string {
               ? `<blockquote style="font-family: 'Playfair Display', serif; font-size: 28pt; font-style: italic; line-height: 1.2; margin-bottom: 12mm;">&ldquo;${escapeHtml(payload.closing_quote.excerpt)}&rdquo;</blockquote>`
               : `<blockquote style="font-family: 'Playfair Display', serif; font-size: 28pt; font-style: italic; line-height: 1.2; margin-bottom: 12mm;">Even when the days blur together, the love in them still leaves a shape.</blockquote>`
           }
-          <p style="font-style: italic; opacity: 0.6;">A keepsake for Durriya, from Maaz</p>
+          <p style="font-style: italic; opacity: 0.6;">${escapeHtml(payload.keepsake_line)}</p>
         </div>
       </section>
     </main>

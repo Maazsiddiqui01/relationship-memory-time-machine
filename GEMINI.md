@@ -12,6 +12,8 @@ This system transforms a long-form WhatsApp conversation archive into an emotion
 
 It converts raw chronological chat logs into a structured narrative that can be explored through an interactive website and later exported into a digital memory book.
 
+The workflow must be reusable. A future run should be able to start from a different WhatsApp export file and regenerate the same phased outputs: parsed corpus, published datasets, dashboard-driven website, and formatted e-book.
+
 The system is not a generic analytics dashboard. It is a storytelling engine that reconstructs shared history through chapters, emotional shifts, recurring themes, memorable messages, and curated moments.
 
 The system ultimately produces two deliverables:
@@ -47,6 +49,7 @@ The system is successful when it reliably produces the following outcomes.
 The frontend should successfully present:
 
 - a story-led homepage
+- a detailed dashboard page
 - a relationship timeline
 - emotional journey views
 - milestone and highlight cards
@@ -89,6 +92,9 @@ The system must generate structured outputs suitable for:
 ## Primary Input
 
 The system receives a WhatsApp text export file.
+
+For repeatable runs, the preferred drop location is `data/raw/`.
+If `RELATIONSHIP_MEMORY_SOURCE` is not set, the pipeline should prefer the newest `.txt` file in `data/raw/`, then the newest `.txt` file in the repo root.
 
 Expected format example:
 
@@ -142,6 +148,20 @@ It may be introduced later for:
 - multi-project support
 - authentication
 - hosted dataset access
+
+## Project Profile Context
+
+The system may receive build-time personalization through environment variables.
+
+Examples:
+
+- `RELATIONSHIP_MEMORY_PRIMARY_READER`
+- `RELATIONSHIP_MEMORY_GIFT_FROM`
+- `RELATIONSHIP_MEMORY_BOOK_TITLE`
+- `RELATIONSHIP_MEMORY_BOOK_SUBTITLE`
+- `RELATIONSHIP_MEMORY_BOOK_TAGLINE`
+
+These values affect website and e-book copy only. They must not modify canonical data.
 
 ---
 
@@ -249,6 +269,27 @@ The curation stage is responsible for:
 Generate optimized, visualization-ready datasets and static site assets.
 
 The final output should be intentionally curated and narrative-first, not a direct dump of raw aggregate analysis.
+
+## Step 6 - Build Website
+
+Compile the static Next.js experience from published JSON datasets.
+
+This includes:
+
+- story homepage
+- dashboard page
+- timeline
+- moments
+- themes
+- patterns
+- chapter pages
+- lens pages
+
+## Step 7 - Build E-book
+
+Generate the visual memory book HTML and PDF from published datasets plus configured artwork.
+
+The e-book should remain visual-first, chart-first, and layout-safe.
 
 ---
 
@@ -443,6 +484,8 @@ Core naming conventions:
 - `inside_jokes.json`
 - `highlights.json`
 - `signature_metrics.json`
+- `dashboard_insights.json`
+- `story_lenses.json`
 - `curated_homepage.json`
 - `memory_book_payload.json`
 
@@ -506,6 +549,20 @@ Large histories should be processed in stages:
 5. Consolidate outputs
 6. Curate story-facing results
 7. Publish static datasets
+8. Build the website
+9. Build the e-book
+
+## Repeatability Rules
+
+The system should be runnable as a repeatable production workflow for a different relationship archive.
+
+That means:
+
+- published frontend datasets must be sufficient for static site generation
+- the website must not depend on local-only annotation files at build time
+- personalization must come from project profile configuration, not hardcoded names
+- a different uploaded transcript should be processable through the same phases
+- verification must occur before deployment
 
 ---
 
@@ -582,6 +639,18 @@ Prevent duplicate parsing, duplicate highlights, and redundant surfaced insights
 
 The frontend should consume precomputed JSON datasets and lazy-load deeper data as needed.
 
+## Reusability
+
+The standard operating path should be:
+
+1. upload or point to a new transcript
+2. set project profile variables if needed
+3. run the phased pipeline
+4. build the website
+5. build the e-book
+6. verify outputs
+7. deploy
+
 ---
 
 # 12. Response Style
@@ -623,4 +692,4 @@ Its purpose is to transform raw WhatsApp conversations into an elegant, evidence
 
 The system must remain deterministic-first, narrative-first, and curation-aware.
 
-It acts as a historian, interpreter, and publisher of shared history rather than a generic analytics tool.
+It acts as a historian, interpreter, publisher, and reusable production workflow for shared history rather than a generic analytics tool.

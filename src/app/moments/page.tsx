@@ -3,9 +3,11 @@ import { SectionHeading } from "@/components/section-heading";
 import { curateHighlights, curateMilestones, differentiateMilestoneTitles } from "@/lib/curation";
 import { loadMomentsData } from "@/lib/data";
 import { formatIsoDate } from "@/lib/format";
+import { addressReader, deriveProjectProfile } from "@/lib/project-profile";
 
 export default async function MomentsPage() {
-  const { milestones, highlights } = await loadMomentsData();
+  const { milestones, highlights, participants } = await loadMomentsData();
+  const profile = deriveProjectProfile(participants);
   const memoryCards = curateHighlights(highlights, { limit: 12, maxChars: 155, maxPerChapter: 2 });
   const visibleMilestones = differentiateMilestoneTitles(
     curateMilestones(milestones, {
@@ -22,9 +24,7 @@ export default async function MomentsPage() {
         <section className="route-hero">
           <span className="hero-kicker">Memory Gallery</span>
           <h1>The pieces worth keeping close.</h1>
-          <p>
-            Durriya, this page is meant to feel like a small keepsake box: brief, vivid, and easy to linger in.
-          </p>
+          <p>{addressReader(profile.primaryReader, "this page is meant to feel like a small keepsake box: brief, vivid, and easy to linger in.")}</p>
         </section>
       </Reveal>
 

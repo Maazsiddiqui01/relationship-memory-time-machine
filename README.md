@@ -1,31 +1,74 @@
 # Relationship Memory Time Machine
 
-This project turns a WhatsApp text export into a curated narrative website and a reusable structured dataset for later memory-book generation.
+This project turns a WhatsApp text export into:
 
-## Stack
+1. a curated static website with story, dashboard, timeline, themes, moments, patterns, chapters, and lens pages
+2. a visual e-book exported as HTML and PDF
 
-- Next.js static frontend
-- TypeScript pipeline and orchestration scripts
-- NDJSON canonical storage
-- JSON public datasets
-- SQLite chunk cache via Node's built-in `node:sqlite`
+## Source Of Truth
 
-## Pipeline
+- Architecture and system rules: `GEMINI.md`
+- Repeatable operator workflow: `DIRECTIVES.md`
+- Environment template: `.env.example`
 
-Run the full pipeline:
+## Next-Run Workflow
+
+When you want to run this on a different WhatsApp export:
+
+1. Put the new `.txt` export in `data/raw/`
+2. Copy `.env.example` to `.env` and update names/title if needed
+3. Install dependencies
+4. Run the pipeline
+5. Build the website
+6. Build the e-book
+7. Verify outputs
+8. Deploy
+
+## Quickstart
 
 ```bash
 npm install
-npm run pipeline:run
+npm run project:all
 ```
 
-Then build the site:
+That full command will:
+
+1. parse the transcript
+2. analyze and consolidate narrative structure
+3. curate outputs
+4. publish `data/public`
+5. build the Next.js site
+6. build the e-book HTML
+7. export the PDF
+
+## Key Commands
 
 ```bash
-npm run build
+npm run pipeline:parse
+npm run pipeline:analyze
+npm run pipeline:consolidate
+npm run pipeline:curate
+npm run pipeline:publish
 ```
 
-The default analysis provider is `heuristic`, which keeps the pipeline runnable locally and preserves the intended chunk/cache/orchestration shape. Set `RELATIONSHIP_MEMORY_ANALYSIS_PROVIDER=gemini` only after wiring a live Gemini provider.
+```bash
+npm run project:website
+npm run project:ebook
+npm run project:all
+```
+
+## Personalization
+
+Use these environment variables to adapt the site and e-book to a different relationship or gift recipient:
+
+- `RELATIONSHIP_MEMORY_SOURCE`
+- `RELATIONSHIP_MEMORY_PRIMARY_READER`
+- `RELATIONSHIP_MEMORY_GIFT_FROM`
+- `RELATIONSHIP_MEMORY_BOOK_TITLE`
+- `RELATIONSHIP_MEMORY_BOOK_SUBTITLE`
+- `RELATIONSHIP_MEMORY_BOOK_TAGLINE`
+
+If `RELATIONSHIP_MEMORY_SOURCE` is not set, the pipeline prefers the newest `.txt` file in `data/raw/`.
 
 ## Key Directories
 
@@ -33,15 +76,18 @@ The default analysis provider is `heuristic`, which keeps the pipeline runnable 
 - `pipeline/orchestration`: analysis, consolidation, curation, and pipeline runner
 - `data/canonical`: immutable parsed corpus
 - `data/annotations`: message and segment annotations
-- `data/derived`: intermediate aggregates and story structures
+- `data/derived`: intermediate narrative structures
 - `data/public`: static frontend datasets
-- `src/app`: Next.js story pages
+- `src/app`: Next.js pages
+- `scripts`: ebook generation and PDF rendering
 
-## Published Outputs
+## Published Website Datasets
 
-After `npm run pipeline:run`, the static frontend reads from `data/public`, including:
+The static frontend reads from `data/public`, including:
 
 - `curated_homepage.json`
+- `dashboard_insights.json`
+- `story_lenses.json`
 - `chapter_segments.json`
 - `milestones.json`
 - `highlights.json`
@@ -49,4 +95,18 @@ After `npm run pipeline:run`, the static frontend reads from `data/public`, incl
 - `phrase_motifs.json`
 - `inside_jokes.json`
 - `signature_metrics.json`
-- monthly message shards listed by `messages_manifest.json`
+- `emotion_timeline.json`
+- `message_frequency.json`
+- `messages_manifest.json`
+
+## Verification
+
+Run:
+
+```bash
+npm run typecheck
+npm test
+npm run build
+```
+
+For deeper run instructions, quality gates, and phase-by-phase outputs, use `DIRECTIVES.md`.

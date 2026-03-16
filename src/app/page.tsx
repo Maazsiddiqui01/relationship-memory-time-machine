@@ -79,9 +79,9 @@ export default async function HomePage() {
             className="hero-bg-image"
           />
           <div className="hero-copy">
-            <span className="hero-kicker">For {primaryReader}</span>
+            <span className="hero-kicker">{profile.heroKicker}</span>
             <h1>{participantNames}</h1>
-            <p>A softer way to revisit us: the moods, the late nights, the turns, and the little things that became ours.</p>
+            <p>A visual way to revisit the archive: the moods, the late nights, the turns, and the patterns that kept returning.</p>
           </div>
 
           <div className="hero-stat-strip">
@@ -147,7 +147,7 @@ export default async function HomePage() {
           <article className="panel-card panel-card--portal">
             <div className="panel-topline">
               <span>Insight preview</span>
-              <strong>If you want the detective version of us</strong>
+              <strong>If you want the detective version of the archive</strong>
             </div>
             <div className="insight-preview-grid">
               {previewInsights.map((record) => (
@@ -163,7 +163,7 @@ export default async function HomePage() {
                 <span className="hero-kicker">Dashboard</span>
                 <h3>Open the deeper board</h3>
               </div>
-              <p>{addressReader(primaryReader, "who chased harder, who stayed up later, which months went loudest, and where the warmth kept returning.")}</p>
+              <p>{addressReader(primaryReader, "who started more often, who stayed up later, which months went loudest, and where the strongest signals kept returning.")}</p>
             </Link>
           </article>
         </section>
@@ -174,7 +174,7 @@ export default async function HomePage() {
           <SectionHeading
             eyebrow="Interactive lenses"
             title="Choose a feeling and step inside it"
-            description="Each lens lets you revisit us through one mood at a time instead of another wall of explanation."
+            description="Each lens lets you revisit the archive through one mood at a time instead of another wall of explanation."
             align="left"
           />
           <div className="lens-grid">
@@ -197,8 +197,8 @@ export default async function HomePage() {
         <section>
           <SectionHeading
             eyebrow="Chapters"
-            title="The six phases of us"
-            description="Think of these as chapter covers you can open whenever you want to sit with a different version of us."
+            title="The major phases in the archive"
+            description="Think of these as chapter covers you can open whenever you want to sit with a different phase of the story."
             align="left"
           />
           <div className="chapter-preview-grid">
@@ -226,9 +226,9 @@ export default async function HomePage() {
         <section className="dashboard-grid dashboard-grid--two">
           <div>
             <SectionHeading
-              eyebrow="Memory cards"
-              title="A few little keepsakes"
-              description="Just enough to feel it again, without letting the page turn into a transcript."
+            eyebrow="Memory cards"
+            title="A few small keepsakes"
+            description="Just enough to feel it again, without letting the page turn into a transcript."
               align="left"
             />
             <div className="memory-grid">

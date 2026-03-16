@@ -357,7 +357,7 @@ function buildMilestoneSummary(milestone: Milestone, displayTitle: string): stri
     return `A softer return after strain around ${formattedDate}.`;
   }
   if (displayTitle === "Cheering From The Sidelines" || displayTitle === "Support in Motion") {
-    return `A moment of truly showing up for each other around ${formattedDate}.`;
+    return `A moment of clear support around ${formattedDate}.`;
   }
   if (displayTitle === "A Hard Conversation" || displayTitle === "Pulling Away") {
     return `A harder turn that changed the mood around ${formattedDate}.`;
@@ -576,8 +576,8 @@ export function summarizeChapter(
 
   if (title.includes("everyday gravity")) {
     return occurrenceIndex > 1
-      ? "The closeness was familiar by now, but it still knew how to feel new."
-      : "This was the part where being close started to feel natural, steady, and full of care.";
+      ? "The familiar rhythm was still able to feel new."
+      : "This was the part where the rhythm started to feel natural, steady, and full of care.";
   }
 
   if (title.includes("ordinary days")) {
@@ -588,8 +588,8 @@ export function summarizeChapter(
 
   if (title.includes("shared routine")) {
     return occurrenceIndex > 1
-      ? "Routine stopped feeling ordinary here; it started feeling like home."
-      : "This was us settling into each other, with warmth tucked into the routine.";
+      ? "Routine stopped feeling ordinary here; it started feeling settled."
+      : "This was the phase where the routine started carrying more warmth and meaning.";
   }
 
   if (!GENERIC_CHAPTER_SUMMARY.test(chapter.summary)) {

@@ -59,14 +59,20 @@ npm run project:all
 
 ## Personalization
 
-Use these environment variables to adapt the site and e-book to a different relationship or gift recipient:
+Use these environment variables to adapt the site and e-book to a different conversation archive or gift recipient:
 
 - `RELATIONSHIP_MEMORY_SOURCE`
+- `RELATIONSHIP_MEMORY_PRESENTATION_MODE`
 - `RELATIONSHIP_MEMORY_PRIMARY_READER`
 - `RELATIONSHIP_MEMORY_GIFT_FROM`
 - `RELATIONSHIP_MEMORY_BOOK_TITLE`
 - `RELATIONSHIP_MEMORY_BOOK_SUBTITLE`
 - `RELATIONSHIP_MEMORY_BOOK_TAGLINE`
+
+`RELATIONSHIP_MEMORY_PRESENTATION_MODE` supports:
+
+- `gift`: direct, personal wording
+- `archive`: neutral wording for non-romantic or non-gift conversation histories
 
 If `RELATIONSHIP_MEMORY_SOURCE` is not set, the pipeline prefers the newest `.txt` file in `data/raw/`.
 

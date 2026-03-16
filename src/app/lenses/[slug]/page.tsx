@@ -117,7 +117,7 @@ export default async function LensPage({ params }: LensPageProps) {
           <SectionHeading
             eyebrow="Touched chapters"
             title="Where this feeling becomes unmistakable"
-            description="These are the phases where this side of us came through most clearly."
+            description="These are the phases where this side of the archive came through most clearly."
             align="left"
           />
           <div className="lens-grid">
@@ -164,12 +164,12 @@ export default async function LensPage({ params }: LensPageProps) {
           </div>
 
           <div>
-            <SectionHeading
-              eyebrow="Story beats"
-              title="Where this feeling changed the story"
-              description="These markers keep the mood tied to the larger arc of us."
-              align="left"
-            />
+          <SectionHeading
+            eyebrow="Story beats"
+            title="Where this feeling changed the story"
+            description="These markers keep the mood tied to the larger arc of the story."
+            align="left"
+          />
             <div className="milestone-list">
               {visibleMilestones.map((milestone) => (
                 <article key={milestone.milestone_id} className="milestone-card">
@@ -189,7 +189,7 @@ export default async function LensPage({ params }: LensPageProps) {
         <section className="quiet-band">
           <p>
             Step back whenever you want. The story page widens out again, and each lens is just one way of looking at
-            us for a while.
+            the archive for a while.
           </p>
           <div className="pill-row">
             <Link href="/" className="pill" prefetch={false}>

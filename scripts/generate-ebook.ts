@@ -31,8 +31,7 @@ import { deriveProjectProfile } from "../src/lib/project-profile.js";
 const ROOT_DIR = process.cwd();
 const OUTPUT_DIR = path.join(ROOT_DIR, "output", "pdf");
 const GENERATED_IMAGE_DIR = path.join(ROOT_DIR, "output", "imagegen");
-const HTML_PATH = path.join(OUTPUT_DIR, "durr-and-maaz-story.html");
-const JSON_PATH = path.join(OUTPUT_DIR, "durr-and-maaz-story.json");
+const MANIFEST_PATH = path.join(OUTPUT_DIR, "ebook-manifest.json");
 const IMAGE_DIR = path.join(ROOT_DIR, "public", "images");
 const DATA_DIR = path.join(ROOT_DIR, "data", "public");
 const MESSAGE_ANNOTATIONS_PATH = path.join(ROOT_DIR, "data", "annotations", "message_annotations.ndjson");
@@ -81,6 +80,8 @@ type BookChapter = DecoratedChapter & {
 };
 
 type BookPayload = {
+  slug: string;
+  presentation_mode: "gift" | "archive";
   title: string;
   subtitle: string;
   tagline: string;
@@ -103,6 +104,15 @@ type BookPayload = {
   signature_metrics: SignatureMetrics;
   closing_quote: BookHighlight | null;
   keepsake_line: string;
+};
+
+type EbookManifest = {
+  slug: string;
+  title: string;
+  html_path: string;
+  json_path: string;
+  pdf_path: string;
+  generated_at: string;
 };
 
 function readPublicJson<T>(fileName: string): Promise<T> {
@@ -162,6 +172,14 @@ function escapeHtml(value: string): string {
 
 function formatPercent(value: number): string {
   return `${value.toFixed(1)}%`;
+}
+
+function slugify(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/gu, "-")
+    .replace(/^-+|-+$/gu, "")
+    .slice(0, 80) || "conversation-memory-book";
 }
 
 function createAreaChart(points: EmotionTimelinePoint[], width: number, height: number): string {
@@ -397,7 +415,7 @@ function buildChapterPages(chapters: BookChapter[], chapterImage: string): strin
       const milestoneLabel = chapter.milestone ? chapter.milestone.display_title : "The feeling kept deepening";
       const milestoneDetail = chapter.milestone
         ? buildExcerpt(chapter.milestone.short_summary, 92)
-        : "No single turning point, just closeness slowly becoming a language of its own.";
+        : "No single turning point, just the pattern gradually taking on a clearer shape.";
       const quote = chapter.highlight ? chapter.highlight.excerpt : "A phase that stayed warm long after it passed.";
 
       return `
@@ -493,8 +511,8 @@ function personalizeChapterSummary(chapter: DecoratedChapter, index: number): st
 
   if (title.includes("everyday gravity")) {
     return index < 3
-      ? "This was the part where being close started to feel natural, steady, and full of care."
-      : "The closeness was familiar by now, but it still knew how to feel new.";
+      ? "This was the part where the rhythm started to feel natural, steady, and full of care."
+      : "The rhythm was familiar by then, but it still knew how to feel new.";
   }
 
   if (title.includes("ordinary days")) {
@@ -505,16 +523,16 @@ function personalizeChapterSummary(chapter: DecoratedChapter, index: number): st
 
   if (title.includes("shared routine")) {
     return index < 3
-      ? "This was us settling into each other, with warmth tucked into the routine."
-      : "Routine stopped feeling ordinary here; it started feeling like home.";
+      ? "This was the phase where the routine started carrying more warmth."
+      : "Routine stopped feeling ordinary here; it started feeling more settled.";
   }
 
   if (chapter.dominant_emotion === "romantic") {
-    return "A phase shaped by warmth, closeness, and the ease of returning to each other.";
+    return "A phase shaped by warmth, steadiness, and a strong sense of return.";
   }
 
   if (chapter.dominant_emotion === "supportive") {
-    return "A phase where care showed up clearly and kept holding the two of you together.";
+    return "A phase where care showed up clearly and kept the archive feeling held together.";
   }
 
   return "A part of the story that quietly left its own shape behind.";
@@ -524,7 +542,7 @@ function personalizeMilestoneSummary(milestone: BookMilestone): string {
   const title = milestone.display_title.toLowerCase();
 
   if (title.includes("birthday")) {
-    return "A birthday message that read more like a love letter.";
+    return "A birthday message that carried more than the date itself.";
   }
 
   if (title.includes("career")) {
@@ -536,11 +554,11 @@ function personalizeMilestoneSummary(milestone: BookMilestone): string {
   }
 
   if (title.includes("support") || title.includes("sidelines")) {
-    return "A clear reminder of how deeply the two of you could show up.";
+    return "A clear reminder of how strongly support could show up here.";
   }
 
   if (title.includes("tense") || title.includes("conflict")) {
-    return "A harder turn that still became part of what the two of you carried through.";
+    return "A harder turn that still became part of what this archive carried through.";
   }
 
   return cleanDisplayText(buildExcerpt(milestone.short_summary, 90));
@@ -618,6 +636,7 @@ async function buildPayload(): Promise<BookPayload> {
   const monthlyVolume = getMonthlyVolume(messageFrequency).slice(-22);
   const { topics, motifs } = pickTopicMotifs(topicClusters, phraseMotifs);
   const profile = deriveProjectProfile(participants);
+  const slug = slugify(profile.bookTitle);
 
   const headlineMetrics: BookMetric[] = [
     {
@@ -628,7 +647,7 @@ async function buildPayload(): Promise<BookPayload> {
     {
       label: "Longest streak",
       value: `${signatureMetrics.headline.longest_daily_streak} days`,
-      detail: "we kept showing up for each other",
+      detail: "days with messages in a row",
     },
     {
       label: "Most active month",
@@ -651,7 +670,9 @@ async function buildPayload(): Promise<BookPayload> {
     curateHighlights(
       highlights.filter(
         (highlight) =>
-          highlight.emotion_label === "romantic" || highlight.archetype_tags.includes("repair_reconnection"),
+          highlight.emotion_label === "romantic" ||
+          highlight.emotion_label === "supportive" ||
+          highlight.archetype_tags.includes("repair_reconnection"),
       ),
       {
         limit: 1,
@@ -659,9 +680,18 @@ async function buildPayload(): Promise<BookPayload> {
         maxPerChapter: 1,
         maxPerSender: 1,
       },
-    )[0] ?? null;
+    )[0] ??
+    curateHighlights(highlights, {
+      limit: 1,
+      maxChars: 120,
+      maxPerChapter: 1,
+      maxPerSender: 1,
+    })[0] ??
+    null;
 
   return {
+    slug,
+    presentation_mode: profile.presentationMode,
     title: profile.bookTitle,
     subtitle: profile.bookSubtitle,
     tagline: profile.bookTagline,
@@ -1033,7 +1063,8 @@ function renderHtml(payload: BookPayload): string {
         <img class="page-art page-art--cover" src="${payload.cover_image}" alt="" />
         <div class="cover-shell">
           <div class="cover-title">
-            <span class="cover-kicker">For you</span>
+            <span class="cover-kicker">${escapeHtml(payload.presentation_mode === "gift" ? "For you" : "Conversation Archive")}</span>
+            
             <h1>${escapeHtml(payload.title)}<br/>${escapeHtml(payload.subtitle)}</h1>
             <p>${escapeHtml(payload.tagline)}</p>
           </div>
@@ -1054,7 +1085,7 @@ function renderHtml(payload: BookPayload): string {
           <span class="eyebrow">What We Built</span>
           <h2>Our rhythm, at a glance</h2>
           <p>
-            A few of the patterns that made us feel like us.
+            A few of the patterns that shaped this archive.
           </p>
         </div>
         <div class="overview-grid">
@@ -1079,7 +1110,7 @@ function renderHtml(payload: BookPayload): string {
           <span class="eyebrow">The Feeling</span>
           <h2>How our energy moved</h2>
           <p>
-            The softer rises, the heavier weeks, and the calm that kept finding us again.
+            The softer rises, the heavier weeks, and the calmer stretches that kept returning.
           </p>
         </div>
         <div style="flex-grow: 1; margin: 0 -25mm; position: relative;">
@@ -1097,7 +1128,7 @@ function renderHtml(payload: BookPayload): string {
           </article>
           <article class="panel">
             <div class="panel-kicker"><span>Hours</span></div>
-            <h3 style="margin-top: 4mm;">When we found each other most</h3>
+            <h3 style="margin-top: 4mm;">When activity clustered most</h3>
             <div style="margin-top: 8mm;">${createHeatmapSvg(payload.message_frequency, 620)}</div>
           </article>
         </div>
@@ -1119,7 +1150,7 @@ function renderHtml(payload: BookPayload): string {
         <div class="overview-grid" style="grid-template-columns: 1.1fr 0.9fr;">
           <article class="panel">
             <div class="panel-kicker"><span>What Stayed</span></div>
-            <h2>The moments that held us</h2>
+            <h2>The moments that held their shape</h2>
             <p style="margin-top: 4mm;">
               Support, repair, and the little returns that mattered.
             </p>
@@ -1147,7 +1178,7 @@ function renderHtml(payload: BookPayload): string {
           </article>
           <article class="panel">
             <div class="panel-kicker"><span>Echoes</span></div>
-            <h3 style="margin-top: 2mm;">Small phrases that stayed with us</h3>
+            <h3 style="margin-top: 2mm;">Small phrases that stayed in the archive</h3>
             <div class="memory-cloud" style="margin-top: 6mm;">${memoryCloud}</div>
           </article>
         </div>
@@ -1157,7 +1188,7 @@ function renderHtml(payload: BookPayload): string {
         <div class="page-number">14</div>
         <div class="hero-stat-box" style="margin-bottom: 12mm;">
           <span class="eyebrow">The Turns</span>
-          <h2>What changed us</h2>
+          <h2>What changed the story</h2>
           <p>
             The dates that quietly shifted everything.
           </p>
@@ -1172,7 +1203,7 @@ function renderHtml(payload: BookPayload): string {
           ${
             payload.closing_quote
               ? `<blockquote style="font-family: 'Playfair Display', serif; font-size: 28pt; font-style: italic; line-height: 1.2; margin-bottom: 12mm;">&ldquo;${escapeHtml(payload.closing_quote.excerpt)}&rdquo;</blockquote>`
-              : `<blockquote style="font-family: 'Playfair Display', serif; font-size: 28pt; font-style: italic; line-height: 1.2; margin-bottom: 12mm;">Even when the days blur together, the love in them still leaves a shape.</blockquote>`
+              : `<blockquote style="font-family: 'Playfair Display', serif; font-size: 28pt; font-style: italic; line-height: 1.2; margin-bottom: 12mm;">Even when the days blur together, the archive still leaves a shape behind.</blockquote>`
           }
           <p style="font-style: italic; opacity: 0.6;">${escapeHtml(payload.keepsake_line)}</p>
         </div>
@@ -1187,12 +1218,29 @@ async function main() {
 
   const payload = await buildPayload();
   const html = renderHtml(payload);
+  const htmlPath = path.join(OUTPUT_DIR, `${payload.slug}.html`);
+  const jsonPath = path.join(OUTPUT_DIR, `${payload.slug}.json`);
+  const pdfPath = path.join(OUTPUT_DIR, `${payload.slug}.pdf`);
+  const latestHtmlPath = path.join(OUTPUT_DIR, "latest-ebook.html");
+  const latestJsonPath = path.join(OUTPUT_DIR, "latest-ebook.json");
+  const manifest: EbookManifest = {
+    slug: payload.slug,
+    title: payload.title,
+    html_path: htmlPath,
+    json_path: jsonPath,
+    pdf_path: pdfPath,
+    generated_at: new Date().toISOString(),
+  };
 
-  await fs.writeFile(JSON_PATH, JSON.stringify(payload, null, 2), "utf8");
-  await fs.writeFile(HTML_PATH, html, "utf8");
+  await fs.writeFile(jsonPath, JSON.stringify(payload, null, 2), "utf8");
+  await fs.writeFile(htmlPath, html, "utf8");
+  await fs.writeFile(latestJsonPath, JSON.stringify(payload, null, 2), "utf8");
+  await fs.writeFile(latestHtmlPath, html, "utf8");
+  await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2), "utf8");
 
-  console.log(`Wrote ${path.relative(ROOT_DIR, JSON_PATH)}`);
-  console.log(`Wrote ${path.relative(ROOT_DIR, HTML_PATH)}`);
+  console.log(`Wrote ${path.relative(ROOT_DIR, jsonPath)}`);
+  console.log(`Wrote ${path.relative(ROOT_DIR, htmlPath)}`);
+  console.log(`Wrote ${path.relative(ROOT_DIR, MANIFEST_PATH)}`);
 }
 
 main().catch((error) => {

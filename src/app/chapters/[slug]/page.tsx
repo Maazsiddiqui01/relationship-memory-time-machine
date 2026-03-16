@@ -91,7 +91,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
           <div className="chapter-cover-copy">
             <span className="hero-kicker">Chapter {getPhaseNumber(chapter.chapter_id)}</span>
             <h1>{displayChapter.display_title}</h1>
-            <p>{addressReader(profile.primaryReader, `this was one version of us. ${summarizeChapter(displayChapter)}`)}</p>
+            <p>{addressReader(profile.primaryReader, `this was one version of the story. ${summarizeChapter(displayChapter)}`)}</p>
           </div>
 
           <div className="hero-stat-strip hero-stat-strip--tight">
@@ -226,7 +226,7 @@ export default async function ChapterPage({ params }: ChapterPageProps) {
 
       <Reveal>
         <section className="quiet-band">
-          <p>When you want to zoom back out, the timeline keeps the order, moments keeps the keepsakes, and patterns shows the rhythm.</p>
+          <p>When you want to zoom back out, the timeline keeps the order, moments keeps the small reminders, and patterns shows the rhythm.</p>
           <div className="pill-row">
             <Link href="/timeline" className="pill" prefetch={false}>
               Back to timeline

@@ -213,7 +213,7 @@ export function DashboardGallery({ insights, signatureMetrics, primaryReader }: 
         <section className="route-hero dashboard-hero">
           <div className="dashboard-hero-copy">
             <span className="hero-kicker">Dashboard</span>
-            <h1>If you ever want the detective version of us.</h1>
+            <h1>If you ever want the detective version of this archive.</h1>
             <p>
               {primaryReader && primaryReader.toLowerCase() !== "you"
                 ? `${primaryReader}, this is where the patterns show themselves: who started, who stayed up late, which months went loud, and how the feeling kept changing.`
@@ -261,8 +261,8 @@ export function DashboardGallery({ insights, signatureMetrics, primaryReader }: 
         <section id="people" className="dashboard-section">
           <SectionHeading
             eyebrow="The two of you"
-            title="How each of us showed up"
-            description="Flip between us whenever you want the board to lean toward one side."
+            title="How each person showed up"
+            description="Flip between views whenever you want the board to lean toward one side."
             align="left"
           />
           <div className="chip-toggle">
@@ -696,7 +696,8 @@ export function DashboardGallery({ insights, signatureMetrics, primaryReader }: 
             <article className="panel-card">
               <div className="panel-topline">
                 <span>Archetype mix</span>
-                <strong>{selectedParticipant ? `${selectedParticipant.label}'s modes` : "Recurring relationship modes"}</strong>
+                <strong>{selectedParticipant ? `${selectedParticipant.label}'s modes` : "Recurring conversation modes"}</strong>
+                
               </div>
               <div className="dashboard-donut dashboard-donut--small">
                 <ResponsiveContainer width="100%" height={280}>
@@ -786,7 +787,7 @@ export function DashboardGallery({ insights, signatureMetrics, primaryReader }: 
         <section id="pace" className="dashboard-section">
           <SectionHeading
             eyebrow="Pace"
-            title="How fast we moved toward each other"
+            title="How fast the conversation kept moving"
             description="Streaks, bursts, reply speed, and the pauses between them."
             align="left"
           />
@@ -903,7 +904,7 @@ export function DashboardGallery({ insights, signatureMetrics, primaryReader }: 
         <section id="records" className="dashboard-section">
           <SectionHeading
             eyebrow="Records"
-            title="The facts that feel most like us"
+            title="The facts that stand out most"
             description="Short visual headlines you can open from here."
             align="left"
           />
@@ -941,7 +942,7 @@ export function DashboardGallery({ insights, signatureMetrics, primaryReader }: 
       <Reveal>
         <section className="quiet-band">
           <p>
-            If this page starts feeling too analytical, step back into the story, the timeline, or the softer keepsake pages.
+            If this page starts feeling too analytical, step back into the story, the timeline, or the lighter memory pages.
           </p>
           <div className="pill-row">
             <Link href={"/" as Route} className="pill" prefetch={false}>

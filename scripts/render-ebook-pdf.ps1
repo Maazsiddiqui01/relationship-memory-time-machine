@@ -2,8 +2,15 @@ $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $PSScriptRoot
 $outputDir = Join-Path $root "output\pdf"
-$htmlPath = Join-Path $outputDir "durr-and-maaz-story.html"
-$pdfPath = Join-Path $outputDir "durr-and-maaz-story.pdf"
+$manifestPath = Join-Path $outputDir "ebook-manifest.json"
+
+if (-not (Test-Path $manifestPath)) {
+  throw "Missing ebook manifest: $manifestPath"
+}
+
+$manifest = Get-Content -Raw $manifestPath | ConvertFrom-Json
+$htmlPath = [string]$manifest.html_path
+$pdfPath = [string]$manifest.pdf_path
 
 if (-not (Test-Path $htmlPath)) {
   throw "Missing HTML artifact: $htmlPath"
@@ -39,4 +46,4 @@ if (-not (Test-Path $pdfPath)) {
   throw "PDF export failed: $pdfPath was not created."
 }
 
-Write-Host "Wrote output/pdf/durr-and-maaz-story.pdf"
+Write-Host ("Wrote " + (Resolve-Path $pdfPath | ForEach-Object { $_.Path.Substring($root.Length + 1) }))

@@ -155,6 +155,7 @@ The system may receive build-time personalization through environment variables.
 
 Examples:
 
+- `RELATIONSHIP_MEMORY_PRESENTATION_MODE`
 - `RELATIONSHIP_MEMORY_PRIMARY_READER`
 - `RELATIONSHIP_MEMORY_GIFT_FROM`
 - `RELATIONSHIP_MEMORY_BOOK_TITLE`
@@ -162,6 +163,11 @@ Examples:
 - `RELATIONSHIP_MEMORY_BOOK_TAGLINE`
 
 These values affect website and e-book copy only. They must not modify canonical data.
+
+Presentation modes should support at least:
+
+- `gift`: direct, personal wording
+- `archive`: neutral wording suitable for non-romantic or generally descriptive conversation histories
 
 ---
 

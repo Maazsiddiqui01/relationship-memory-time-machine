@@ -88,52 +88,52 @@ export const LENS_META: Record<
 > = {
   "check-in": {
     title: "Check-Ins",
-    teaser: "The small 'are you there?' moments that kept us stitched together.",
+    teaser: "The small 'are you there?' moments that kept the thread intact.",
     mood: "quiet and steady",
   },
   affection: {
     title: "Affection",
-    teaser: "The places where love stopped being implied and started glowing.",
+    teaser: "The places where care stopped being implied and started showing clearly.",
     mood: "soft and glowing",
   },
   planning: {
     title: "Planning",
-    teaser: "All the little plans that made 'later' feel real.",
+    teaser: "All the little plans that made later feel more concrete.",
     mood: "forward-looking",
   },
   humor_banter: {
     title: "Humor & Banter",
-    teaser: "The teasing, play, and nonsense that only made sense between us.",
+    teaser: "The teasing, play, and nonsense that kept recurring in the archive.",
     mood: "light and spark-filled",
   },
   reassurance: {
     title: "Reassurance",
-    teaser: "The messages that held things steady when either of us needed it.",
+    teaser: "The messages that steadied things when someone needed it.",
     mood: "calm and protective",
   },
   conflict: {
     title: "Conflict",
-    teaser: "The harder edge of us, when care and friction sat in the same room.",
+    teaser: "The harder edge of the archive, when care and friction sat in the same room.",
     mood: "tense and charged",
   },
   repair_reconnection: {
     title: "Repair & Reconnection",
-    teaser: "The return after the strain, when reaching back mattered more than being perfect.",
+    teaser: "The return after strain, when reaching back mattered more than being perfect.",
     mood: "tender and fragile",
   },
   longing_missing: {
     title: "Longing & Missing",
-    teaser: "The ache, the distance, and the wanting-to-be-closer version of us.",
+    teaser: "The ache, the distance, and the parts of the archive shaped by wanting more closeness.",
     mood: "wistful and intimate",
   },
   everyday_life: {
     title: "Everyday Closeness",
-    teaser: "The ordinary messages that quietly became a love story.",
+    teaser: "The ordinary messages that quietly became the core of the story.",
     mood: "domestic and lived-in",
   },
   future_imagining: {
     title: "Future Imagining",
-    teaser: "The moments where us started sounding like a future, not just a present.",
+    teaser: "The moments where the conversation started sounding like a future, not just a present.",
     mood: "hopeful and cinematic",
   },
 };

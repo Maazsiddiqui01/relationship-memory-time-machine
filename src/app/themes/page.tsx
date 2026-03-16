@@ -19,7 +19,7 @@ export default async function ThemesPage() {
         <section className="route-hero">
           <span className="hero-kicker">Themes</span>
           <h1>The words that kept finding their way back.</h1>
-          <p>Little phrases, recurring ideas, and the language that slowly became ours.</p>
+          <p>Little phrases, recurring ideas, and the language that slowly became part of the archive.</p>
         </section>
       </Reveal>
 
@@ -27,7 +27,7 @@ export default async function ThemesPage() {
         <section>
           <SectionHeading
             eyebrow="Topic clusters"
-            title="Where our conversation kept returning"
+            title="Where the conversation kept returning"
             description="Themes, motif chips, and the things we circled back to without meaning to."
             align="left"
           />

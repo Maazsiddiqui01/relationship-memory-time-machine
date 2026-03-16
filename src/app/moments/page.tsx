@@ -24,7 +24,7 @@ export default async function MomentsPage() {
         <section className="route-hero">
           <span className="hero-kicker">Memory Gallery</span>
           <h1>The pieces worth keeping close.</h1>
-          <p>{addressReader(profile.primaryReader, "this page is meant to feel like a small keepsake box: brief, vivid, and easy to linger in.")}</p>
+          <p>{addressReader(profile.primaryReader, "this page is meant to feel like a small memory box: brief, vivid, and easy to linger in.")}</p>
         </section>
       </Reveal>
 

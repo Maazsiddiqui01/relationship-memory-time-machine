@@ -36,7 +36,7 @@ export default async function TimelinePage() {
           <SectionHeading
             eyebrow="Chapters"
             title="The story in sequence"
-            description="Use these as anchors whenever you want to move through us phase by phase."
+            description="Use these as anchors whenever you want to move through the archive phase by phase."
             align="left"
           />
           <div className="chapter-preview-grid">

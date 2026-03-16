@@ -19,8 +19,8 @@ export default async function PatternsPage() {
       <Reveal>
         <section className="route-hero">
           <span className="hero-kicker">Patterns</span>
-          <h1>The habits hidden inside us.</h1>
-          <p>A lighter read of our rhythm before the full detective board.</p>
+          <h1>The habits hidden in the archive.</h1>
+          <p>A lighter read of the rhythm before the full detective board.</p>
         </section>
       </Reveal>
 

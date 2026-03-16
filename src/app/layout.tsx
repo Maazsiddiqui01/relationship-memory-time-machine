@@ -18,7 +18,7 @@ const bodyFont = Outfit({
 
 export const metadata: Metadata = {
   title: "Relationship Memory Time Machine",
-  description: "A curated memory journey through a long-form WhatsApp relationship archive.",
+  description: "A curated story and insight experience built from a long-form WhatsApp conversation archive.",
 };
 
 const NAV_ITEMS = [

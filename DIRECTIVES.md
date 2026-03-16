@@ -27,6 +27,7 @@ The intended next-run workflow is: upload a different `.txt` export, set profile
 
 These variables control gift/personalization copy:
 
+- `RELATIONSHIP_MEMORY_PRESENTATION_MODE`
 - `RELATIONSHIP_MEMORY_PRIMARY_READER`
 - `RELATIONSHIP_MEMORY_GIFT_FROM`
 - `RELATIONSHIP_MEMORY_BOOK_TITLE`
@@ -34,6 +35,11 @@ These variables control gift/personalization copy:
 - `RELATIONSHIP_MEMORY_BOOK_TAGLINE`
 
 Use `.env.example` as the template.
+
+Presentation modes:
+
+- `gift`: use direct reader-facing wording
+- `archive`: use neutral wording suitable for non-romantic, non-gift, or generally descriptive builds
 
 ## Execution Phases
 
@@ -163,6 +169,8 @@ Outputs:
 - `output/pdf/*.html`
 - `output/pdf/*.json`
 - `output/pdf/*.pdf`
+
+The ebook build now writes a manifest at `output/pdf/ebook-manifest.json` so artifact names can follow the configured book title instead of staying hardcoded.
 
 ### Phase 8: Full End-to-End Run
 

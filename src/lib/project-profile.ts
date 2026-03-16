@@ -2,7 +2,10 @@ type ParticipantLike = {
   label: string;
 };
 
+export type PresentationMode = "gift" | "archive";
+
 export type ProjectProfile = {
+  presentationMode: PresentationMode;
   primaryReader: string;
   giftFrom: string | null;
   participantNames: string[];
@@ -11,6 +14,7 @@ export type ProjectProfile = {
   bookSubtitle: string;
   bookTagline: string;
   keepsakeLine: string;
+  heroKicker: string;
 };
 
 function normalizeFirstName(label: string): string {
@@ -28,11 +32,32 @@ function uniqueNames(participants: ParticipantLike[]): string[] {
     .filter((name, index, values) => values.indexOf(name) === index);
 }
 
-function resolvePrimaryReader(participantNames: string[]): string {
+function resolvePresentationMode(): PresentationMode {
+  const configured = process.env.RELATIONSHIP_MEMORY_PRESENTATION_MODE?.trim().toLowerCase();
+  if (configured === "gift" || configured === "archive") {
+    return configured;
+  }
+
+  return process.env.RELATIONSHIP_MEMORY_PRIMARY_READER?.trim() ? "gift" : "archive";
+}
+
+function resolvePrimaryReader(participantNames: string[], mode: PresentationMode): string {
+  if (mode === "archive") {
+    return "You";
+  }
+
   return process.env.RELATIONSHIP_MEMORY_PRIMARY_READER?.trim() || participantNames[0] || "You";
 }
 
-function resolveGiftFrom(participantNames: string[], primaryReader: string): string | null {
+function resolveGiftFrom(
+  participantNames: string[],
+  primaryReader: string,
+  mode: PresentationMode,
+): string | null {
+  if (mode === "archive") {
+    return null;
+  }
+
   const configured = process.env.RELATIONSHIP_MEMORY_GIFT_FROM?.trim();
   if (configured) {
     return configured;
@@ -43,22 +68,32 @@ function resolveGiftFrom(participantNames: string[], primaryReader: string): str
 
 export function deriveProjectProfile(participants: ParticipantLike[] = []): ProjectProfile {
   const participantNames = uniqueNames(participants);
-  const primaryReader = resolvePrimaryReader(participantNames);
-  const giftFrom = resolveGiftFrom(participantNames, primaryReader);
+  const presentationMode = resolvePresentationMode();
+  const primaryReader = resolvePrimaryReader(participantNames, presentationMode);
+  const giftFrom = resolveGiftFrom(participantNames, primaryReader, presentationMode);
   const pairLabel =
     participantNames.length >= 2
       ? `${participantNames[0]} & ${participantNames[1]}`
-      : participantNames[0] ?? "Relationship Memory Time Machine";
+      : participantNames[0] ?? "Conversation Archive";
   const bookTitle = process.env.RELATIONSHIP_MEMORY_BOOK_TITLE?.trim() || pairLabel;
-  const bookSubtitle = process.env.RELATIONSHIP_MEMORY_BOOK_SUBTITLE?.trim() || `For ${primaryReader}`;
+  const bookSubtitle =
+    process.env.RELATIONSHIP_MEMORY_BOOK_SUBTITLE?.trim() ||
+    (presentationMode === "gift" ? `For ${primaryReader}` : "Conversation Archive");
   const bookTagline =
     process.env.RELATIONSHIP_MEMORY_BOOK_TAGLINE?.trim() ||
-    "A keepsake of the rhythm, the phases, and the quiet ways you kept finding each other.";
-  const keepsakeLine = giftFrom
-    ? `A keepsake for ${primaryReader}, from ${giftFrom}`
-    : `A keepsake for ${primaryReader}`;
+    (presentationMode === "gift"
+      ? "A keepsake of the rhythm, the phases, and the quiet ways you kept finding each other."
+      : "A visual archive of the rhythm, themes, and changes inside one conversation history.");
+  const keepsakeLine =
+    presentationMode === "gift"
+      ? giftFrom
+        ? `A keepsake for ${primaryReader}, from ${giftFrom}`
+        : `A keepsake for ${primaryReader}`
+      : "A visual archive assembled from the conversation history.";
+  const heroKicker = presentationMode === "gift" ? `For ${primaryReader}` : "Conversation Archive";
 
   return {
+    presentationMode,
     primaryReader,
     giftFrom,
     participantNames,
@@ -67,6 +102,7 @@ export function deriveProjectProfile(participants: ParticipantLike[] = []): Proj
     bookSubtitle,
     bookTagline,
     keepsakeLine,
+    heroKicker,
   };
 }
 

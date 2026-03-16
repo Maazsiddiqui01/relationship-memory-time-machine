@@ -1,8 +1,7 @@
-import { createReadStream, promises as fs } from "node:fs";
+﻿import { promises as fs } from "node:fs";
 import path from "node:path";
-import readline from "node:readline";
 
-import { ARCHETYPE_LABELS, type ArchetypeLabel } from "../pipeline/config.js";
+import type { ArchetypeLabel } from "../pipeline/config.js";
 import type {
   ChapterSegment,
   EmotionTimelinePoint,
@@ -34,7 +33,6 @@ const GENERATED_IMAGE_DIR = path.join(ROOT_DIR, "output", "imagegen");
 const MANIFEST_PATH = path.join(OUTPUT_DIR, "ebook-manifest.json");
 const IMAGE_DIR = path.join(ROOT_DIR, "public", "images");
 const DATA_DIR = path.join(ROOT_DIR, "data", "public");
-const MESSAGE_ANNOTATIONS_PATH = path.join(ROOT_DIR, "data", "annotations", "message_annotations.ndjson");
 
 const ARCHETYPE_META: Record<
   ArchetypeLabel,
@@ -79,6 +77,99 @@ type BookChapter = DecoratedChapter & {
   highlight: BookHighlight | null;
 };
 
+type DashboardParticipantOverview = {
+  participant_id: string;
+  label: string;
+  total_messages: number;
+  message_share: number;
+  average_words_per_message: number;
+  average_chars_per_message: number;
+  emoji_count: number;
+  emoji_share: number;
+  emoji_per_message: number;
+  link_count: number;
+  multiline_count: number;
+  multiline_share: number;
+  weekend_percentage: number;
+  late_night_percentage: number;
+  session_opener_count: number;
+  session_opener_share: number;
+  longest_message_length: number;
+  average_reply_gap_minutes: number;
+};
+
+type DashboardInsights = {
+  participants: DashboardParticipantOverview[];
+  time_patterns: {
+    monthly_split: Array<{
+      month_key: string;
+      total_messages: number;
+      participant_counts: Record<string, number>;
+      late_night_count: number;
+    }>;
+    weekday_distribution: Array<{
+      label: string;
+      total_messages: number;
+      participant_counts: Record<string, number>;
+      weekday: number;
+    }>;
+    hour_distribution: Array<{
+      label: string;
+      total_messages: number;
+      participant_counts: Record<string, number>;
+      hour_of_day: number;
+    }>;
+  };
+  session_patterns: {
+    longest_sessions: Array<{
+      technical_session_id: string;
+      start_timestamp: string;
+      end_timestamp: string;
+      message_count: number;
+      density_score: number;
+      dominant_emotion: string;
+      participant_counts: Record<string, number>;
+    }>;
+    fastest_exchange_windows: Array<{
+      technical_session_id: string;
+      start_timestamp: string;
+      end_timestamp: string;
+      average_reply_gap_minutes: number;
+      message_count: number;
+    }>;
+    highest_volume_days: Array<{
+      day_key: string;
+      count: number;
+    }>;
+  };
+  emotion_patterns: {
+    overall_emotion_mix: Array<{ label: string; count: number }>;
+    overall_archetype_mix: Array<{ label: string; count: number }>;
+    participant_signal_totals: Array<{
+      participant_id: string;
+      label: string;
+      support_count: number;
+      conflict_count: number;
+      repair_count: number;
+    }>;
+    signal_trend: Array<{
+      month_key: string;
+      support_count: number;
+      conflict_count: number;
+      repair_count: number;
+    }>;
+  };
+  detective_records: Array<{
+    record_id: string;
+    label: string;
+    value: string;
+    detail: string;
+    winner_participant_id: string | null;
+    winner_label: string | null;
+    route: string;
+  }>;
+};
+
 type BookPayload = {
   slug: string;
   presentation_mode: "gift" | "archive";
@@ -102,6 +193,7 @@ type BookPayload = {
   motifs: PhraseMotif[];
   lenses: BookLens[];
   signature_metrics: SignatureMetrics;
+  dashboard: DashboardInsights;
   closing_quote: BookHighlight | null;
   keepsake_line: string;
 };
@@ -262,6 +354,93 @@ function createMonthlyBarChart(points: Array<{ month_key: string; count: number 
   `;
 }
 
+function createSplitMonthlyChart(
+  points: Array<{
+    month_key: string;
+    total_messages: number;
+    participant_counts: Record<string, number>;
+  }>,
+  participantIds: string[],
+  width: number,
+  height: number,
+): string {
+  const margin = { top: 18, right: 0, bottom: 32, left: 0 };
+  const innerWidth = width - margin.left - margin.right;
+  const innerHeight = height - margin.top - margin.bottom;
+  const maxCount = Math.max(...points.map((point) => point.total_messages), 1);
+  const barWidth = innerWidth / Math.max(points.length, 1);
+  const [firstParticipantId, secondParticipantId] = participantIds;
+
+  const bars = points
+    .map((point, index) => {
+      const firstCount = point.participant_counts[firstParticipantId] ?? 0;
+      const secondCount = point.participant_counts[secondParticipantId] ?? 0;
+      const firstHeight = (firstCount / maxCount) * innerHeight;
+      const secondHeight = (secondCount / maxCount) * innerHeight;
+      const x = margin.left + index * barWidth + barWidth * 0.16;
+      const ySecond = margin.top + innerHeight - secondHeight;
+      const yFirst = ySecond - firstHeight;
+      const showLabel = index % Math.max(1, Math.floor(points.length / 6)) === 0 || index === points.length - 1;
+      const labelX = x + (barWidth * 0.68) / 2;
+      return `
+        <g>
+          <rect x="${x.toFixed(1)}" y="${ySecond.toFixed(1)}" width="${(barWidth * 0.68).toFixed(1)}" height="${secondHeight.toFixed(1)}" rx="4" fill="#efb7c6" opacity="0.92" />
+          <rect x="${x.toFixed(1)}" y="${yFirst.toFixed(1)}" width="${(barWidth * 0.68).toFixed(1)}" height="${firstHeight.toFixed(1)}" rx="4" fill="#c97d96" opacity="0.9" />
+          ${showLabel ? `<text x="${labelX.toFixed(1)}" y="${height - 2}" text-anchor="middle" font-size="6.7pt" style="text-transform:uppercase;opacity:0.55;letter-spacing:0.05em;">${escapeHtml(point.month_key.slice(2))}</text>` : ""}
+        </g>
+      `;
+    })
+    .join("");
+
+  return `
+    <svg viewBox="0 0 ${width} ${height}" class="chart-svg" aria-label="Monthly split chart">
+      <line x1="0" y1="${margin.top + innerHeight}" x2="${width}" y2="${margin.top + innerHeight}" stroke="var(--line-strong)" />
+      ${bars}
+    </svg>
+  `;
+}
+
+function createDonutSplitChart(participants: DashboardParticipantOverview[], size = 250): string {
+  const radius = 76;
+  const circumference = 2 * Math.PI * radius;
+  const center = size / 2;
+  const totalMessages = participants.reduce((sum, participant) => sum + participant.total_messages, 0);
+  let offset = 0;
+  const colors = ["#c97d96", "#efb7c6"];
+
+  const arcs = participants
+    .map((participant, index) => {
+      const fraction = totalMessages === 0 ? 0 : participant.total_messages / totalMessages;
+      const arcLength = fraction * circumference;
+      const circle = `
+        <circle
+          cx="${center}"
+          cy="${center}"
+          r="${radius}"
+          fill="none"
+          stroke="${colors[index % colors.length]}"
+          stroke-width="24"
+          stroke-linecap="butt"
+          stroke-dasharray="${arcLength.toFixed(2)} ${(circumference - arcLength).toFixed(2)}"
+          stroke-dashoffset="${(-offset).toFixed(2)}"
+          transform="rotate(-90 ${center} ${center})"
+        />
+      `;
+      offset += arcLength;
+      return circle;
+    })
+    .join("");
+
+  return `
+    <svg viewBox="0 0 ${size} ${size}" class="chart-svg" aria-label="Message share split">
+      <circle cx="${center}" cy="${center}" r="${radius}" fill="none" stroke="#f6e4e9" stroke-width="24" />
+      ${arcs}
+      <text x="${center}" y="${center - 8}" text-anchor="middle" class="donut-overline">together</text>
+      <text x="${center}" y="${center + 18}" text-anchor="middle" class="donut-value">${escapeHtml(formatCompact(totalMessages))}</text>
+    </svg>
+  `;
+}
+
 function createHeatmapSvg(messageFrequency: MessageFrequency, width: number): string {
   const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const gridX = 40;
@@ -306,8 +485,8 @@ function createHeatmapSvg(messageFrequency: MessageFrequency, width: number): st
 function createChapterTimeline(chapters: BookChapter[], width: number, height: number): string {
   const margin = { top: 40, right: 0, bottom: 20, left: 0 };
   const innerWidth = width - margin.left - margin.right;
-  const rowHeight = 44;
-  const trackHeight = 10;
+  const rowHeight = Math.max(24, Math.floor((height - margin.top - margin.bottom) / Math.max(chapters.length, 1)));
+  const trackHeight = 8;
   const starts = chapters.map((chapter) => new Date(chapter.start_timestamp).getTime());
   const ends = chapters.map((chapter) => new Date(chapter.end_timestamp).getTime());
   const min = Math.min(...starts);
@@ -363,15 +542,56 @@ function createLateNightGauge(value: number, size = 220): string {
   `;
 }
 
+function createSignalTrendChart(
+  points: Array<{ month_key: string; support_count: number; conflict_count: number; repair_count: number }>,
+  width: number,
+  height: number,
+): string {
+  const margin = { top: 18, right: 8, bottom: 28, left: 0 };
+  const innerWidth = width - margin.left - margin.right;
+  const innerHeight = height - margin.top - margin.bottom;
+  const maxValue = Math.max(
+    ...points.flatMap((point) => [point.support_count, point.conflict_count, point.repair_count]),
+    1,
+  );
+
+  const buildPath = (key: "support_count" | "conflict_count" | "repair_count") =>
+    points
+      .map((point, index) => {
+        const x = margin.left + (index / Math.max(points.length - 1, 1)) * innerWidth;
+        const y = margin.top + innerHeight - (point[key] / maxValue) * innerHeight;
+        return `${index === 0 ? "M" : "L"} ${x.toFixed(1)} ${y.toFixed(1)}`;
+      })
+      .join(" ");
+
+  const labels = points
+    .filter((_, index) => index % Math.max(1, Math.floor(points.length / 5)) === 0 || index === points.length - 1)
+    .map((point, index, array) => {
+      const x = margin.left + (points.indexOf(point) / Math.max(points.length - 1, 1)) * innerWidth;
+      const anchor = index === array.length - 1 ? "end" : "middle";
+      return `<text x="${x.toFixed(1)}" y="${height - 2}" text-anchor="${anchor}" font-size="6.5pt" style="text-transform:uppercase;opacity:0.55;letter-spacing:0.05em;">${escapeHtml(point.month_key.slice(2))}</text>`;
+    })
+    .join("");
+
+  return `
+    <svg viewBox="0 0 ${width} ${height}" class="chart-svg" aria-label="Support conflict repair trend">
+      <path d="${buildPath("support_count")}" fill="none" stroke="#b96b84" stroke-width="2.2" stroke-linecap="round" />
+      <path d="${buildPath("repair_count")}" fill="none" stroke="#d99aac" stroke-width="2" stroke-linecap="round" />
+      <path d="${buildPath("conflict_count")}" fill="none" stroke="#7e5f68" stroke-width="1.6" stroke-linecap="round" opacity="0.7" />
+      ${labels}
+    </svg>
+  `;
+}
+
 function createLensGarden(lenses: BookLens[], width: number, height: number): string {
   const maxCount = Math.max(...lenses.map((lens) => lens.count), 1);
   const positions = [
-    { x: 120, y: 140 },
-    { x: 300, y: 100 },
-    { x: 480, y: 140 },
-    { x: 180, y: 280 },
-    { x: 360, y: 280 },
-    { x: 540, y: 230 },
+    { x: width * 0.16, y: height * 0.44 },
+    { x: width * 0.42, y: height * 0.24 },
+    { x: width * 0.76, y: height * 0.4 },
+    { x: width * 0.28, y: height * 0.78 },
+    { x: width * 0.56, y: height * 0.8 },
+    { x: width * 0.86, y: height * 0.68 },
   ];
 
   return `
@@ -409,89 +629,17 @@ function buildMilestoneAtlas(milestones: BookMilestone[]): string {
     .join("");
 }
 
-function buildChapterPages(chapters: BookChapter[], chapterImage: string): string {
-  return chapters
-    .map((chapter, index) => {
-      const milestoneLabel = chapter.milestone ? chapter.milestone.display_title : "The feeling kept deepening";
-      const milestoneDetail = chapter.milestone
-        ? buildExcerpt(chapter.milestone.short_summary, 92)
-        : "No single turning point, just the pattern gradually taking on a clearer shape.";
-      const quote = chapter.highlight ? chapter.highlight.excerpt : "A phase that stayed warm long after it passed.";
+function deriveLensesFromDashboard(dashboard: DashboardInsights): BookLens[] {
+  const total = dashboard.emotion_patterns.overall_archetype_mix.reduce((sum, entry) => sum + entry.count, 0);
 
-      return `
-        <section class="page page--chapter">
-          <img class="page-art page-art--chapter" src="${chapterImage}" alt="" />
-          <div class="page-number">${index + 7}</div>
-          <div class="page-chapter-grid" style="margin-top: 15mm; flex-grow: 1;">
-            <div class="chapter-copy">
-              <span class="eyebrow">${escapeHtml(chapter.phase_label)}</span>
-              <h2>${escapeHtml(chapter.display_title)}</h2>
-              <p class="chapter-summary" style="margin-top: 6mm; font-size: 10.5pt; max-width: 85mm;">${escapeHtml(chapter.curated_summary)}</p>
-              
-              <div class="chapter-stats" style="margin-top: 10mm; border-top: 1px solid var(--line); padding-top: 6mm;">
-                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); padding-bottom: 3mm;">
-                  <span style="font-size: 7pt; letter-spacing: 0.15em; text-transform: uppercase;">Volume</span>
-                  <strong style="font-family: 'Playfair Display', serif; font-size: 16pt;">${escapeHtml(formatCompact(chapter.message_count))}</strong>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 3mm;">
-                  <span style="font-size: 7pt; letter-spacing: 0.15em; text-transform: uppercase;">Mood</span>
-                  <strong style="font-family: 'Playfair Display', serif; font-size: 14pt;">${escapeHtml(chapter.dominant_emotion)}</strong>
-                </div>
-              </div>
-            </div>
-            
-            <div class="chapter-side" style="display: flex; flex-direction: column; justify-content: flex-end; gap: 8mm;">
-              <article class="chapter-note" style="border-left: 2px solid var(--rose-deep); padding-left: 5mm;">
-                <h3 style="font-size: 14pt;">${escapeHtml(milestoneLabel)}</h3>
-                <p style="font-style: italic; opacity: 0.8; font-size: 10pt;">${escapeHtml(milestoneDetail)}</p>
-              </article>
-              <article class="chapter-quote-card" style="background: rgba(255, 255, 255, 0.4); padding: 6mm; border-radius: 4px; border: 1px solid var(--line);">
-                <blockquote style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 14pt; line-height: 1.3;">
-                  &ldquo;${escapeHtml(quote)}&rdquo;
-                </blockquote>
-              </article>
-            </div>
-          </div>
-        </section>
-      `;
-    })
-    .join("");
-}
-
-async function computeLensCounts(): Promise<BookLens[]> {
-  const archetypeCounts = new Map<ArchetypeLabel, number>();
-  let total = 0;
-
-  for (const archetype of ARCHETYPE_LABELS) {
-    archetypeCounts.set(archetype, 0);
-  }
-
-  const stream = createReadStream(MESSAGE_ANNOTATIONS_PATH, { encoding: "utf8" });
-  const lines = readline.createInterface({
-    input: stream,
-    crlfDelay: Infinity,
-  });
-
-  for await (const line of lines) {
-    if (!line.trim()) {
-      continue;
-    }
-
-    const parsed = JSON.parse(line) as { archetype_tags: ArchetypeLabel[] };
-    total += 1;
-
-    for (const archetype of parsed.archetype_tags) {
-      archetypeCounts.set(archetype, (archetypeCounts.get(archetype) ?? 0) + 1);
-    }
-  }
-
-  return [...archetypeCounts.entries()]
-    .map(([archetype, count]) => ({
-      archetype,
-      title: ARCHETYPE_META[archetype]?.title ?? humanizeArchetypeLabel(archetype),
-      mood: ARCHETYPE_META[archetype]?.mood ?? "story signal",
-      count,
-      share: total === 0 ? 0 : count / total,
+  return dashboard.emotion_patterns.overall_archetype_mix
+    .filter((entry): entry is { label: ArchetypeLabel; count: number } => entry.label in ARCHETYPE_META)
+    .map((entry) => ({
+      archetype: entry.label,
+      title: ARCHETYPE_META[entry.label]?.title ?? humanizeArchetypeLabel(entry.label),
+      mood: ARCHETYPE_META[entry.label]?.mood ?? "story signal",
+      count: entry.count,
+      share: total === 0 ? 0 : entry.count / total,
     }))
     .sort((left, right) => right.count - left.count)
     .slice(0, 6);
@@ -565,7 +713,7 @@ function personalizeMilestoneSummary(milestone: BookMilestone): string {
 }
 
 async function buildPayload(): Promise<BookPayload> {
-  const [participants, signatureMetrics, emotionTimeline, messageFrequency, chapters, highlights, milestones, topicClusters, phraseMotifs] =
+  const [participants, signatureMetrics, emotionTimeline, messageFrequency, chapters, highlights, milestones, topicClusters, phraseMotifs, dashboard] =
     await Promise.all([
       readPublicJson<Participant[]>("participants.json"),
       readPublicJson<SignatureMetrics>("signature_metrics.json"),
@@ -576,26 +724,27 @@ async function buildPayload(): Promise<BookPayload> {
       readPublicJson<Milestone[]>("milestones.json"),
       readPublicJson<TopicCluster[]>("topic_clusters.json"),
       readPublicJson<PhraseMotif[]>("phrase_motifs.json"),
+      readPublicJson<DashboardInsights>("dashboard_insights.json"),
     ]);
 
-  const [coverImage, chapterImage, lensImage, lenses] = await Promise.all([
+  const [coverImage, chapterImage, lensImage] = await Promise.all([
     embedPreferredImage(["ebook-cover.png", "hero.png"]),
     embedPreferredImage(["ebook-chapter.png", "chapter-motif.png"]),
     embedPreferredImage(["ebook-closing.png", "lens-motif.png"]),
-    computeLensCounts(),
   ]);
+  const lenses = deriveLensesFromDashboard(dashboard);
 
   const curatedHighlights = curateHighlights(highlights, {
-    limit: 8,
-    maxChars: 116,
+    limit: 4,
+    maxChars: 88,
     maxPerChapter: 2,
-    maxPerSender: 3,
+    maxPerSender: 2,
   });
 
   const curatedMilestones = curateMilestones(milestones, {
-    limit: 6, // Reduced to 6 to fit A4 atlas page strictly
+    limit: 5,
     maxPerChapter: 2,
-    maxSameTitle: 2,
+    maxSameTitle: 1,
     allowCareerSignals: true,
   })
     .sort((left, right) => left.start_timestamp.localeCompare(right.start_timestamp))
@@ -712,16 +861,19 @@ async function buildPayload(): Promise<BookPayload> {
     motifs,
     lenses,
     signature_metrics: signatureMetrics,
+    dashboard,
     closing_quote: closingQuote,
     keepsake_line: profile.keepsakeLine,
   };
 }
 
 function renderHtml(payload: BookPayload): string {
+  const dashboardParticipants = payload.dashboard.participants.slice(0, 2);
+  const participantIds = dashboardParticipants.map((participant) => participant.participant_id);
   const heroMetrics = payload.headline_metrics
     .map(
       (metric) => `
-        <article class="metric-card">
+        <article class="hero-metric">
           <span>${escapeHtml(metric.label)}</span>
           <strong>${escapeHtml(metric.value)}</strong>
           <small>${escapeHtml(metric.detail)}</small>
@@ -730,72 +882,163 @@ function renderHtml(payload: BookPayload): string {
     )
     .join("");
 
-  const replyGaps = payload.reply_gap_metrics
+  const participantLegends = dashboardParticipants
+    .map(
+      (participant, index) => `
+        <span class="legend-pill">
+          <i class="legend-dot legend-dot--${index + 1}"></i>
+          ${escapeHtml(participant.label)}
+        </span>
+      `,
+    )
+    .join("");
+
+  const participantSignatureCards = dashboardParticipants
+    .map(
+      (participant) => `
+        <article class="signature-card">
+          <div class="signature-head">
+            <div>
+              <span class="section-kicker section-kicker--tiny">${escapeHtml(participant.label)}</span>
+              <h3>${escapeHtml(formatPercent(participant.message_share))} share</h3>
+            </div>
+            <strong>${escapeHtml(formatCompact(participant.total_messages))}</strong>
+          </div>
+          <div class="signature-grid">
+            <div><span>words / msg</span><strong>${escapeHtml(participant.average_words_per_message.toFixed(1))}</strong></div>
+            <div><span>emoji / msg</span><strong>${escapeHtml(participant.emoji_per_message.toFixed(2))}</strong></div>
+            <div><span>late night</span><strong>${escapeHtml(formatPercent(participant.late_night_percentage))}</strong></div>
+            <div><span>openers</span><strong>${escapeHtml(String(participant.session_opener_count))}</strong></div>
+            <div><span>reply gap</span><strong>${escapeHtml(`${participant.average_reply_gap_minutes.toFixed(1)}m`)}</strong></div>
+            <div><span>longest note</span><strong>${escapeHtml(formatCompact(participant.longest_message_length))}</strong></div>
+          </div>
+        </article>
+      `,
+    )
+    .join("");
+
+  const detectiveCards = payload.dashboard.detective_records
+    .slice(0, 4)
+    .map(
+      (record) => `
+        <article class="mini-card mini-card--stat">
+          <span>${escapeHtml(record.label)}</span>
+          <strong>${escapeHtml(record.value)}</strong>
+          <small>${escapeHtml(record.detail)}</small>
+        </article>
+      `,
+    )
+    .join("");
+
+  const maxEmotion = Math.max(...payload.dashboard.emotion_patterns.overall_emotion_mix.map((entry) => entry.count), 1);
+  const emotionRows = payload.dashboard.emotion_patterns.overall_emotion_mix
+    .slice(0, 5)
+    .map(
+      (emotion) => `
+        <div class="bar-row">
+          <div class="bar-copy"><span>${escapeHtml(emotion.label)}</span><strong>${escapeHtml(formatCompact(emotion.count))}</strong></div>
+          <div class="bar-track"><i class="bar-fill" style="width:${((emotion.count / maxEmotion) * 100).toFixed(1)}%"></i></div>
+        </div>
+      `,
+    )
+    .join("");
+
+  const archetypeRows = payload.lenses
+    .slice(0, 5)
+    .map(
+      (lens) => `
+        <div class="bar-row">
+          <div class="bar-copy"><span>${escapeHtml(lens.title)}</span><strong>${escapeHtml(formatCompact(lens.count))}</strong></div>
+          <div class="bar-track"><i class="bar-fill bar-fill--soft" style="width:${(lens.share * 100).toFixed(1)}%"></i></div>
+        </div>
+      `,
+    )
+    .join("");
+
+  const signalCards = payload.dashboard.emotion_patterns.participant_signal_totals
     .map(
       (entry) => `
-        <article class="reply-card">
+        <article class="mini-card">
           <span>${escapeHtml(entry.label)}</span>
-          <strong>${escapeHtml(entry.value)}</strong>
+          <strong>${escapeHtml(formatCompact(entry.support_count))} support</strong>
+          <small>${escapeHtml(formatCompact(entry.repair_count))} repair / ${escapeHtml(formatCompact(entry.conflict_count))} conflict</small>
         </article>
       `,
     )
     .join("");
 
-  const topicCards = payload.topics
+  const milestoneCards = payload.milestones
+    .slice(0, 4)
+    .map(
+      (milestone) => `
+        <article class="timeline-note">
+          <span>${escapeHtml(formatMonthYear(milestone.start_timestamp))}</span>
+          <h3>${escapeHtml(milestone.display_title)}</h3>
+          <p>${escapeHtml(buildExcerpt(milestone.short_summary, 68))}</p>
+        </article>
+      `,
+    )
+    .join("");
+
+  const sessionCards = [
+    payload.dashboard.session_patterns.longest_sessions[0]
+      ? `
+          <article class="mini-card mini-card--stat">
+            <span>longest stretch</span>
+            <strong>${escapeHtml(formatCompact(payload.dashboard.session_patterns.longest_sessions[0].message_count))}</strong>
+            <small>${escapeHtml(formatMonthYear(payload.dashboard.session_patterns.longest_sessions[0].start_timestamp))}</small>
+          </article>
+        `
+      : "",
+    payload.dashboard.session_patterns.fastest_exchange_windows[0]
+      ? `
+          <article class="mini-card mini-card--stat">
+            <span>fastest exchange</span>
+            <strong>${escapeHtml(`${payload.dashboard.session_patterns.fastest_exchange_windows[0].average_reply_gap_minutes.toFixed(1)} min`)}</strong>
+            <small>${escapeHtml(formatCompact(payload.dashboard.session_patterns.fastest_exchange_windows[0].message_count))} messages in one window</small>
+          </article>
+        `
+      : "",
+    payload.dashboard.session_patterns.highest_volume_days[0]
+      ? `
+          <article class="mini-card mini-card--stat">
+            <span>loudest day</span>
+            <strong>${escapeHtml(formatIsoDate(payload.dashboard.session_patterns.highest_volume_days[0].day_key))}</strong>
+            <small>${escapeHtml(formatCompact(payload.dashboard.session_patterns.highest_volume_days[0].count))} messages</small>
+          </article>
+        `
+      : "",
+  ].join("");
+
+  const motifCloud = payload.motifs
+    .slice(0, 10)
+    .map(
+      (motif) => `
+        <span class="motif-chip">${escapeHtml(cleanDisplayText(motif.label))}</span>
+      `,
+    )
+    .join("");
+
+  const topicPills = payload.topics
+    .slice(0, 4)
     .map(
       (topic) => `
-        <article class="topic-pill">
-          <span>${escapeHtml(topic.label.replace(/_/gu, " "))}</span>
-          <strong>${escapeHtml(formatCompact(topic.count))}</strong>
-        </article>
+        <span class="legend-pill">${escapeHtml(topic.label.replace(/_/gu, " "))}</span>
       `,
     )
     .join("");
 
-  const motifChips = payload.motifs
-    .map(
-      (motif) => `
-        <span class="motif-chip">${escapeHtml(cleanDisplayText(motif.label))}<small>${escapeHtml(formatCompact(motif.count))}</small></span>
-      `,
-    )
-    .join("");
-
-  const milestoneAtlas = buildMilestoneAtlas(payload.milestones);
-  const chapterCards = payload.chapters
-    .map(
-      (chapter) => `
-        <article class="chapter-card">
-          <span>${escapeHtml(chapter.phase_label)}</span>
-          <h3>${escapeHtml(chapter.display_title)}</h3>
-          <strong>${escapeHtml(formatCompact(chapter.message_count))} msgs</strong>
-          <p>${escapeHtml(chapter.dominant_emotion)}</p>
-        </article>
-      `,
-    )
-    .join("");
-
-  const memoryCloud = payload.motifs
-    .slice(0, 8)
-    .map(
-      (motif) => `
-        <span class="memory-cloud-chip">${escapeHtml(cleanDisplayText(motif.label))}</span>
-      `,
-    )
-    .join("");
-
-  const highlightRibbon = payload.highlights
-    .slice(0, 3) // Hard limit to 3 to fit A4 height
+  const memorySnippets = payload.highlights
+    .slice(0, 2)
     .map(
       (highlight) => `
-        <article class="ribbon-card">
-          <blockquote style="font-size: 11pt; line-height: 1.25;">&ldquo;${escapeHtml(highlight.excerpt)}&rdquo;</blockquote>
-          <span style="font-size: 7.5pt; margin-top: 1mm; display: block;">${escapeHtml(highlight.sender_label ?? "Memory")} / ${escapeHtml(highlight.emotion_label)}</span>
+        <article class="quote-slice">
+          <blockquote>&ldquo;${escapeHtml(cleanDisplayText(highlight.excerpt))}&rdquo;</blockquote>
+          <small>${escapeHtml(highlight.sender_label ?? "Memory")} / ${escapeHtml(highlight.emotion_label)}</small>
         </article>
       `,
     )
     .join("");
-
-  const chapterPages = buildChapterPages(payload.chapters, payload.chapter_image);
 
   return `<!doctype html>
 <html lang="en">
@@ -804,57 +1047,66 @@ function renderHtml(payload: BookPayload): string {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${escapeHtml(payload.title)} - ${escapeHtml(payload.subtitle)}</title>
     <style>
-      @page { size: 210mm 297mm; margin: 0; }
+      @page { size: 192mm 240mm; margin: 0; }
       :root {
-        --ink: #32262a;
-        --muted: #80656e;
-        --rose: #d88da5;
-        --rose-deep: #b96b84;
-        --ivory: #fffbf8;
-        --paper: #fffdfc;
-        --line: rgba(134, 105, 112, 0.12);
-        --shadow: 0 12px 40px rgba(115, 92, 100, 0.08);
+        --page-w: 192mm;
+        --page-h: 240mm;
+        --ink: #392b31;
+        --ink-soft: #6d5961;
+        --rose: #e2a6b7;
+        --rose-deep: #c97d96;
+        --rose-soft: #f4dbe3;
+        --paper: #fffaf8;
+        --paper-warm: #fff4ef;
+        --card: rgba(255, 255, 255, 0.72);
+        --line: rgba(159, 119, 131, 0.16);
+        --line-strong: rgba(159, 119, 131, 0.26);
+        --shadow: 0 18px 44px rgba(145, 105, 118, 0.10);
       }
       * { box-sizing: border-box; }
       html, body {
         margin: 0;
         padding: 0;
-        width: 210mm;
-        height: 297mm;
-        font-family: "Palatino", "Georgia", serif;
+        width: var(--page-w);
+        min-height: var(--page-h);
+        background: #f9f3f1;
         color: var(--ink);
-        background: #fdfaf9;
+        font-family: "Georgia", "Times New Roman", serif;
         -webkit-font-smoothing: antialiased;
       }
-      .book { width: 210mm; margin: 0 auto; }
+      .book { width: var(--page-w); margin: 0 auto; }
       .page {
         position: relative;
-        width: 210mm;
-        height: 297mm;
-        padding: 30mm 25mm;
+        width: var(--page-w);
+        height: var(--page-h);
+        padding: 16mm 15mm 14mm;
         overflow: hidden;
-        background: var(--paper);
         break-after: page;
-        display: flex;
-        flex-direction: column;
+        page-break-after: always;
+        background:
+          radial-gradient(circle at top left, rgba(244, 216, 225, 0.52), transparent 30%),
+          radial-gradient(circle at top right, rgba(255, 237, 226, 0.75), transparent 28%),
+          linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
       }
-      .page::after {
+      .page::before {
         content: "";
         position: absolute;
         inset: 0;
-        background: url('https://www.transparenttextures.com/patterns/felt.png'); /* Subtle paper grain */
-        opacity: 0.03;
+        background:
+          radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.56), transparent 20%),
+          radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.44), transparent 16%),
+          radial-gradient(circle at 50% 100%, rgba(248, 219, 228, 0.36), transparent 28%);
         pointer-events: none;
       }
       .page-number {
         position: absolute;
-        right: 20mm;
-        bottom: 12mm;
+        right: 12mm;
+        bottom: 8mm;
         color: var(--rose-deep);
-        font: 600 8pt "Montserrat", "Segoe UI", sans-serif;
-        letter-spacing: 0.15em;
+        font: 700 6.8pt "Segoe UI", sans-serif;
+        letter-spacing: 0.24em;
         text-transform: uppercase;
-        opacity: 0.6;
+        opacity: 0.58;
       }
       .page-art {
         position: absolute;
@@ -862,357 +1114,531 @@ function renderHtml(payload: BookPayload): string {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        opacity: 0.25;
-        mix-blend-mode: multiply;
-        transition: opacity 0.4s ease;
+        opacity: 0.20;
       }
-      .page-art--cover { opacity: 0.4; }
-      .page-art--chapter { opacity: 0.12; }
-      
-      .cover { display: flex; flex-direction: column; justify-content: space-between; padding: 30mm 20mm; }
-      .cover-shell { position: relative; z-index: 10; display: grid; gap: 10mm; }
-      .cover-kicker, .eyebrow {
-        display: inline-block;
-        color: var(--rose-deep);
-        font: 700 8pt "Montserrat", "Segoe UI", sans-serif;
-        letter-spacing: 0.3em;
-        text-transform: uppercase;
-        margin-bottom: 4mm;
+      .page-art--cover { opacity: 0.75; }
+      .page-art--ambient { opacity: 0.18; }
+      .page-art--closing { opacity: 0.5; }
+      .cover-overlay {
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(135deg, rgba(255, 251, 248, 0.78) 10%, rgba(255, 244, 239, 0.46) 46%, rgba(255, 244, 239, 0.70) 100%);
       }
-      h1, h2, h3 { margin: 0; font-family: "Playfair Display", "Georgia", serif; font-weight: 400; line-height: 1.1; }
-      h1 { font-size: 42pt; letter-spacing: -0.02em; }
-      h2 { font-size: 28pt; letter-spacing: -0.01em; color: var(--ink); }
-      h3 { font-size: 18pt; color: var(--muted); }
+      .shell { position: relative; z-index: 2; }
+      h1, h2, h3, h4, p, blockquote { margin: 0; }
+      h1, h2, h3, h4 {
+        font-family: "Georgia", "Times New Roman", serif;
+        font-weight: 400;
+        letter-spacing: -0.03em;
+      }
+      h1 { font-size: 35pt; line-height: 0.98; }
+      h2 { font-size: 24pt; line-height: 1.02; }
+      h3 { font-size: 15pt; line-height: 1.08; }
+      h4 { font-size: 12pt; line-height: 1.12; }
       p {
-        margin: 0;
-        color: var(--muted);
-        font: 11pt/1.6 "Palatino", "Georgia", serif;
+        color: var(--ink-soft);
+        font: 9.4pt/1.46 "Segoe UI", sans-serif;
       }
-      .cover-title { display: grid; gap: 4mm; max-width: 120mm; }
-      .cover-title p { max-width: 90mm; font-size: 12pt; font-style: italic; }
-      .cover-metrics {
-        display: flex;
-        gap: 8mm;
-        margin-top: 5mm;
-      }
-      .metric-card, .chapter-card, .topic-pill, .atlas-card, .chapter-note, .chapter-quote-card {
-        background: transparent;
-        border: none;
-        box-shadow: none;
-        padding: 0;
-      }
-      .metric-card { display: grid; gap: 2mm; }
-      .metric-card span, .chapter-card span, .topic-pill span, .atlas-date {
+      .section-kicker {
+        display: inline-flex;
         color: var(--rose-deep);
-        font: 700 7pt "Montserrat", sans-serif;
-        letter-spacing: 0.2em;
+        font: 700 7pt "Segoe UI", sans-serif;
+        letter-spacing: 0.28em;
         text-transform: uppercase;
       }
-      .metric-card strong { font-size: 22pt; font-family: "Playfair Display", serif; }
-      .metric-card small { color: var(--muted); font-size: 9pt; }
-      
+      .section-kicker--tiny { font-size: 6.2pt; letter-spacing: 0.22em; }
+      .glass-card, .mini-card, .timeline-note, .signature-card, .hero-metric, .quote-slice {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 8mm;
+        box-shadow: var(--shadow);
+      }
+      .hero-metric {
+        padding: 5mm 4.5mm;
+        display: grid;
+        gap: 1.5mm;
+        min-height: 31mm;
+      }
+      .hero-metric span, .mini-card span, .timeline-note span {
+        color: var(--rose-deep);
+        font: 700 6.6pt "Segoe UI", sans-serif;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+      .hero-metric strong { font-size: 18pt; }
+      .hero-metric small, .mini-card small, .quote-slice small {
+        color: var(--ink-soft);
+        font: 7.8pt/1.35 "Segoe UI", sans-serif;
+      }
+      .cover {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+      }
+      .cover-title {
+        display: grid;
+        gap: 5mm;
+        max-width: 96mm;
+      }
+      .cover-title p {
+        max-width: 84mm;
+        font-size: 10.2pt;
+      }
+      .cover-metrics {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 4mm;
+        align-self: start;
+        width: 64mm;
+        justify-self: end;
+      }
+      .cover-grid {
+        display: grid;
+        grid-template-columns: 1.12fr 0.88fr;
+        gap: 8mm;
+        align-items: end;
+        margin-top: 10mm;
+      }
       .cover-footer {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
-        position: relative;
-        z-index: 10;
-        border-top: 1px solid var(--line);
+        align-items: end;
         padding-top: 8mm;
+        border-top: 1px solid rgba(255,255,255,0.45);
       }
-      .participant-lockup strong { 
-        display: block; 
-        font-size: 16pt; 
-        font-family: "Playfair Display", serif; 
-        margin-bottom: 2mm; 
-      }
-      .overview-grid, .signals-grid, .chapter-map-grid, .themes-grid {
+      .cover-footer strong { display: block; font-size: 13pt; }
+      .page-grid {
         position: relative;
-        z-index: 10;
-        display: grid;
-        gap: 12mm;
-        margin-top: 10mm;
-      }
-      .overview-grid { grid-template-columns: 1fr 1fr; align-items: stretch; }
-      .hero-stat-box {
+        z-index: 2;
         display: grid;
         gap: 6mm;
-        grid-column: span 2;
-        margin-bottom: 8mm;
+        height: 100%;
       }
+      .overview-top {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 6mm;
+      }
+      .overview-hero {
+        display: grid;
+        gap: 4mm;
+        align-content: start;
+      }
+      .overview-panels { display: grid; gap: 6mm; }
       .panel {
-        display: flex;
-        flex-direction: column;
+        padding: 5.5mm;
+        display: grid;
+        gap: 4mm;
+      }
+      .duo-grid {
+        display: grid;
+        grid-template-columns: 1.08fr 0.92fr;
         gap: 6mm;
       }
-      .panel-kicker span {
-        color: var(--rose-deep);
-        font: 700 7pt "Montserrat", sans-serif;
-        letter-spacing: 0.25em;
-        text-transform: uppercase;
+      .stack { display: grid; gap: 5mm; }
+      .dense-stack { display: grid; gap: 3.2mm; }
+      .legend-row, .topic-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5mm;
       }
-      .stat-stack { display: grid; gap: 3mm; }
-      .stat-row {
+      .legend-pill, .motif-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 2mm;
+        padding: 2.2mm 3.4mm;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.55);
+        color: var(--ink);
+        font: 600 7.2pt "Segoe UI", sans-serif;
+      }
+      .legend-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        display: inline-block;
+      }
+      .legend-dot--1 { background: #c97d96; }
+      .legend-dot--2 { background: #efb7c6; }
+      .donut-overline, .donut-value, .gauge-value, .gauge-label, .lens-name, .lens-value, .chart-svg text, .heatmap-axis {
+        fill: var(--ink);
+        font-family: "Segoe UI", sans-serif;
+      }
+      .donut-overline {
+        font-size: 6.8pt;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        fill: var(--rose-deep);
+      }
+      .donut-value {
+        font-size: 19pt;
+        font-family: "Georgia", serif;
+      }
+      .chart-box {
+        padding: 5.5mm;
+        display: grid;
+        gap: 3mm;
+      }
+      .chart-box svg { width: 100%; height: auto; display: block; }
+      .chart-title { display: grid; gap: 2mm; }
+      .chart-title h3 { font-size: 17pt; }
+      .comparison-strip { display: grid; gap: 3mm; }
+      .comparison-row { display: grid; gap: 1.5mm; }
+      .comparison-copy {
         display: flex;
         justify-content: space-between;
         gap: 3mm;
-        padding-bottom: 2.5mm;
-        border-bottom: 1px solid var(--line);
+        font: 7.8pt "Segoe UI", sans-serif;
+        color: var(--ink-soft);
       }
-      .stat-row:last-child { border-bottom: 0; padding-bottom: 0; }
-      .stat-row span { color: var(--muted); font: 9pt "Segoe UI", sans-serif; }
-      .stat-row strong { font-size: 14pt; font-family: "Playfair Display", serif; }
-      .chart-svg text, .heatmap-axis, .timeline-name, .timeline-detail, .timeline-caption, .lens-name, .lens-value, .gauge-value, .gauge-label {
-        fill: #47383e;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
+      .comparison-track, .bar-track {
+        height: 6px;
+        border-radius: 999px;
+        background: rgba(231, 203, 212, 0.72);
+        overflow: hidden;
       }
-      .lens-value { font-size: 11pt; font-weight: 700; }
-      .lens-name { font-size: 8pt; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
-      .gauge-value { font-size: 24pt; font-weight: 400; font-family: "Playfair Display", serif; }
-      .gauge-label { font-size: 7.5pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rose-deep); }
-      .reply-grid { display: grid; gap: 3mm; }
-      .reply-card { padding: 4mm; }
-      .reply-card strong { font-size: 12.5pt; }
-      .chapter-card-grid, .topic-grid, .atlas-grid, .ribbon-grid {
+      .comparison-fill, .bar-fill {
+        display: block;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, #c97d96 0%, #e4a2b5 100%);
+      }
+      .comparison-fill--soft, .bar-fill--soft {
+        background: linear-gradient(90deg, #d49fb0 0%, #f0c5d0 100%);
+      }
+      .signature-card {
+        padding: 5mm;
+        display: grid;
+        gap: 4mm;
+      }
+      .signature-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 4mm;
+        align-items: end;
+      }
+      .signature-head strong { font-size: 15pt; }
+      .signature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 3mm;
+      }
+      .signature-grid div {
+        padding: 3.3mm;
+        border-radius: 5mm;
+        background: rgba(255,255,255,0.46);
+        border: 1px solid rgba(201, 125, 150, 0.12);
+        display: grid;
+        gap: 1mm;
+      }
+      .signature-grid span {
+        color: var(--ink-soft);
+        font: 600 6.3pt "Segoe UI", sans-serif;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .signature-grid strong { font-size: 11pt; }
+      .mini-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 4mm;
       }
-      .chapter-card, .topic-pill, .ribbon-card, .atlas-card { display: grid; gap: 2mm; padding: 4mm; }
-      .chapter-card p, .atlas-card p { font-size: 9pt; }
-      .ribbon-card { border-left: 2px solid var(--rose); padding-left: 5mm; margin-bottom: 2mm; }
-      .motif-cloud { display: flex; flex-wrap: wrap; gap: 2.5mm; }
-      .motif-chip {
-        display: inline-flex;
-        align-items: center;
-        gap: 2mm;
-        padding: 2mm 3.5mm;
-        border-radius: 999px;
-        border: 1px solid rgba(216, 141, 165, 0.2);
-        background: rgba(255, 248, 249, 0.94);
-        color: var(--rose-deep);
-        font: 700 7.75pt "Segoe UI", sans-serif;
+      .mini-card {
+        padding: 4.3mm;
+        display: grid;
+        gap: 1.5mm;
       }
-      .motif-chip small { color: var(--muted); font-size: 7.5pt; font-weight: 600; }
-      .memory-cloud {
+      .mini-card strong { font-size: 13pt; }
+      .mini-card--stat strong { font-size: 15pt; }
+      .bar-row { display: grid; gap: 1.5mm; }
+      .bar-copy {
         display: flex;
-        flex-wrap: wrap;
-        gap: 3mm;
-        margin-top: 6mm;
+        justify-content: space-between;
+        gap: 4mm;
+        font: 7.6pt "Segoe UI", sans-serif;
+        color: var(--ink-soft);
       }
-      .memory-cloud-chip {
-        display: inline-flex;
-        align-items: center;
-        padding: 2mm 5mm;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        background: transparent;
+      .bar-copy strong {
+        font-size: 8pt;
         color: var(--ink);
-        font: 600 8.5pt "Montserrat", sans-serif;
-        letter-spacing: 0.04em;
       }
-      .topic-pill strong { font-size: 14pt; }
-      .page--chapter {
-        background:
-          radial-gradient(circle at top left, rgba(246, 205, 221, 0.42), transparent 28%),
-          linear-gradient(180deg, #fffdfa 0%, #fff5f4 100%);
+      .timeline-layout {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 6mm;
       }
-      .page-chapter-grid {
-        position: relative;
-        z-index: 2;
+      .timeline-bottom {
         display: grid;
         grid-template-columns: 1.05fr 0.95fr;
-        gap: 7mm;
-        align-items: stretch;
-        margin-top: 14mm;
+        gap: 6mm;
       }
-      .chapter-copy { display: grid; gap: 4.5mm; align-content: start; }
-      .chapter-summary { max-width: 78mm; font-size: 9.8pt; }
-      .chapter-stats { display: grid; gap: 3mm; }
-      .chapter-stats div { display: grid; gap: 0.8mm; padding-bottom: 2.5mm; border-bottom: 1px solid var(--line); }
-      .chapter-stats div:last-child { border-bottom: 0; }
-      .chapter-stats span {
-        color: var(--muted);
-        font: 7.75pt "Segoe UI", sans-serif;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
+      .timeline-note {
+        padding: 4.4mm;
+        display: grid;
+        gap: 1.6mm;
       }
-      .chapter-stats strong { font-size: 12.5pt; }
-      .chapter-side { display: grid; gap: 4mm; align-content: end; }
-      .chapter-note, .chapter-quote-card { display: grid; gap: 2.5mm; padding: 5mm; }
-      .eyebrow--soft { opacity: 0.86; }
-      .chapter-quote-card blockquote { font-size: 14pt; }
-      .atlas-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 6mm; }
-      .atlas-card--accent { background: rgba(255, 247, 248, 0.94); }
-      .closing { display: grid; align-content: space-between; }
+      .timeline-note p { font-size: 8.2pt; line-height: 1.38; }
+      .quote-slice {
+        padding: 4.8mm;
+        display: grid;
+        gap: 2mm;
+      }
+      .quote-slice blockquote {
+        font-size: 11.5pt;
+        line-height: 1.22;
+      }
+      .closing { display: grid; align-items: end; }
+      .closing .cover-overlay {
+        background:
+          linear-gradient(180deg, rgba(255, 249, 246, 0.26) 0%, rgba(255, 249, 246, 0.82) 56%, rgba(255, 249, 246, 0.96) 100%);
+      }
       .closing-shell {
         position: relative;
         z-index: 2;
         display: grid;
-        gap: 8mm;
+        gap: 6mm;
         max-width: 102mm;
       }
-      .closing blockquote { font-size: 20pt; line-height: 1.24; }
-      .closing p { font-size: 10.5pt; }
+      .closing-shell blockquote {
+        font-size: 26pt;
+        line-height: 1.06;
+      }
+      .closing-shell p { font-size: 9.8pt; }
     </style>
   </head>
   <body>
     <main class="book">
-      <section class="page cover">
+      <section class="page cover" id="spread-cover">
         <img class="page-art page-art--cover" src="${payload.cover_image}" alt="" />
-        <div class="cover-shell">
-          <div class="cover-title">
-            <span class="cover-kicker">${escapeHtml(payload.presentation_mode === "gift" ? "For you" : "Conversation Archive")}</span>
-            
-            <h1>${escapeHtml(payload.title)}<br/>${escapeHtml(payload.subtitle)}</h1>
-            <p>${escapeHtml(payload.tagline)}</p>
+        <div class="cover-overlay"></div>
+        <div class="shell">
+          <div class="cover-grid">
+            <div class="cover-title">
+              <span class="section-kicker">${escapeHtml(payload.subtitle)}</span>
+              <h1>${escapeHtml(payload.title)}</h1>
+              <p>${escapeHtml(payload.tagline)}</p>
+            </div>
+            <div class="cover-metrics">${heroMetrics}</div>
           </div>
-          <div class="cover-metrics">${heroMetrics}</div>
         </div>
-        <div class="cover-footer">
+        <div class="cover-footer shell">
           <p>${escapeHtml(payload.time_span)}</p>
-          <div class="participant-lockup">
+          <div>
             <strong>${escapeHtml(payload.participants.join(" + "))}</strong>
-            <p>made from the way we kept talking, waiting, and returning</p>
+            <p>${escapeHtml(payload.keepsake_line)}</p>
           </div>
         </div>
       </section>
 
-      <section class="page">
+      <section class="page" id="spread-overview">
+        <div class="page-number">1</div>
+        <div class="page-grid">
+          <div class="overview-top">
+            <div class="overview-hero">
+              <span class="section-kicker">At a glance</span>
+              <h2>The whole shape, held in one place</h2>
+              <p>A shorter book, but with the parts that still feel alive.</p>
+            </div>
+            <div class="overview-panels glass-card panel">
+              <div class="chart-title">
+                <span class="section-kicker section-kicker--tiny">Archive span</span>
+                <h3>${escapeHtml(String(payload.signature_metrics.headline.longest_daily_streak))} days in a row</h3>
+                <p>${escapeHtml(formatCompact(payload.signature_metrics.headline.total_messages))} messages across ${escapeHtml(String(payload.message_frequency.summary.active_days))} active days.</p>
+              </div>
+              <div class="dense-stack">
+                <div class="comparison-copy"><span>most active day</span><strong>${escapeHtml(formatIsoDate(payload.signature_metrics.headline.most_active_day.day_key))}</strong></div>
+                <div class="comparison-copy"><span>most active month</span><strong>${escapeHtml(payload.signature_metrics.headline.most_active_month.month_key)}</strong></div>
+                <div class="comparison-copy"><span>late-night share</span><strong>${escapeHtml(formatPercent(payload.signature_metrics.headline.late_night_percentage))}</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="duo-grid">
+            <article class="chart-box glass-card">
+              <div class="chart-title">
+                <span class="section-kicker section-kicker--tiny">Emotion</span>
+                <h3>Weekly intensity</h3>
+              </div>
+              ${createAreaChart(payload.emotional_arc, 520, 220)}
+            </article>
+            <article class="chart-box glass-card">
+              <div class="chart-title">
+                <span class="section-kicker section-kicker--tiny">Share split</span>
+                <h3>Together, then by side</h3>
+              </div>
+              ${createDonutSplitChart(dashboardParticipants, 220)}
+              <div class="legend-row">${participantLegends}</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="spread-time">
         <div class="page-number">2</div>
-        <div class="hero-stat-box">
-          <span class="eyebrow">What We Built</span>
-          <h2>Our rhythm, at a glance</h2>
-          <p>
-            A few of the patterns that shaped this archive.
-          </p>
-        </div>
-        <div class="overview-grid">
-          <div class="panel">
-            <div class="stat-stack">
-              <div class="stat-row"><span>Most active day</span><strong>${escapeHtml(formatIsoDate(payload.signature_metrics.headline.most_active_day.day_key))}</strong></div>
-              <div class="stat-row"><span>Most active month</span><strong>${escapeHtml(payload.signature_metrics.headline.most_active_month.month_key)}</strong></div>
-              <div class="stat-row"><span>Support moments</span><strong>${escapeHtml(formatCompact(payload.signature_metrics.headline.support_moments_count))}</strong></div>
-              <div class="stat-row"><span>Conflict-repair cycles</span><strong>${escapeHtml(String(payload.signature_metrics.headline.conflict_repair_cycles))}</strong></div>
+        <div class="page-grid">
+          <article class="chart-box glass-card">
+            <div class="chart-title">
+              <span class="section-kicker">Time</span>
+              <h2>When the archive was most alive</h2>
             </div>
-          </div>
-          <div class="panel">
-            <div class="panel-kicker"><span>Response Gap</span></div>
-            <div class="reply-grid">${replyGaps}</div>
+            ${createSplitMonthlyChart(payload.dashboard.time_patterns.monthly_split, participantIds, 620, 170)}
+            <div class="legend-row">${participantLegends}</div>
+          </article>
+          <div class="duo-grid">
+            <article class="chart-box glass-card">
+              <div class="chart-title">
+                <span class="section-kicker section-kicker--tiny">Hours</span>
+                <h3>When the day opened up</h3>
+              </div>
+              ${createHeatmapSvg(payload.message_frequency, 520)}
+            </article>
+            <article class="stack">
+              <article class="chart-box glass-card">
+                <div class="chart-title">
+                  <span class="section-kicker section-kicker--tiny">After midnight</span>
+                  <h3>The night kept showing up</h3>
+                </div>
+                ${createLateNightGauge(payload.signature_metrics.headline.late_night_percentage, 170)}
+              </article>
+              <article class="glass-card panel">
+                <span class="section-kicker section-kicker--tiny">Signals</span>
+                <div class="comparison-strip">
+                  <div class="comparison-row">
+                    <div class="comparison-copy"><span>support moments</span><strong>${escapeHtml(formatCompact(payload.signature_metrics.headline.support_moments_count))}</strong></div>
+                    <div class="comparison-track"><i class="comparison-fill" style="width:72%"></i></div>
+                  </div>
+                  <div class="comparison-row">
+                    <div class="comparison-copy"><span>conflict / repair cycles</span><strong>${escapeHtml(String(payload.signature_metrics.headline.conflict_repair_cycles))}</strong></div>
+                    <div class="comparison-track"><i class="comparison-fill comparison-fill--soft" style="width:38%"></i></div>
+                  </div>
+                </div>
+              </article>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="page">
+      <section class="page" id="spread-voices">
+        <img class="page-art page-art--ambient" src="${payload.chapter_image}" alt="" />
         <div class="page-number">3</div>
-        <div class="hero-stat-box" style="margin-bottom: 12mm;">
-          <span class="eyebrow">The Feeling</span>
-          <h2>How our energy moved</h2>
-          <p>
-            The softer rises, the heavier weeks, and the calmer stretches that kept returning.
-          </p>
-        </div>
-        <div style="flex-grow: 1; margin: 0 -25mm; position: relative;">
-          ${createAreaChart(payload.emotional_arc, 720, 400)}
-        </div>
-      </section>
-
-      <section class="page">
-        <div class="page-number">4</div>
-        <div class="signals-grid" style="grid-template-columns: 1fr; gap: 20mm;">
-          <article class="panel">
-            <div class="panel-kicker"><span>Time</span></div>
-            <h3 style="margin-top: 4mm;">How the months filled up</h3>
-            <div style="margin-top: 8mm;">${createMonthlyBarChart(payload.monthly_volume, 620, 240)}</div>
-          </article>
-          <article class="panel">
-            <div class="panel-kicker"><span>Hours</span></div>
-            <h3 style="margin-top: 4mm;">When activity clustered most</h3>
-            <div style="margin-top: 8mm;">${createHeatmapSvg(payload.message_frequency, 620)}</div>
-          </article>
-        </div>
-      </section>
-
-      <section class="page">
-        <div class="page-number">5</div>
-        <div class="chapter-map-grid" style="grid-template-columns: 1fr; gap: 15mm;">
-          <article class="panel">
-            <div class="panel-kicker"><span>Phases</span></div>
-            <h2>The way our story unfolded</h2>
-            <div style="margin-top: 10mm;">${createChapterTimeline(payload.chapters, 680, 400)}</div>
-          </article>
-        </div>
-      </section>
-
-      <section class="page">
-        <div class="page-number">6</div>
-        <div class="overview-grid" style="grid-template-columns: 1.1fr 0.9fr;">
-          <article class="panel">
-            <div class="panel-kicker"><span>What Stayed</span></div>
-            <h2>The moments that held their shape</h2>
-            <p style="margin-top: 4mm;">
-              Support, repair, and the little returns that mattered.
-            </p>
-            <div class="ribbon-grid" style="margin-top: 10mm; display: grid; gap: 8mm;">${highlightRibbon}</div>
-          </article>
-          <article class="panel" style="justify-content: center; align-items: center;">
-            <div style="text-align: center;">
-              <div class="panel-kicker"><span>After Midnight</span></div>
-              <div style="margin-top: 8mm;">${createLateNightGauge(payload.signature_metrics.headline.late_night_percentage)}</div>
+        <div class="page-grid">
+          <div class="overview-hero">
+            <span class="section-kicker">The two voices</span>
+            <h2>How each one shaped the archive</h2>
+          </div>
+          <div class="duo-grid">
+            <div class="stack">${participantSignatureCards}</div>
+            <div class="stack">
+              <article class="glass-card panel">
+                <div class="chart-title">
+                  <span class="section-kicker section-kicker--tiny">Conversation openers</span>
+                  <h3>Who started the rhythm more often</h3>
+                </div>
+                <div class="comparison-strip">
+                  ${dashboardParticipants
+                    .map((participant, index) => `
+                      <div class="comparison-row">
+                        <div class="comparison-copy"><span>${escapeHtml(participant.label)}</span><strong>${escapeHtml(String(participant.session_opener_count))}</strong></div>
+                        <div class="comparison-track"><i class="comparison-fill ${index === 1 ? "comparison-fill--soft" : ""}" style="width:${participant.session_opener_share.toFixed(1)}%"></i></div>
+                      </div>
+                    `)
+                    .join("")}
+                </div>
+              </article>
+              <div class="mini-grid">${detectiveCards}</div>
             </div>
-          </article>
+          </div>
         </div>
       </section>
 
-      ${chapterPages}
-
-      <section class="page">
-        <img class="page-art" src="${payload.lens_image}" alt="" />
-        <div class="page-number">13</div>
-        <div class="themes-grid" style="grid-template-columns: 1fr; gap: 15mm; flex-grow: 1;">
-          <article class="panel">
-            <div class="panel-kicker"><span>Us, In Pieces</span></div>
-            <h2>The shapes our conversations took</h2>
-            <div style="margin-top: 8mm;">${createLensGarden(payload.lenses, 640, 360)}</div>
-          </article>
-          <article class="panel">
-            <div class="panel-kicker"><span>Echoes</span></div>
-            <h3 style="margin-top: 2mm;">Small phrases that stayed in the archive</h3>
-            <div class="memory-cloud" style="margin-top: 6mm;">${memoryCloud}</div>
-          </article>
+      <section class="page" id="spread-mood">
+        <div class="page-number">4</div>
+        <div class="page-grid">
+          <div class="duo-grid">
+            <article class="glass-card panel">
+              <div class="chart-title">
+                <span class="section-kicker">Mood</span>
+                <h2>What the archive leaned toward</h2>
+              </div>
+              <div class="dense-stack">${emotionRows}</div>
+            </article>
+            <article class="glass-card panel">
+              <div class="chart-title">
+                <span class="section-kicker">Shapes</span>
+                <h2>How the conversations tended to move</h2>
+              </div>
+              <div class="dense-stack">${archetypeRows}</div>
+            </article>
+          </div>
+          <div class="duo-grid">
+            <article class="chart-box glass-card">
+              <div class="chart-title">
+                <span class="section-kicker section-kicker--tiny">Support / conflict / repair</span>
+                <h3>The signal line</h3>
+              </div>
+              ${createSignalTrendChart(payload.dashboard.emotion_patterns.signal_trend, 520, 180)}
+            </article>
+            <div class="stack">${signalCards}</div>
+          </div>
         </div>
       </section>
 
-      <section class="page">
-        <div class="page-number">14</div>
-        <div class="hero-stat-box" style="margin-bottom: 12mm;">
-          <span class="eyebrow">The Turns</span>
-          <h2>What changed the story</h2>
-          <p>
-            The dates that quietly shifted everything.
-          </p>
+      <section class="page" id="spread-timeline">
+        <div class="page-number">5</div>
+        <div class="page-grid timeline-layout">
+          <article class="chart-box glass-card">
+            <div class="chart-title">
+              <span class="section-kicker">Timeline</span>
+              <h2>The phases, without the clutter</h2>
+            </div>
+            ${createChapterTimeline(payload.chapters, 620, 210)}
+          </article>
+          <div class="timeline-bottom">
+            <div class="stack">${milestoneCards}</div>
+            <div class="stack">${sessionCards}</div>
+          </div>
         </div>
-        <div class="atlas-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12mm;">${milestoneAtlas}</div>
       </section>
 
-      <section class="page closing" style="justify-content: center; align-items: center; text-align: center;">
-        <img class="page-art" src="${payload.cover_image}" alt="" style="opacity: 0.1;" />
+      <section class="page" id="spread-themes">
+        <img class="page-art page-art--ambient" src="${payload.lens_image}" alt="" />
+        <div class="page-number">6</div>
+        <div class="page-grid">
+          <article class="chart-box glass-card">
+            <div class="chart-title">
+              <span class="section-kicker">Themes</span>
+              <h2>The echoes that kept returning</h2>
+            </div>
+            ${createLensGarden(payload.lenses, 620, 220)}
+            <div class="topic-row">${topicPills}</div>
+          </article>
+          <div class="duo-grid">
+            <article class="glass-card panel">
+              <span class="section-kicker section-kicker--tiny">Memory cloud</span>
+              <div class="legend-row">${motifCloud}</div>
+            </article>
+            <div class="stack">${memorySnippets}</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page closing" id="spread-closing">
+        <img class="page-art page-art--closing" src="${payload.cover_image}" alt="" />
+        <div class="cover-overlay"></div>
         <div class="closing-shell">
-          <span class="eyebrow">Still Ours</span>
+          <span class="section-kicker">${escapeHtml(payload.presentation_mode === "gift" ? "Still yours" : "Still here")}</span>
           ${
             payload.closing_quote
-              ? `<blockquote style="font-family: 'Playfair Display', serif; font-size: 28pt; font-style: italic; line-height: 1.2; margin-bottom: 12mm;">&ldquo;${escapeHtml(payload.closing_quote.excerpt)}&rdquo;</blockquote>`
-              : `<blockquote style="font-family: 'Playfair Display', serif; font-size: 28pt; font-style: italic; line-height: 1.2; margin-bottom: 12mm;">Even when the days blur together, the archive still leaves a shape behind.</blockquote>`
+              ? `<blockquote>&ldquo;${escapeHtml(cleanDisplayText(buildExcerpt(payload.closing_quote.excerpt, 92)))}&rdquo;</blockquote>`
+              : `<blockquote>The shape stays, even after the days themselves start to blur.</blockquote>`
           }
-          <p style="font-style: italic; opacity: 0.6;">${escapeHtml(payload.keepsake_line)}</p>
+          <p>${escapeHtml(payload.keepsake_line)}</p>
         </div>
       </section>
     </main>
   </body>
 </html>`;
 }
-
 async function main() {
   await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
@@ -1247,3 +1673,4 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+

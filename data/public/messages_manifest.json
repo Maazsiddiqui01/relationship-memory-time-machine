@@ -1,47 +1,7 @@
 {
-  "total_messages": 271152,
-  "shard_count": 28,
+  "total_messages": 271147,
+  "shard_count": 23,
   "shards": [
-    {
-      "shard_id": "messages_2023-01",
-      "path": "messages/messages_2023-01.json",
-      "month_key": "2023-01",
-      "message_count": 1,
-      "start_timestamp": "2023-01-23T20:02:00",
-      "end_timestamp": "2023-01-23T20:02:00"
-    },
-    {
-      "shard_id": "messages_2023-08",
-      "path": "messages/messages_2023-08.json",
-      "month_key": "2023-08",
-      "message_count": 2,
-      "start_timestamp": "2023-08-13T16:06:00",
-      "end_timestamp": "2023-08-14T14:39:00"
-    },
-    {
-      "shard_id": "messages_2023-09",
-      "path": "messages/messages_2023-09.json",
-      "month_key": "2023-09",
-      "message_count": 1,
-      "start_timestamp": "2023-09-05T21:58:00",
-      "end_timestamp": "2023-09-05T21:58:00"
-    },
-    {
-      "shard_id": "messages_2023-12",
-      "path": "messages/messages_2023-12.json",
-      "month_key": "2023-12",
-      "message_count": 1,
-      "start_timestamp": "2023-12-18T14:42:00",
-      "end_timestamp": "2023-12-18T14:42:00"
-    },
-    {
-      "shard_id": "messages_2024-03",
-      "path": "messages/messages_2024-03.json",
-      "month_key": "2024-03",
-      "message_count": 1,
-      "start_timestamp": "2024-03-05T00:38:00",
-      "end_timestamp": "2024-03-05T00:38:00"
-    },
     {
       "shard_id": "messages_2024-05",
       "path": "messages/messages_2024-05.json",
@@ -86,7 +46,7 @@
       "shard_id": "messages_2024-10",
       "path": "messages/messages_2024-10.json",
       "month_key": "2024-10",
-      "message_count": 15298,
+      "message_count": 15299,
       "start_timestamp": "2024-10-01T03:29:00",
       "end_timestamp": "2024-10-31T22:28:00"
     },

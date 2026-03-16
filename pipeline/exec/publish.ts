@@ -1,4 +1,5 @@
 import path from "node:path";
+import { rm } from "node:fs/promises";
 
 import { PATHS } from "../config.js";
 import type {
@@ -12,6 +13,7 @@ import { writeStoryLenses } from "../lib/story-lenses.js";
 
 async function main(): Promise<void> {
   await ensureProjectDirectories();
+  await rm(PATHS.publicMessagesDir, { recursive: true, force: true });
 
   const messages = await readNdjson<CanonicalMessage>(PATHS.canonicalMessages);
   const participants = await readJson(PATHS.participants);

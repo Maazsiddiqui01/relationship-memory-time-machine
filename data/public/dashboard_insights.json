@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T19:55:41.818Z",
+  "generated_at": "2026-03-16T12:32:32.732Z",
   "participants": [
     {
       "participant_id": "participant_01",
@@ -15,7 +15,7 @@
       "link_count": 213,
       "link_share": 30.26,
       "multiline_count": 353,
-      "multiline_share": 38.58,
+      "multiline_share": 38.62,
       "weekend_percentage": 29.57,
       "late_night_percentage": 27.19,
       "session_opener_count": 167,
@@ -26,9 +26,9 @@
     {
       "participant_id": "participant_02",
       "label": "Maaz Siddiqui",
-      "total_messages": 147305,
+      "total_messages": 147306,
       "message_share": 54.33,
-      "total_words": 688822,
+      "total_words": 688816,
       "average_words_per_message": 4.68,
       "average_chars_per_message": 23.44,
       "emoji_count": 21908,
@@ -36,8 +36,8 @@
       "emoji_per_message": 0.15,
       "link_count": 491,
       "link_share": 69.74,
-      "multiline_count": 562,
-      "multiline_share": 61.42,
+      "multiline_count": 561,
+      "multiline_share": 61.38,
       "weekend_percentage": 29.07,
       "late_night_percentage": 27.38,
       "session_opener_count": 153,
@@ -95,10 +95,10 @@
       },
       {
         "month_key": "2024-10",
-        "total_messages": 15297,
+        "total_messages": 15298,
         "participant_counts": {
           "participant_01": 6488,
-          "participant_02": 8809
+          "participant_02": 8810
         },
         "late_night_count": 3130
       },
@@ -286,10 +286,10 @@
       },
       {
         "label": "Wed",
-        "total_messages": 36631,
+        "total_messages": 36632,
         "participant_counts": {
           "participant_01": 16523,
-          "participant_02": 20108
+          "participant_02": 20109
         },
         "weekday": 3
       },
@@ -414,10 +414,10 @@
       },
       {
         "label": "10:00",
-        "total_messages": 11914,
+        "total_messages": 11915,
         "participant_counts": {
           "participant_01": 5352,
-          "participant_02": 6562
+          "participant_02": 6563
         },
         "hour_of_day": 10
       },
@@ -592,7 +592,7 @@
       },
       {
         "month_key": "2024-10",
-        "total_messages": 15297,
+        "total_messages": 15298,
         "late_night_messages": 3130,
         "late_night_share": 20.46,
         "participant_counts": {
@@ -816,9 +816,9 @@
         "month_key": "2024-10",
         "winner_participant_id": "participant_02",
         "winner_label": "Maaz Siddiqui",
-        "winner_count": 8809,
-        "margin": 2321,
-        "total_messages": 15297
+        "winner_count": 8810,
+        "margin": 2322,
+        "total_messages": 15298
       },
       {
         "month_key": "2024-11",
@@ -1155,7 +1155,7 @@
   "session_patterns": {
     "longest_sessions": [
       {
-        "technical_session_id": "tech_0026",
+        "technical_session_id": "tech_0020",
         "start_timestamp": "2024-05-29T07:54:00",
         "end_timestamp": "2024-06-13T01:51:00",
         "message_count": 24916,
@@ -1167,7 +1167,7 @@
         }
       },
       {
-        "technical_session_id": "tech_0061",
+        "technical_session_id": "tech_0055",
         "start_timestamp": "2024-09-22T11:31:00",
         "end_timestamp": "2024-10-12T05:59:00",
         "message_count": 9229,
@@ -1179,7 +1179,7 @@
         }
       },
       {
-        "technical_session_id": "tech_0067",
+        "technical_session_id": "tech_0061",
         "start_timestamp": "2024-11-03T10:12:00",
         "end_timestamp": "2024-11-18T22:05:00",
         "message_count": 8210,
@@ -1191,19 +1191,19 @@
         }
       },
       {
-        "technical_session_id": "tech_0066",
+        "technical_session_id": "tech_0060",
         "start_timestamp": "2024-10-21T05:44:00",
         "end_timestamp": "2024-11-03T03:40:00",
-        "message_count": 6917,
+        "message_count": 6918,
         "density_score": 22.32,
         "dominant_emotion": "romantic",
         "participant_counts": {
-          "participant_02": 4084,
+          "participant_02": 4085,
           "participant_01": 2833
         }
       },
       {
-        "technical_session_id": "tech_0034",
+        "technical_session_id": "tech_0028",
         "start_timestamp": "2024-06-23T11:10:00",
         "end_timestamp": "2024-06-30T03:13:00",
         "message_count": 6719,
@@ -1215,7 +1215,7 @@
         }
       },
       {
-        "technical_session_id": "tech_0041",
+        "technical_session_id": "tech_0035",
         "start_timestamp": "2024-07-28T11:21:00",
         "end_timestamp": "2024-08-04T02:57:00",
         "message_count": 6170,
@@ -1229,7 +1229,7 @@
     ],
     "densest_sessions": [
       {
-        "technical_session_id": "tech_0300",
+        "technical_session_id": "tech_0294",
         "start_timestamp": "2026-02-14T22:19:00",
         "end_timestamp": "2026-02-15T01:03:00",
         "message_count": 470,
@@ -1241,7 +1241,7 @@
         }
       },
       {
-        "technical_session_id": "tech_0020",
+        "technical_session_id": "tech_0014",
         "start_timestamp": "2024-05-18T18:18:00",
         "end_timestamp": "2024-05-19T01:39:00",
         "message_count": 1077,
@@ -1253,7 +1253,7 @@
         }
       },
       {
-        "technical_session_id": "tech_0007",
+        "technical_session_id": "tech_0001",
         "start_timestamp": "2024-05-05T22:20:00",
         "end_timestamp": "2024-05-05T23:16:00",
         "message_count": 136,
@@ -1265,7 +1265,7 @@
         }
       },
       {
-        "technical_session_id": "tech_0295",
+        "technical_session_id": "tech_0289",
         "start_timestamp": "2026-02-10T19:51:00",
         "end_timestamp": "2026-02-10T21:09:00",
         "message_count": 159,
@@ -1277,7 +1277,7 @@
         }
       },
       {
-        "technical_session_id": "tech_0157",
+        "technical_session_id": "tech_0151",
         "start_timestamp": "2025-06-30T21:12:00",
         "end_timestamp": "2025-07-01T00:06:00",
         "message_count": 344,
@@ -1289,7 +1289,7 @@
         }
       },
       {
-        "technical_session_id": "tech_0298",
+        "technical_session_id": "tech_0292",
         "start_timestamp": "2026-02-13T19:48:00",
         "end_timestamp": "2026-02-14T00:39:00",
         "message_count": 502,
@@ -1329,8 +1329,8 @@
     ],
     "longest_silence_gaps": [
       {
-        "from_message_id": "msg_0267559",
-        "to_message_id": "msg_0267560",
+        "from_message_id": "msg_0267554",
+        "to_message_id": "msg_0267555",
         "start_timestamp": "2026-01-22T19:36:00",
         "end_timestamp": "2026-02-06T17:10:00",
         "gap_minutes": 21454,
@@ -1338,8 +1338,8 @@
         "to_sender_label": "Durriya"
       },
       {
-        "from_message_id": "msg_0265820",
-        "to_message_id": "msg_0265821",
+        "from_message_id": "msg_0265815",
+        "to_message_id": "msg_0265816",
         "start_timestamp": "2025-12-23T19:52:00",
         "end_timestamp": "2025-12-31T18:34:00",
         "gap_minutes": 11442,
@@ -1347,8 +1347,8 @@
         "to_sender_label": "Maaz Siddiqui"
       },
       {
-        "from_message_id": "msg_0265702",
-        "to_message_id": "msg_0265703",
+        "from_message_id": "msg_0265697",
+        "to_message_id": "msg_0265698",
         "start_timestamp": "2025-12-14T19:00:00",
         "end_timestamp": "2025-12-20T19:01:00",
         "gap_minutes": 8641,
@@ -1356,8 +1356,8 @@
         "to_sender_label": "Maaz Siddiqui"
       },
       {
-        "from_message_id": "msg_0266374",
-        "to_message_id": "msg_0266375",
+        "from_message_id": "msg_0266369",
+        "to_message_id": "msg_0266370",
         "start_timestamp": "2026-01-02T20:44:00",
         "end_timestamp": "2026-01-08T16:40:00",
         "gap_minutes": 8396,
@@ -1365,8 +1365,8 @@
         "to_sender_label": "Durriya"
       },
       {
-        "from_message_id": "msg_0269997",
-        "to_message_id": "msg_0269998",
+        "from_message_id": "msg_0269992",
+        "to_message_id": "msg_0269993",
         "start_timestamp": "2026-02-20T23:15:00",
         "end_timestamp": "2026-02-25T14:27:00",
         "gap_minutes": 6672,
@@ -1374,8 +1374,8 @@
         "to_sender_label": "Maaz Siddiqui"
       },
       {
-        "from_message_id": "msg_0245230",
-        "to_message_id": "msg_0245231",
+        "from_message_id": "msg_0245225",
+        "to_message_id": "msg_0245226",
         "start_timestamp": "2025-09-16T22:14:00",
         "end_timestamp": "2025-09-20T22:04:00",
         "gap_minutes": 5750,
@@ -1385,42 +1385,42 @@
     ],
     "fastest_exchange_windows": [
       {
-        "technical_session_id": "tech_0007",
+        "technical_session_id": "tech_0001",
         "start_timestamp": "2024-05-05T22:20:00",
         "end_timestamp": "2024-05-05T23:16:00",
         "average_reply_gap_minutes": 0.8,
         "message_count": 135
       },
       {
-        "technical_session_id": "tech_0027",
+        "technical_session_id": "tech_0021",
         "start_timestamp": "2024-06-13T09:17:00",
         "end_timestamp": "2024-06-15T03:44:00",
         "average_reply_gap_minutes": 1.46,
         "message_count": 4112
       },
       {
-        "technical_session_id": "tech_0020",
+        "technical_session_id": "tech_0014",
         "start_timestamp": "2024-05-18T18:18:00",
         "end_timestamp": "2024-05-19T01:39:00",
         "average_reply_gap_minutes": 1.55,
         "message_count": 1077
       },
       {
-        "technical_session_id": "tech_0026",
+        "technical_session_id": "tech_0020",
         "start_timestamp": "2024-05-29T07:54:00",
         "end_timestamp": "2024-06-13T01:51:00",
         "average_reply_gap_minutes": 1.74,
         "message_count": 24915
       },
       {
-        "technical_session_id": "tech_0025",
+        "technical_session_id": "tech_0019",
         "start_timestamp": "2024-05-28T08:32:00",
         "end_timestamp": "2024-05-29T01:33:00",
         "average_reply_gap_minutes": 1.81,
         "message_count": 1665
       },
       {
-        "technical_session_id": "tech_0018",
+        "technical_session_id": "tech_0012",
         "start_timestamp": "2024-05-17T10:30:00",
         "end_timestamp": "2024-05-18T00:42:00",
         "average_reply_gap_minutes": 2.14,
@@ -1432,7 +1432,7 @@
     "overall_emotion_mix": [
       {
         "label": "romantic",
-        "count": 257554
+        "count": 257555
       },
       {
         "label": "funny",
@@ -1484,7 +1484,7 @@
         "breakdown": [
           {
             "label": "romantic",
-            "count": 140349
+            "count": 140350
           },
           {
             "label": "funny",
@@ -1508,7 +1508,7 @@
     "overall_archetype_mix": [
       {
         "label": "everyday_life",
-        "count": 245160
+        "count": 245161
       },
       {
         "label": "humor_banter",
@@ -1600,7 +1600,7 @@
         "breakdown": [
           {
             "label": "everyday_life",
-            "count": 131995
+            "count": 131996
           },
           {
             "label": "affection",
@@ -1664,7 +1664,7 @@
         "title": "Everyday Gravity",
         "dominant_emotion": "romantic",
         "dominant_archetype": "everyday_life",
-        "message_count": 48805
+        "message_count": 48799
       },
       {
         "chapter_id": "chapter_002",
@@ -1680,7 +1680,7 @@
         "title": "Shared Routine",
         "dominant_emotion": "romantic",
         "dominant_archetype": "everyday_life",
-        "message_count": 53371
+        "message_count": 53372
       },
       {
         "chapter_id": "chapter_004",
@@ -1858,9 +1858,9 @@
       "winner_label": "Maaz Siddiqui",
       "route": "/dashboard/",
       "supporting_message_ids": [
-        "msg_0000009",
-        "msg_0000011",
-        "msg_0000012"
+        "msg_0000003",
+        "msg_0000005",
+        "msg_0000006"
       ]
     },
     {
@@ -1872,9 +1872,9 @@
       "winner_label": "Maaz Siddiqui",
       "route": "/patterns/",
       "supporting_message_ids": [
-        "msg_0000009",
-        "msg_0000011",
-        "msg_0000012"
+        "msg_0000003",
+        "msg_0000005",
+        "msg_0000006"
       ]
     },
     {
@@ -1886,9 +1886,9 @@
       "winner_label": "Durriya",
       "route": "/dashboard/",
       "supporting_message_ids": [
-        "msg_0000014",
-        "msg_0000038",
-        "msg_0000082"
+        "msg_0000008",
+        "msg_0000032",
+        "msg_0000076"
       ]
     },
     {
@@ -1900,9 +1900,9 @@
       "winner_label": "Maaz Siddiqui",
       "route": "/timeline/",
       "supporting_message_ids": [
-        "msg_0000009",
-        "msg_0000011",
-        "msg_0000012"
+        "msg_0000003",
+        "msg_0000005",
+        "msg_0000006"
       ]
     },
     {
@@ -1914,9 +1914,9 @@
       "winner_label": null,
       "route": "/timeline/",
       "supporting_message_ids": [
-        "msg_0027601",
-        "msg_0027602",
-        "msg_0027603"
+        "msg_0027595",
+        "msg_0027596",
+        "msg_0027597"
       ]
     },
     {
@@ -1928,9 +1928,9 @@
       "winner_label": null,
       "route": "/timeline/",
       "supporting_message_ids": [
-        "msg_0030271",
-        "msg_0030272",
-        "msg_0030273"
+        "msg_0030265",
+        "msg_0030266",
+        "msg_0030267"
       ]
     },
     {
@@ -1942,9 +1942,9 @@
       "winner_label": null,
       "route": "/dashboard/",
       "supporting_message_ids": [
-        "msg_0258735",
-        "msg_0258736",
-        "msg_0258737"
+        "msg_0258730",
+        "msg_0258731",
+        "msg_0258732"
       ]
     },
     {
@@ -1956,9 +1956,9 @@
       "winner_label": null,
       "route": "/lenses/reassurance/",
       "supporting_message_ids": [
-        "msg_0120502",
-        "msg_0120503",
-        "msg_0120504"
+        "msg_0120496",
+        "msg_0120497",
+        "msg_0120498"
       ]
     },
     {
@@ -1970,9 +1970,9 @@
       "winner_label": null,
       "route": "/lenses/repair-reconnection/",
       "supporting_message_ids": [
-        "msg_0120502",
-        "msg_0120503",
-        "msg_0120504"
+        "msg_0120496",
+        "msg_0120497",
+        "msg_0120498"
       ]
     },
     {
@@ -1984,9 +1984,9 @@
       "winner_label": "Maaz Siddiqui",
       "route": "/dashboard/",
       "supporting_message_ids": [
-        "msg_0000009",
-        "msg_0000011",
-        "msg_0000012"
+        "msg_0000003",
+        "msg_0000005",
+        "msg_0000006"
       ]
     },
     {
@@ -1998,9 +1998,9 @@
       "winner_label": "Maaz Siddiqui",
       "route": "/dashboard/",
       "supporting_message_ids": [
-        "msg_0000024",
-        "msg_0000393",
-        "msg_0000394"
+        "msg_0000018",
+        "msg_0000387",
+        "msg_0000388"
       ]
     },
     {
@@ -2012,23 +2012,23 @@
       "winner_label": "Durriya",
       "route": "/dashboard/",
       "supporting_message_ids": [
-        "msg_0000008",
-        "msg_0000010",
-        "msg_0000014"
+        "msg_0000002",
+        "msg_0000004",
+        "msg_0000008"
       ]
     },
     {
       "record_id": "who_sends_more_multiline",
       "label": "Who sends more multiline notes",
-      "value": "Maaz Siddiqui - 562",
+      "value": "Maaz Siddiqui - 561",
       "detail": "Longer note-style messages instead of one-liners",
       "winner_participant_id": "participant_02",
       "winner_label": "Maaz Siddiqui",
       "route": "/moments/",
       "supporting_message_ids": [
-        "msg_0000967",
-        "msg_0001172",
-        "msg_0003869"
+        "msg_0000961",
+        "msg_0001166",
+        "msg_0003863"
       ]
     },
     {
@@ -2040,9 +2040,9 @@
       "winner_label": "Durriya",
       "route": "/patterns/",
       "supporting_message_ids": [
-        "msg_0000008",
-        "msg_0000010",
-        "msg_0000014"
+        "msg_0000002",
+        "msg_0000004",
+        "msg_0000008"
       ]
     },
     {
@@ -2054,9 +2054,9 @@
       "winner_label": "Maaz Siddiqui",
       "route": "/timeline/",
       "supporting_message_ids": [
-        "msg_0027601",
-        "msg_0027602",
-        "msg_0027603"
+        "msg_0027595",
+        "msg_0027596",
+        "msg_0027597"
       ]
     },
     {
@@ -2068,9 +2068,9 @@
       "winner_label": null,
       "route": "/timeline/",
       "supporting_message_ids": [
-        "msg_0265150",
-        "msg_0265151",
-        "msg_0265152"
+        "msg_0265145",
+        "msg_0265146",
+        "msg_0265147"
       ]
     }
   ]

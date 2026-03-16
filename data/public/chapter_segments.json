@@ -3,43 +3,40 @@
     "chapter_id": "chapter_001",
     "slug": "chapter-01-everyday-gravity",
     "title": "Everyday Gravity",
-    "summary": "Everyday Gravity leans romantic with Everyday Life and Difficult Conversation shaping the phase.",
-    "start_timestamp": "2023-01-23T20:02:00",
+    "summary": "Everyday Gravity leans romantic with Everyday Life and Daily Life shaping the phase.",
+    "start_timestamp": "2024-05-05T22:20:00",
     "end_timestamp": "2024-06-13T01:51:00",
     "narrative_segment_ids": [
       "segment_0001",
       "segment_0002",
       "segment_0003",
       "segment_0004",
-      "segment_0005",
-      "segment_0006",
-      "segment_0007",
-      "segment_0008",
-      "segment_0009",
-      "segment_0010"
+      "segment_0005"
     ],
     "milestone_ids": [
       "milestone_0001",
-      "milestone_0002"
+      "milestone_0002",
+      "milestone_0003"
     ],
     "highlight_ids": [
       "highlight_0001",
       "highlight_0002",
-      "highlight_0003",
-      "highlight_0031"
+      "highlight_0022",
+      "highlight_0052",
+      "highlight_0058"
     ],
     "dominant_emotion": "romantic",
     "dominant_topics": [
-      "difficult_conversation",
       "daily_life",
-      "relationship"
+      "relationship",
+      "humor"
     ],
     "dominant_archetypes": [
       "everyday_life",
       "affection",
       "humor_banter"
     ],
-    "message_count": 48805
+    "message_count": 48799
   },
   {
     "chapter_id": "chapter_002",
@@ -49,25 +46,22 @@
     "start_timestamp": "2024-06-13T09:17:00",
     "end_timestamp": "2024-08-05T22:36:00",
     "narrative_segment_ids": [
-      "segment_0011",
-      "segment_0012",
-      "segment_0013",
-      "segment_0014"
+      "segment_0006",
+      "segment_0007",
+      "segment_0008",
+      "segment_0009"
     ],
     "milestone_ids": [
-      "milestone_0003",
       "milestone_0004",
-      "milestone_0005"
+      "milestone_0005",
+      "milestone_0006"
     ],
     "highlight_ids": [
-      "highlight_0004",
-      "highlight_0005",
-      "highlight_0006",
-      "highlight_0007",
-      "highlight_0054",
-      "highlight_0055",
-      "highlight_0056",
-      "highlight_0057"
+      "highlight_0023",
+      "highlight_0024",
+      "highlight_0025",
+      "highlight_0038",
+      "highlight_0060"
     ],
     "dominant_emotion": "romantic",
     "dominant_topics": [
@@ -90,29 +84,29 @@
     "start_timestamp": "2024-08-06T05:35:00",
     "end_timestamp": "2024-11-23T00:44:00",
     "narrative_segment_ids": [
+      "segment_0010",
+      "segment_0011",
+      "segment_0012",
+      "segment_0013",
+      "segment_0014",
       "segment_0015",
-      "segment_0016",
-      "segment_0017",
-      "segment_0018",
-      "segment_0019",
-      "segment_0020",
-      "segment_0021"
+      "segment_0016"
     ],
     "milestone_ids": [
-      "milestone_0006",
       "milestone_0007",
-      "milestone_0021",
-      "milestone_0022"
+      "milestone_0008",
+      "milestone_0009",
+      "milestone_0024"
     ],
     "highlight_ids": [
-      "highlight_0008",
-      "highlight_0009",
-      "highlight_0010",
-      "highlight_0011",
-      "highlight_0012",
-      "highlight_0035",
-      "highlight_0036",
-      "highlight_0047"
+      "highlight_0003",
+      "highlight_0004",
+      "highlight_0005",
+      "highlight_0013",
+      "highlight_0014",
+      "highlight_0015",
+      "highlight_0016",
+      "highlight_0017"
     ],
     "dominant_emotion": "romantic",
     "dominant_topics": [
@@ -125,7 +119,7 @@
       "humor_banter",
       "affection"
     ],
-    "message_count": 53371
+    "message_count": 53372
   },
   {
     "chapter_id": "chapter_004",
@@ -135,33 +129,35 @@
     "start_timestamp": "2024-11-23T07:10:00",
     "end_timestamp": "2025-04-25T00:29:00",
     "narrative_segment_ids": [
+      "segment_0017",
+      "segment_0018",
+      "segment_0019",
+      "segment_0020",
+      "segment_0021",
       "segment_0022",
       "segment_0023",
       "segment_0024",
       "segment_0025",
       "segment_0026",
       "segment_0027",
-      "segment_0028",
-      "segment_0029",
-      "segment_0030",
-      "segment_0031",
-      "segment_0032",
-      "segment_0033"
+      "segment_0028"
     ],
     "milestone_ids": [
-      "milestone_0008",
-      "milestone_0009",
-      "milestone_0010"
+      "milestone_0010",
+      "milestone_0011",
+      "milestone_0012",
+      "milestone_0013",
+      "milestone_0023"
     ],
     "highlight_ids": [
-      "highlight_0013",
-      "highlight_0014",
-      "highlight_0015",
-      "highlight_0016",
+      "highlight_0006",
+      "highlight_0007",
+      "highlight_0030",
+      "highlight_0031",
       "highlight_0032",
-      "highlight_0037",
-      "highlight_0042",
-      "highlight_0043"
+      "highlight_0033",
+      "highlight_0036",
+      "highlight_0039"
     ],
     "dominant_emotion": "romantic",
     "dominant_topics": [
@@ -184,6 +180,11 @@
     "start_timestamp": "2025-04-25T07:01:00",
     "end_timestamp": "2025-09-02T19:41:00",
     "narrative_segment_ids": [
+      "segment_0029",
+      "segment_0030",
+      "segment_0031",
+      "segment_0032",
+      "segment_0033",
       "segment_0034",
       "segment_0035",
       "segment_0036",
@@ -198,29 +199,23 @@
       "segment_0045",
       "segment_0046",
       "segment_0047",
-      "segment_0048",
-      "segment_0049",
-      "segment_0050",
-      "segment_0051",
-      "segment_0052",
-      "segment_0053"
+      "segment_0048"
     ],
     "milestone_ids": [
-      "milestone_0011",
-      "milestone_0012",
-      "milestone_0013",
       "milestone_0014",
-      "milestone_0015"
+      "milestone_0015",
+      "milestone_0016",
+      "milestone_0017"
     ],
     "highlight_ids": [
-      "highlight_0017",
-      "highlight_0018",
-      "highlight_0019",
-      "highlight_0020",
+      "highlight_0008",
+      "highlight_0009",
       "highlight_0021",
-      "highlight_0022",
-      "highlight_0023",
-      "highlight_0024"
+      "highlight_0034",
+      "highlight_0035",
+      "highlight_0037",
+      "highlight_0042",
+      "highlight_0045"
     ],
     "dominant_emotion": "romantic",
     "dominant_topics": [
@@ -243,6 +238,11 @@
     "start_timestamp": "2025-09-03T17:17:00",
     "end_timestamp": "2026-03-14T23:17:00",
     "narrative_segment_ids": [
+      "segment_0049",
+      "segment_0050",
+      "segment_0051",
+      "segment_0052",
+      "segment_0053",
       "segment_0054",
       "segment_0055",
       "segment_0056",
@@ -278,29 +278,24 @@
       "segment_0086",
       "segment_0087",
       "segment_0088",
-      "segment_0089",
-      "segment_0090",
-      "segment_0091",
-      "segment_0092",
-      "segment_0093",
-      "segment_0094"
+      "segment_0089"
     ],
     "milestone_ids": [
-      "milestone_0016",
-      "milestone_0017",
       "milestone_0018",
       "milestone_0019",
-      "milestone_0020"
+      "milestone_0020",
+      "milestone_0021",
+      "milestone_0022"
     ],
     "highlight_ids": [
-      "highlight_0026",
-      "highlight_0027",
-      "highlight_0028",
-      "highlight_0029",
-      "highlight_0030",
-      "highlight_0033",
-      "highlight_0034",
-      "highlight_0039"
+      "highlight_0010",
+      "highlight_0011",
+      "highlight_0012",
+      "highlight_0019",
+      "highlight_0040",
+      "highlight_0044",
+      "highlight_0049",
+      "highlight_0050"
     ],
     "dominant_emotion": "romantic",
     "dominant_topics": [

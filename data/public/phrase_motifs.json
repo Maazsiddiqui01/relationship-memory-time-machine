@@ -5,14 +5,14 @@
     "normalized_phrase": "yes baby",
     "count": 1364,
     "representative_message_ids": [
-      "msg_0064592",
-      "msg_0065471",
-      "msg_0066506",
-      "msg_0068103",
-      "msg_0068384",
-      "msg_0068826",
-      "msg_0068899",
-      "msg_0069004"
+      "msg_0064586",
+      "msg_0065465",
+      "msg_0066500",
+      "msg_0068097",
+      "msg_0068378",
+      "msg_0068820",
+      "msg_0068893",
+      "msg_0068998"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -22,14 +22,14 @@
     "normalized_phrase": "okay baby",
     "count": 1195,
     "representative_message_ids": [
-      "msg_0064429",
-      "msg_0064666",
-      "msg_0065123",
-      "msg_0066315",
-      "msg_0067167",
-      "msg_0067281",
-      "msg_0068237",
-      "msg_0068292"
+      "msg_0064423",
+      "msg_0064660",
+      "msg_0065117",
+      "msg_0066309",
+      "msg_0067161",
+      "msg_0067275",
+      "msg_0068231",
+      "msg_0068286"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -39,14 +39,14 @@
     "normalized_phrase": "love you",
     "count": 639,
     "representative_message_ids": [
-      "msg_0045674",
-      "msg_0047635",
-      "msg_0050988",
-      "msg_0051087",
-      "msg_0052686",
-      "msg_0052717",
-      "msg_0053259",
-      "msg_0055076"
+      "msg_0045668",
+      "msg_0047629",
+      "msg_0050982",
+      "msg_0051081",
+      "msg_0052680",
+      "msg_0052711",
+      "msg_0053253",
+      "msg_0055070"
     ],
     "archetype_hint": "affection"
   },
@@ -56,14 +56,14 @@
     "normalized_phrase": "hi baby",
     "count": 487,
     "representative_message_ids": [
-      "msg_0064257",
-      "msg_0064680",
-      "msg_0065461",
-      "msg_0065462",
-      "msg_0066045",
-      "msg_0068726",
-      "msg_0070722",
-      "msg_0070723"
+      "msg_0064251",
+      "msg_0064674",
+      "msg_0065455",
+      "msg_0065456",
+      "msg_0066039",
+      "msg_0068720",
+      "msg_0070716",
+      "msg_0070717"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -73,14 +73,14 @@
     "normalized_phrase": "good morning baby",
     "count": 474,
     "representative_message_ids": [
-      "msg_0066195",
-      "msg_0066671",
-      "msg_0068390",
-      "msg_0068411",
-      "msg_0069216",
-      "msg_0070966",
-      "msg_0075444",
-      "msg_0082088"
+      "msg_0066189",
+      "msg_0066665",
+      "msg_0068384",
+      "msg_0068405",
+      "msg_0069210",
+      "msg_0070960",
+      "msg_0075438",
+      "msg_0082082"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -90,14 +90,14 @@
     "normalized_phrase": "love you more",
     "count": 471,
     "representative_message_ids": [
-      "msg_0051088",
-      "msg_0052362",
-      "msg_0052687",
-      "msg_0052719",
-      "msg_0054413",
-      "msg_0057618",
-      "msg_0059337",
-      "msg_0059830"
+      "msg_0051082",
+      "msg_0052356",
+      "msg_0052681",
+      "msg_0052713",
+      "msg_0054407",
+      "msg_0057612",
+      "msg_0059331",
+      "msg_0059824"
     ],
     "archetype_hint": "affection"
   },
@@ -107,14 +107,14 @@
     "normalized_phrase": "goodnight baby",
     "count": 355,
     "representative_message_ids": [
-      "msg_0064205",
-      "msg_0065313",
-      "msg_0065370",
-      "msg_0065380",
-      "msg_0066189",
-      "msg_0066655",
-      "msg_0066666",
-      "msg_0067857"
+      "msg_0064199",
+      "msg_0065307",
+      "msg_0065364",
+      "msg_0065374",
+      "msg_0066183",
+      "msg_0066649",
+      "msg_0066660",
+      "msg_0067851"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -124,14 +124,14 @@
     "normalized_phrase": "thank you",
     "count": 343,
     "representative_message_ids": [
-      "msg_0002272",
-      "msg_0013374",
-      "msg_0017543",
-      "msg_0019721",
-      "msg_0024408",
-      "msg_0031259",
-      "msg_0032548",
-      "msg_0033765"
+      "msg_0002266",
+      "msg_0013368",
+      "msg_0017537",
+      "msg_0019715",
+      "msg_0024402",
+      "msg_0031253",
+      "msg_0032542",
+      "msg_0033759"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -141,14 +141,14 @@
     "normalized_phrase": "allah hafiz",
     "count": 329,
     "representative_message_ids": [
-      "msg_0000142",
-      "msg_0002066",
-      "msg_0002492",
-      "msg_0002494",
-      "msg_0005251",
-      "msg_0007083",
-      "msg_0008096",
-      "msg_0008155"
+      "msg_0000136",
+      "msg_0002060",
+      "msg_0002486",
+      "msg_0002488",
+      "msg_0005245",
+      "msg_0007077",
+      "msg_0008090",
+      "msg_0008149"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -158,14 +158,14 @@
     "normalized_phrase": "uh oh",
     "count": 291,
     "representative_message_ids": [
-      "msg_0000858",
-      "msg_0001762",
-      "msg_0003659",
-      "msg_0004263",
-      "msg_0005015",
-      "msg_0005398",
-      "msg_0005808",
-      "msg_0006617"
+      "msg_0000852",
+      "msg_0001756",
+      "msg_0003653",
+      "msg_0004257",
+      "msg_0005009",
+      "msg_0005392",
+      "msg_0005802",
+      "msg_0006611"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -175,14 +175,14 @@
     "normalized_phrase": "good morning",
     "count": 262,
     "representative_message_ids": [
-      "msg_0003374",
-      "msg_0005255",
-      "msg_0007088",
-      "msg_0008157",
-      "msg_0009112",
-      "msg_0012234",
-      "msg_0014283",
-      "msg_0014284"
+      "msg_0003368",
+      "msg_0005249",
+      "msg_0007082",
+      "msg_0008151",
+      "msg_0009106",
+      "msg_0012228",
+      "msg_0014277",
+      "msg_0014278"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -192,14 +192,14 @@
     "normalized_phrase": "thank baby",
     "count": 239,
     "representative_message_ids": [
-      "msg_0064963",
-      "msg_0066293",
-      "msg_0067428",
-      "msg_0069122",
-      "msg_0070557",
-      "msg_0070913",
-      "msg_0076443",
-      "msg_0076923"
+      "msg_0064957",
+      "msg_0066287",
+      "msg_0067422",
+      "msg_0069116",
+      "msg_0070551",
+      "msg_0070907",
+      "msg_0076437",
+      "msg_0076917"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -209,14 +209,14 @@
     "normalized_phrase": "take care",
     "count": 231,
     "representative_message_ids": [
-      "msg_0003620",
-      "msg_0008095",
-      "msg_0010645",
-      "msg_0012170",
-      "msg_0017437",
-      "msg_0018571",
-      "msg_0019079",
-      "msg_0019652"
+      "msg_0003614",
+      "msg_0008089",
+      "msg_0010639",
+      "msg_0012164",
+      "msg_0017431",
+      "msg_0018565",
+      "msg_0019073",
+      "msg_0019646"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -226,14 +226,14 @@
     "normalized_phrase": "thank you baby",
     "count": 199,
     "representative_message_ids": [
-      "msg_0066218",
-      "msg_0066524",
-      "msg_0066709",
-      "msg_0068344",
-      "msg_0068746",
-      "msg_0069509",
-      "msg_0076468",
-      "msg_0077585"
+      "msg_0066212",
+      "msg_0066518",
+      "msg_0066703",
+      "msg_0068338",
+      "msg_0068740",
+      "msg_0069503",
+      "msg_0076462",
+      "msg_0077579"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -243,14 +243,14 @@
     "normalized_phrase": "oh no",
     "count": 198,
     "representative_message_ids": [
-      "msg_0000667",
-      "msg_0000691",
-      "msg_0002770",
-      "msg_0004544",
-      "msg_0019631",
-      "msg_0021220",
-      "msg_0023680",
-      "msg_0027814"
+      "msg_0000661",
+      "msg_0000685",
+      "msg_0002764",
+      "msg_0004538",
+      "msg_0019625",
+      "msg_0021214",
+      "msg_0023674",
+      "msg_0027808"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -260,14 +260,14 @@
     "normalized_phrase": "no baby",
     "count": 189,
     "representative_message_ids": [
-      "msg_0067438",
-      "msg_0068612",
-      "msg_0069087",
-      "msg_0069602",
-      "msg_0070422",
-      "msg_0070840",
-      "msg_0071645",
-      "msg_0074464"
+      "msg_0067432",
+      "msg_0068606",
+      "msg_0069081",
+      "msg_0069596",
+      "msg_0070416",
+      "msg_0070834",
+      "msg_0071639",
+      "msg_0074458"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -277,14 +277,14 @@
     "normalized_phrase": "bye baby",
     "count": 184,
     "representative_message_ids": [
-      "msg_0065356",
-      "msg_0067550",
-      "msg_0068013",
-      "msg_0070028",
-      "msg_0070031",
-      "msg_0070560",
-      "msg_0072503",
-      "msg_0073261"
+      "msg_0065350",
+      "msg_0067544",
+      "msg_0068007",
+      "msg_0070022",
+      "msg_0070025",
+      "msg_0070554",
+      "msg_0072497",
+      "msg_0073255"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -294,14 +294,14 @@
     "normalized_phrase": "oks baby",
     "count": 160,
     "representative_message_ids": [
-      "msg_0104385",
-      "msg_0105969",
-      "msg_0109091",
-      "msg_0110950",
-      "msg_0136950",
-      "msg_0137564",
-      "msg_0137909",
-      "msg_0139277"
+      "msg_0104379",
+      "msg_0105963",
+      "msg_0109085",
+      "msg_0110944",
+      "msg_0136945",
+      "msg_0137559",
+      "msg_0137904",
+      "msg_0139272"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -311,14 +311,14 @@
     "normalized_phrase": "oh yes",
     "count": 147,
     "representative_message_ids": [
-      "msg_0000688",
-      "msg_0001557",
-      "msg_0002020",
-      "msg_0002499",
-      "msg_0002557",
-      "msg_0003133",
-      "msg_0003963",
-      "msg_0004226"
+      "msg_0000682",
+      "msg_0001551",
+      "msg_0002014",
+      "msg_0002493",
+      "msg_0002551",
+      "msg_0003127",
+      "msg_0003957",
+      "msg_0004220"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -328,14 +328,14 @@
     "normalized_phrase": "ah baby",
     "count": 146,
     "representative_message_ids": [
-      "msg_0065998",
-      "msg_0066109",
-      "msg_0075926",
-      "msg_0099805",
-      "msg_0121066",
-      "msg_0121320",
-      "msg_0128124",
-      "msg_0132763"
+      "msg_0065992",
+      "msg_0066103",
+      "msg_0075920",
+      "msg_0099799",
+      "msg_0121060",
+      "msg_0121314",
+      "msg_0128118",
+      "msg_0132757"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -345,14 +345,14 @@
     "normalized_phrase": "too baby",
     "count": 146,
     "representative_message_ids": [
-      "msg_0076871",
-      "msg_0088857",
-      "msg_0091746",
-      "msg_0092253",
-      "msg_0101432",
-      "msg_0102040",
-      "msg_0106656",
-      "msg_0113840"
+      "msg_0076865",
+      "msg_0088851",
+      "msg_0091740",
+      "msg_0092247",
+      "msg_0101426",
+      "msg_0102034",
+      "msg_0106650",
+      "msg_0113834"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -362,14 +362,14 @@
     "normalized_phrase": "miss more",
     "count": 143,
     "representative_message_ids": [
-      "msg_0008242",
-      "msg_0013108",
-      "msg_0020184",
-      "msg_0021304",
-      "msg_0027823",
-      "msg_0030939",
-      "msg_0032087",
-      "msg_0048574"
+      "msg_0008236",
+      "msg_0013102",
+      "msg_0020178",
+      "msg_0021298",
+      "msg_0027817",
+      "msg_0030933",
+      "msg_0032081",
+      "msg_0048568"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -379,14 +379,14 @@
     "normalized_phrase": "no worries",
     "count": 142,
     "representative_message_ids": [
-      "msg_0000963",
-      "msg_0004412",
-      "msg_0006946",
-      "msg_0009538",
-      "msg_0011355",
-      "msg_0011447",
-      "msg_0014335",
-      "msg_0021094"
+      "msg_0000957",
+      "msg_0004406",
+      "msg_0006940",
+      "msg_0009532",
+      "msg_0011349",
+      "msg_0011441",
+      "msg_0014329",
+      "msg_0021088"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -396,14 +396,14 @@
     "normalized_phrase": "love you more baby",
     "count": 138,
     "representative_message_ids": [
-      "msg_0066153",
-      "msg_0066205",
-      "msg_0070458",
-      "msg_0072482",
-      "msg_0082293",
-      "msg_0083946",
-      "msg_0090364",
-      "msg_0092713"
+      "msg_0066147",
+      "msg_0066199",
+      "msg_0070452",
+      "msg_0072476",
+      "msg_0082287",
+      "msg_0083940",
+      "msg_0090358",
+      "msg_0092707"
     ],
     "archetype_hint": "affection"
   },
@@ -413,14 +413,14 @@
     "normalized_phrase": "love you so much",
     "count": 135,
     "representative_message_ids": [
-      "msg_0052908",
-      "msg_0058331",
-      "msg_0067883",
-      "msg_0074222",
-      "msg_0076477",
-      "msg_0076976",
-      "msg_0085040",
-      "msg_0096639"
+      "msg_0052902",
+      "msg_0058325",
+      "msg_0067877",
+      "msg_0074216",
+      "msg_0076471",
+      "msg_0076970",
+      "msg_0085034",
+      "msg_0096633"
     ],
     "archetype_hint": "affection"
   },
@@ -430,14 +430,14 @@
     "normalized_phrase": "miss more baby",
     "count": 135,
     "representative_message_ids": [
-      "msg_0067134",
-      "msg_0068484",
-      "msg_0070136",
-      "msg_0080460",
-      "msg_0084445",
-      "msg_0085859",
-      "msg_0086534",
-      "msg_0091442"
+      "msg_0067128",
+      "msg_0068478",
+      "msg_0070130",
+      "msg_0080454",
+      "msg_0084439",
+      "msg_0085853",
+      "msg_0086528",
+      "msg_0091436"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -447,14 +447,14 @@
     "normalized_phrase": "aww baby",
     "count": 131,
     "representative_message_ids": [
-      "msg_0065141",
-      "msg_0068172",
-      "msg_0069810",
-      "msg_0070150",
-      "msg_0075600",
-      "msg_0078122",
-      "msg_0078806",
-      "msg_0087539"
+      "msg_0065135",
+      "msg_0068166",
+      "msg_0069804",
+      "msg_0070144",
+      "msg_0075594",
+      "msg_0078116",
+      "msg_0078800",
+      "msg_0087533"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -464,14 +464,14 @@
     "normalized_phrase": "hey baby",
     "count": 131,
     "representative_message_ids": [
-      "msg_0074338",
-      "msg_0084963",
-      "msg_0088944",
-      "msg_0091607",
-      "msg_0098896",
-      "msg_0099542",
-      "msg_0103589",
-      "msg_0107585"
+      "msg_0074332",
+      "msg_0084957",
+      "msg_0088938",
+      "msg_0091601",
+      "msg_0098890",
+      "msg_0099536",
+      "msg_0103583",
+      "msg_0107579"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -481,14 +481,14 @@
     "normalized_phrase": "leaving now",
     "count": 125,
     "representative_message_ids": [
-      "msg_0055714",
-      "msg_0057178",
-      "msg_0058941",
-      "msg_0058950",
-      "msg_0059005",
-      "msg_0059045",
-      "msg_0062915",
-      "msg_0079801"
+      "msg_0055708",
+      "msg_0057172",
+      "msg_0058935",
+      "msg_0058944",
+      "msg_0058999",
+      "msg_0059039",
+      "msg_0062909",
+      "msg_0079795"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -498,14 +498,14 @@
     "normalized_phrase": "my baby",
     "count": 121,
     "representative_message_ids": [
-      "msg_0066108",
-      "msg_0066137",
-      "msg_0066624",
-      "msg_0067532",
-      "msg_0067847",
-      "msg_0069177",
-      "msg_0075260",
-      "msg_0079000"
+      "msg_0066102",
+      "msg_0066131",
+      "msg_0066618",
+      "msg_0067526",
+      "msg_0067841",
+      "msg_0069171",
+      "msg_0075254",
+      "msg_0078994"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -515,14 +515,14 @@
     "normalized_phrase": "oh okay",
     "count": 120,
     "representative_message_ids": [
-      "msg_0002127",
-      "msg_0002151",
-      "msg_0003665",
-      "msg_0004369",
-      "msg_0009398",
-      "msg_0010014",
-      "msg_0013855",
-      "msg_0019287"
+      "msg_0002121",
+      "msg_0002145",
+      "msg_0003659",
+      "msg_0004363",
+      "msg_0009392",
+      "msg_0010008",
+      "msg_0013849",
+      "msg_0019281"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -532,14 +532,14 @@
     "normalized_phrase": "love you baby",
     "count": 112,
     "representative_message_ids": [
-      "msg_0065571",
-      "msg_0066294",
-      "msg_0066466",
-      "msg_0068244",
-      "msg_0068650",
-      "msg_0072479",
-      "msg_0073161",
-      "msg_0076337"
+      "msg_0065565",
+      "msg_0066288",
+      "msg_0066460",
+      "msg_0068238",
+      "msg_0068644",
+      "msg_0072473",
+      "msg_0073155",
+      "msg_0076331"
     ],
     "archetype_hint": "affection"
   },
@@ -549,14 +549,14 @@
     "normalized_phrase": "sleep well",
     "count": 107,
     "representative_message_ids": [
-      "msg_0009088",
-      "msg_0009702",
-      "msg_0022210",
-      "msg_0023841",
-      "msg_0028784",
-      "msg_0032076",
-      "msg_0033590",
-      "msg_0034379"
+      "msg_0009082",
+      "msg_0009696",
+      "msg_0022204",
+      "msg_0023835",
+      "msg_0028778",
+      "msg_0032070",
+      "msg_0033584",
+      "msg_0034373"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -566,14 +566,14 @@
     "normalized_phrase": "oh god",
     "count": 107,
     "representative_message_ids": [
-      "msg_0015484",
-      "msg_0022446",
-      "msg_0024467",
-      "msg_0037029",
-      "msg_0039444",
-      "msg_0039477",
-      "msg_0040335",
-      "msg_0043233"
+      "msg_0015478",
+      "msg_0022440",
+      "msg_0024461",
+      "msg_0037023",
+      "msg_0039438",
+      "msg_0039471",
+      "msg_0040329",
+      "msg_0043227"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -583,14 +583,14 @@
     "normalized_phrase": "how you",
     "count": 106,
     "representative_message_ids": [
-      "msg_0023254",
-      "msg_0031310",
-      "msg_0032386",
-      "msg_0038375",
-      "msg_0042625",
-      "msg_0051111",
-      "msg_0059119",
-      "msg_0060808"
+      "msg_0023248",
+      "msg_0031304",
+      "msg_0032380",
+      "msg_0038369",
+      "msg_0042619",
+      "msg_0051105",
+      "msg_0059113",
+      "msg_0060802"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -600,14 +600,14 @@
     "normalized_phrase": "oh baby",
     "count": 101,
     "representative_message_ids": [
-      "msg_0067621",
-      "msg_0082150",
-      "msg_0083967",
-      "msg_0084003",
-      "msg_0086477",
-      "msg_0089854",
-      "msg_0092116",
-      "msg_0095934"
+      "msg_0067615",
+      "msg_0082144",
+      "msg_0083961",
+      "msg_0083997",
+      "msg_0086471",
+      "msg_0089848",
+      "msg_0092110",
+      "msg_0095928"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -617,14 +617,14 @@
     "normalized_phrase": "see baby",
     "count": 100,
     "representative_message_ids": [
-      "msg_0086569",
-      "msg_0087078",
-      "msg_0091268",
-      "msg_0092072",
-      "msg_0095900",
-      "msg_0097842",
-      "msg_0118398",
-      "msg_0132957"
+      "msg_0086563",
+      "msg_0087072",
+      "msg_0091262",
+      "msg_0092066",
+      "msg_0095894",
+      "msg_0097836",
+      "msg_0118392",
+      "msg_0132951"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -634,14 +634,14 @@
     "normalized_phrase": "no no",
     "count": 95,
     "representative_message_ids": [
-      "msg_0000446",
-      "msg_0005004",
-      "msg_0005031",
-      "msg_0012683",
-      "msg_0012732",
-      "msg_0013162",
-      "msg_0020226",
-      "msg_0020791"
+      "msg_0000440",
+      "msg_0004998",
+      "msg_0005025",
+      "msg_0012677",
+      "msg_0012726",
+      "msg_0013156",
+      "msg_0020220",
+      "msg_0020785"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -651,14 +651,14 @@
     "normalized_phrase": "meri jaan",
     "count": 94,
     "representative_message_ids": [
-      "msg_0046017",
-      "msg_0047103",
-      "msg_0050192",
-      "msg_0061146",
-      "msg_0064160",
-      "msg_0084970",
-      "msg_0085965",
-      "msg_0088831"
+      "msg_0046011",
+      "msg_0047097",
+      "msg_0050186",
+      "msg_0061140",
+      "msg_0064154",
+      "msg_0084964",
+      "msg_0085959",
+      "msg_0088825"
     ],
     "archetype_hint": "everyday_life"
   },
@@ -668,14 +668,14 @@
     "normalized_phrase": "kya baat",
     "count": 91,
     "representative_message_ids": [
-      "msg_0000027",
-      "msg_0000815",
-      "msg_0001215",
-      "msg_0002963",
-      "msg_0004339",
-      "msg_0007058",
-      "msg_0009783",
-      "msg_0010605"
+      "msg_0000021",
+      "msg_0000809",
+      "msg_0001209",
+      "msg_0002957",
+      "msg_0004333",
+      "msg_0007052",
+      "msg_0009777",
+      "msg_0010599"
     ],
     "archetype_hint": "everyday_life"
   }
